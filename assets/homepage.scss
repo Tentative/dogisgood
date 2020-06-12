@@ -3,3 +3,8 @@
 .custom-title {
   color: $title-text-color;
 }
+
+.v-list-item__content {
+  border-right: 4px solid $item-content-border;
+  border-radius: $item-content-border-radius;
+}

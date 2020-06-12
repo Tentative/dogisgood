@@ -74,9 +74,7 @@ export default {
         },
         light: {
           primary: colors.blue,
-          text: colors.white,
-          accent: colors.blue,
-          secondary: '#000000'
+          accent: colors.blue.lighten4
         }
       }
     }

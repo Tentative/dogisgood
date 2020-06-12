@@ -2,6 +2,7 @@
   <v-app light>
     <v-navigation-drawer
       v-model="drawer"
+      class="accent"
       :mini-variant="miniVariant"
       :clipped="clipped"
       fixed
@@ -25,15 +26,15 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app class="primary">
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon class="white--text" @click.stop="drawer = !drawer" />
       <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
+        <v-icon class="white--text">mdi-home</v-icon>
       </v-btn>
       <v-btn icon @click.stop="clipped = !clipped">
-        <v-icon>mdi-application</v-icon>
+        <v-icon class="white--text">mdi-paw</v-icon>
       </v-btn>
       <v-btn icon @click.stop="fixed = !fixed">
-        <v-icon>mdi-minus</v-icon>
+        <v-icon class="white--text">mdi-bone</v-icon>
       </v-btn>
       <v-spacer />
       <v-btn icon @click.stop="rightDrawer = !rightDrawer">
@@ -72,14 +73,24 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
+          icon: 'mdi-home',
+          title: 'Homepage',
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
+          icon: 'mdi-checkbox-marked-circle-outline',
+          title: 'Servizi',
           to: '/inspire'
+        },
+        {
+          icon: 'mdi-google-maps',
+          title: 'Dove trovarci',
+          to: '/contact-us'
+        },
+        {
+          icon: 'mdi-view-carousel',
+          title: 'Gallery',
+          to: '/gallery'
         }
       ],
       miniVariant: false,

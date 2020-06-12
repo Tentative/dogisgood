@@ -1,10 +1,11 @@
 @import '@/assets/variables.scss';
 
 .custom-title {
-  color: $title-text-color;
+  color: $main-text-color;
 }
 
-.v-list-item__content {
-  border-right: 4px solid $item-content-border;
-  border-radius: $item-content-border-radius;
+.v-list .v-list-item--active {
+  & span {
+    border-right: 2px solid $item-content-border;
+  }
 }

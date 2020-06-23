@@ -25,7 +25,7 @@
             </v-card-text>
             <v-card-actions>
               <v-btn text color="deep-purple accent-4">
-                Learn More
+                Scopri di più
               </v-btn>
             </v-card-actions>
           </v-card>

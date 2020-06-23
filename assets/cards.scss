@@ -4,12 +4,24 @@
   background-color: $item-content-border;
   color: $main-text-color;
   text-transform: uppercase;
+  -webkit-box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  margin-top: -25px;
 }
 
-i.v-icon.mdi-home {
-  color: rgba(0, 0, 0, 0.54);
-  background-color: $card-icon-background-color !important;
+#asilo {
+  color: $main-text-color;
+  background-color: $card-icon-background-color;
   border-radius: 100%;
   font-size: 3em;
   padding: 10px;
+  -webkit-box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  margin-top: -50px;
+}
+
+#card-content {
+  background-color: $item-content-border;
 }

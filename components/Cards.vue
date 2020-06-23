@@ -1,19 +1,19 @@
 <template>
-  <v-card max-width="400" class="mx-auto">
+  <v-card max-width="85vw" class="mx-auto">
     <v-expansion-panels>
       <v-expansion-panel
         v-for="(card, i) in cards"
         :key="i"
         class="cards-wrapper"
       >
-        <v-expansion-panel-header
-          :id="'card-exp-' + card.order"
-          :ripple="true"
-          :expand-icon="card.icon"
-          >{{ card.title }}</v-expansion-panel-header
+        <v-expansion-panel-header :id="'card-exp-' + card.order" :ripple="true"
+          >{{ card.title
+          }}<template v-slot:actions :elevation="1">
+            <v-icon id="asilo">mdi-home</v-icon>
+          </template></v-expansion-panel-header
         >
-        <v-expansion-panel-content>
-          <v-card :raised="true" class="mx-auto" max-width="344">
+        <v-expansion-panel-content id="card-content">
+          <v-card :raised="true" class="mx-auto" max-width="80vw">
             <v-card-text>
               <div class="text--primary">
                 Il nostro cane è un compagno di vita e condivide con noi

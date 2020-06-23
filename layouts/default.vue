@@ -27,6 +27,7 @@
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app class="primary">
       <v-app-bar-nav-icon class="white--text" @click.stop="drawer = !drawer" />
+
       <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon class="white--text">mdi-home</v-icon>
       </v-btn>

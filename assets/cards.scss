@@ -2,4 +2,14 @@
 
 #card-1 {
   background-color: $item-content-border;
+  color: $main-text-color;
+  text-transform: uppercase;
+}
+
+i.v-icon.mdi-home {
+  color: rgba(0, 0, 0, 0.54);
+  background-color: $card-icon-background-color !important;
+  border-radius: 100%;
+  font-size: 3em;
+  padding: 10px;
 }

@@ -1,6 +1,38 @@
 <template>
   <v-card max-width="400" class="mx-auto">
-    <v-app-bar id="card-1">
+    <v-expansion-panels>
+      <v-expansion-panel
+        v-for="(card, i) in cards"
+        :key="i"
+        class="cards-wrapper"
+      >
+        <v-expansion-panel-header
+          :id="'card-exp-' + card.order"
+          :ripple="true"
+          :expand-icon="card.icon"
+          >{{ card.title }}</v-expansion-panel-header
+        >
+        <v-expansion-panel-content>
+          <v-card :raised="true" class="mx-auto" max-width="344">
+            <v-card-text>
+              <div class="text--primary">
+                Il nostro cane è un compagno di vita e condivide con noi
+                avventure e tempo libero, ma gli impegni quotidiani, spesso, ci
+                tengono fuori casa per parecchie ore costringendo il nostro
+                amico a rimanere solo e recluso. L’idea del nostro asilo nasce
+                proprio da una riflessione intorno alle esigenze di entrambi.
+              </div>
+            </v-card-text>
+            <v-card-actions>
+              <v-btn text color="deep-purple accent-4">
+                Learn More
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-expansion-panels>
+    <v-app-bar id="card-1" light>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
       <v-toolbar-title>DOG IS GOOD | L'ASILO PER CANI</v-toolbar-title>
@@ -51,6 +83,7 @@
 <script>
 export default {
   data: () => ({
+    activeClass: 'cards-wrapper',
     items: [
       {
         color: '#1F7087',
@@ -67,7 +100,9 @@ export default {
     ],
     cards: [
       {
-        title: ''
+        title: "Dog is good | L' asilo per cani",
+        icon: 'mdi-home',
+        order: '1'
       }
     ]
   })

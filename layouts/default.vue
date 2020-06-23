@@ -20,9 +20,7 @@
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <span>
-              <v-list-item-title v-text="item.title" />
-            </span>
+            <v-list-item-title v-text="item.title" />
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -39,9 +37,9 @@
         <v-icon class="white--text">mdi-bone</v-icon>
       </v-btn>
       <v-spacer />
-      <v-img icon @click.stop="rightDrawer = !rightDrawer">
-        <v-icon>mdi-menu</v-icon>
-      </v-img>
+      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
+        <v-img src="./root/dogisgood/static/logo-circle-main-nav.png"></v-img>
+      </v-btn>
     </v-app-bar>
     <v-content>
       <v-container>

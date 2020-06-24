@@ -96,7 +96,7 @@
             <v-container>
               <v-row dense>
                 <v-col cols="12">
-                  <v-card color="#385F73" dark>
+                  <v-card color="#a5f542" light>
                     <v-card-title class="headline"
                       >I nostri percorsi</v-card-title
                     >
@@ -147,14 +147,14 @@ export default {
     imgSrc: require('@/static/struttura.jpg'),
     items: [
       {
-        color: '#1F7087',
+        color: '#f59242',
         src: require('@/static/puppy-school.jpg'),
         title: 'Puppy school',
         artist: 'Obiettivi: benessere di cucciolo e proprietario',
         button: 'Scopri'
       },
       {
-        color: '#952175',
+        color: '#f542a5',
         src: require('@/static/percorsi-personalizzati.jpg'),
         title: 'Percorsi su misura',
         artist:

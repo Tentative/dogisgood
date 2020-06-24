@@ -179,11 +179,11 @@
       </v-expansion-panels>
     </v-card>
     <div id="partners" class="text-center mx-auto">
-      <v-sheet color="#a5f542" class="title">I nostri partner:</v-sheet>
+      <v-sheet color="#a5f542" class="title ">I nostri partner:</v-sheet>
     </div>
     <v-carousel
       cycle
-      height="400"
+      height="250"
       hide-delimiter-background
       show-arrows-on-hover
     >
@@ -218,6 +218,16 @@
         </v-card>
       </v-carousel-item>
     </v-carousel>
+    <div id="partners" class="text-center mx-auto">
+      <v-sheet color="#a5f542" class="title">Contattaci:</v-sheet>
+    </div>
+    <v-card flat tile width="85vw%" shaped class="orange lighten-1 text-center">
+      <v-card-text>
+        <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
+          <v-icon size="24px">{{ icon }}</v-icon>
+        </v-btn>
+      </v-card-text>
+    </v-card>
   </div>
 </template>
 
@@ -229,6 +239,7 @@ export default {
     imgSrc: require('@/static/struttura.jpg'),
     partnerSrc: require('@/static/feste-di-compleanno.jpg'),
     cardSrc: require('@/static/puppy-school.jpg'),
+    icons: ['mdi-phone', 'mdi-email', 'mdi-whatsapp', 'mdi-facebook'],
     cardsGrid: [
       {
         title: 'Toelettatura',

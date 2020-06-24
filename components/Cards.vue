@@ -11,7 +11,7 @@
               <v-icon id="asilo">mdi-home</v-icon>
             </template></v-expansion-panel-header
           >
-          <v-expansion-panel-content id="card-content">
+          <v-expansion-panel-content id="card-content-1">
             <v-card :raised="true" class="mx-auto" max-width="80vw">
               <v-card-text>
                 <div class="text--primary">
@@ -37,24 +37,25 @@
             </template></v-expansion-panel-header
           >
           <v-expansion-panel-content id="card-content">
-            <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-              height="200px"
-            ></v-img>
+            <v-img :src="imgSrc" height="200px"></v-img>
 
             <v-card-title>
-              Top western road trips
+              La nostra struttura
             </v-card-title>
 
             <v-card-subtitle>
-              1,000 miles of wonder
+              Via San Vitale 129 - Seregno (MB)
             </v-card-subtitle>
 
             <v-card-actions>
-              <v-btn text>Share</v-btn>
+              <v-btn
+                text
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fasilodogisgood%2F&amp;src=sdkpreparse"
+                >Condividi<v-icon right dark>mdi-share-variant</v-icon></v-btn
+              >
 
-              <v-btn color="purple" text>
-                Explore
+              <v-btn outlined color="purple" text>
+                Scopri
               </v-btn>
 
               <v-spacer></v-spacer>
@@ -71,12 +72,10 @@
                 <v-divider></v-divider>
 
                 <v-card-text>
-                  I'm a thing. But, like most politicians, he promised more than
-                  he could deliver. You won't have time for sleeping, soldier,
-                  not with all the bed making you'll be doing. Then we'll go
-                  with that data file! Hey, you add a one and two zeros to that
-                  or we walk! You're going to do his laundry? I've got to find a
-                  way to escape.
+                  La struttura che ospita l’Asilo Dog is Good è stata realizzata
+                  per rispondere al meglio a tutte le esigenze dei nostri amici
+                  pelosi e offrire comfort, igiene e sicurezza adeguati al loro
+                  benessere. 400 mq e un ampio cortile privato a disposizione.
                 </v-card-text>
               </div>
             </v-expand-transition>
@@ -91,6 +90,7 @@
 export default {
   data: () => ({
     show: false,
+    imgSrc: require('@/static/struttura.jpg'),
     cards: [
       {
         title: "Dog is good | L' asilo per cani",

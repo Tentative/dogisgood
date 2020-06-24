@@ -83,6 +83,60 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </v-card>
+    <v-card max-width="85vw" class="mx-auto">
+      >
+      <v-expansion-panels>
+        <v-expansion-panel id="panel-3">
+          <v-expansion-panel-header id="card-exp-3" :ripple="true"
+            >PERCORSI<template v-slot:actions :elevation="1">
+              <v-icon id="percorsi">mdi-bone</v-icon>
+            </template></v-expansion-panel-header
+          >
+          <v-expansion-panel-content id="card-content-3">
+            <v-container>
+              <v-row dense>
+                <v-col cols="12">
+                  <v-card color="#385F73" dark>
+                    <v-card-title class="headline"
+                      >I nostri percorsi</v-card-title
+                    >
+
+                    <v-card-subtitle
+                      >Il nostro è il metodo di educazione detto gentile, adatto
+                      a qualunque cane</v-card-subtitle
+                    >
+
+                    <v-card-actions>
+                      <v-btn text>Scopri</v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-col>
+
+                <v-col v-for="(item, i) in items" :key="i" cols="12">
+                  <v-card :color="item.color" dark>
+                    <div class="d-flex flex-no-wrap justify-space-between">
+                      <div>
+                        <v-card-title
+                          class="headline"
+                          v-text="item.title"
+                        ></v-card-title>
+
+                        <v-card-subtitle v-text="item.artist"></v-card-subtitle>
+                      </div>
+
+                      <v-avatar class="ma-3" size="125" tile>
+                        <v-img :src="item.src"></v-img>
+                      </v-avatar>
+                    </div>
+                    <v-btn :block="true">{{ item.button }}</v-btn>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-expansion-panels>
+    </v-card>
   </div>
 </template>
 
@@ -91,6 +145,23 @@ export default {
   data: () => ({
     show: false,
     imgSrc: require('@/static/struttura.jpg'),
+    items: [
+      {
+        color: '#1F7087',
+        src: require('@/static/puppy-school.jpg'),
+        title: 'Puppy school',
+        artist: 'Obiettivi: benessere di cucciolo e proprietario',
+        button: 'Scopri'
+      },
+      {
+        color: '#952175',
+        src: require('@/static/percorsi-personalizzati.jpg'),
+        title: 'Percorsi su misura',
+        artist:
+          'Per ulteriori informazioni ed iscrizioni non esitate a contattarci.',
+        button: 'Contattaci'
+      }
+    ],
     cards: [
       {
         title: "Dog is good | L' asilo per cani",

@@ -1,7 +1,8 @@
 @import './variables.scss';
 
 #card-exp-1,
-#card-exp-2 {
+#card-exp-2,
+#card-exp-3 {
   background-color: $item-content-border;
   color: $main-text-color;
   text-transform: uppercase;
@@ -12,12 +13,15 @@
 }
 
 #panel-1,
-#panel-2 {
+#panel-2,
+#panel-3 {
   margin-bottom: 80px;
 }
 
 #asilo,
-#struttura {
+#struttura,
+#servizi,
+#percorsi {
   color: $main-text-color;
   background-color: $card-icon-background-color;
   border-radius: 100%;

@@ -178,6 +178,9 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </v-card>
+    <div id="partners" class="text-center mx-auto">
+      <v-sheet color="#a5f542" class="title">I nostri partner:</v-sheet>
+    </div>
     <v-carousel
       cycle
       height="400"

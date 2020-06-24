@@ -137,6 +137,55 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </v-card>
+    <v-card max-width="85vw" class="mx-auto">
+      <v-expansion-panels>
+        <v-expansion-panel id="panel-4">
+          <v-expansion-panel-header id="card-exp-3" :ripple="true"
+            >SERVIZI<template v-slot:actions :elevation="1">
+              <v-icon id="percorsi">mdi-dog</v-icon>
+            </template></v-expansion-panel-header
+          >
+          <v-expansion-panel-content id="card-content-4">
+            <v-container fluid>
+              <v-row dense>
+                <v-col
+                  v-for="card in cardsGrid"
+                  :key="card.title"
+                  :cols="card.flex"
+                >
+                  <v-card>
+                    <v-img
+                      :src="card.src"
+                      class="white--text align-end"
+                      gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                      height="200px"
+                    >
+                      <v-card-title v-text="card.title"></v-card-title>
+                    </v-img>
+
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+
+                      <v-btn icon>
+                        <v-icon>mdi-heart</v-icon>
+                      </v-btn>
+
+                      <v-btn icon>
+                        <v-icon>mdi-bookmark</v-icon>
+                      </v-btn>
+
+                      <v-btn icon>
+                        <v-icon>mdi-share-variant</v-icon>
+                      </v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-expansion-panels>
+    </v-card>
   </div>
 </template>
 
@@ -145,6 +194,34 @@ export default {
   data: () => ({
     show: false,
     imgSrc: require('@/static/struttura.jpg'),
+    cardsGrid: [
+      {
+        title: 'Toelettatura',
+        src: require('@/static/toelettatura.jpg'),
+        flex: 12
+      },
+      { title: 'Bautique', src: require('@/static/pet-shop.jpg'), flex: 6 },
+      {
+        title: 'Wedding dog sitter',
+        src: require('@/static/wedding-dog-sitter.jpg'),
+        flex: 6
+      },
+      {
+        title: 'Feste di compleanno',
+        src: require('@/static/feste-di-compleanno.jpg'),
+        flex: 6
+      },
+      {
+        title: 'Osteopatia animale',
+        src: require('@/static/osteopatia-animale.jpg'),
+        flex: 6
+      },
+      {
+        title: 'Campo di educazione privato',
+        src: require('@/static/campo-addestramento-privato.jpg'),
+        flex: 12
+      }
+    ],
     items: [
       {
         color: '#f59242',

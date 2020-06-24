@@ -28,7 +28,7 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </v-card>
-    <v-card class="mx-auto" max-width="85vw">
+    <v-card max-width="85vw" class="mx-auto">
       <v-expansion-panels>
         <v-expansion-panel id="panel-2">
           <v-expansion-panel-header id="card-exp-2" :ripple="true"
@@ -83,7 +83,7 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </v-card>
-    <v-card max-width="85vw" class="mx-auto">
+    <v-card max-width="85vw" class="mx-auto" style="margin-top:-25px;">
       >
       <v-expansion-panels>
         <v-expansion-panel id="panel-3">
@@ -140,7 +140,7 @@
     <v-card max-width="85vw" class="mx-auto">
       <v-expansion-panels>
         <v-expansion-panel id="panel-4">
-          <v-expansion-panel-header id="card-exp-3" :ripple="true"
+          <v-expansion-panel-header id="card-exp-4" :ripple="true"
             >SERVIZI<template v-slot:actions :elevation="1">
               <v-icon id="percorsi">mdi-dog</v-icon>
             </template></v-expansion-panel-header
@@ -178,6 +178,7 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </v-card>
+    <div class="text">I nostri partner:</div>
   </div>
 </template>
 

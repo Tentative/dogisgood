@@ -61,8 +61,8 @@
     </v-navigation-drawer>
     <v-footer light padless>
       <v-card class="flex" flat tile>
-        <v-card-title id="footer" class="text-center">
-          <strong class="subheading ">RESTA IN CONTATTO!</strong>
+        <v-card-title id="footer" class="white--text text-center">
+          <div class="subheading ">Seguici sui social:</div>
 
           <v-spacer></v-spacer>
 

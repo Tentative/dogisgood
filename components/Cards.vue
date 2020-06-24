@@ -178,7 +178,43 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </v-card>
-    <div class="text">I nostri partner:</div>
+    <v-carousel
+      cycle
+      height="400"
+      hide-delimiter-background
+      show-arrows-on-hover
+    >
+      <v-carousel-item v-for="n in 3" :key="n">
+        <v-card class="mx-auto" max-width="85vw" tile>
+          <v-img
+            height="100%"
+            src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg"
+          >
+            <v-row align="end" class="fill-height">
+              <v-col align-self="start" class="pa-0" cols="12">
+                <v-avatar class="profile" color="grey" size="164" tile>
+                  <v-img
+                    src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"
+                  ></v-img>
+                </v-avatar>
+              </v-col>
+              <v-col class="py-0">
+                <v-list-item color="rgba(0, 0, 0, .4)" dark>
+                  <v-list-item-content>
+                    <v-list-item-title class="title "
+                      >Dog is good</v-list-item-title
+                    >
+                    <v-list-item-subtitle class="subtitle "
+                      >Asilo per cani</v-list-item-subtitle
+                    >
+                  </v-list-item-content>
+                </v-list-item>
+              </v-col>
+            </v-row>
+          </v-img>
+        </v-card>
+      </v-carousel-item>
+    </v-carousel>
   </div>
 </template>
 
@@ -186,7 +222,10 @@
 export default {
   data: () => ({
     show: false,
+    text: 'i nostri partner:',
     imgSrc: require('@/static/struttura.jpg'),
+    partnerSrc: require('@/static/feste-di-compleanno.jpg'),
+    cardSrc: require('@/static/puppy-school.jpg'),
     cardsGrid: [
       {
         title: 'Toelettatura',

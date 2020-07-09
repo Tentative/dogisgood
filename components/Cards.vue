@@ -19,7 +19,7 @@
                 </div>
               </v-card-text>
               <v-card-actions>
-                <v-btn text color="deep-purple accent-4">
+                <v-btn text color="deep-purple accent-4" to="/asilo">
                   Scopri di più
                 </v-btn>
               </v-card-actions>
@@ -195,12 +195,12 @@
             <v-icon dark>mdi-account-circle</v-icon>
           </v-avatar>
 
-          <v-avatar size="28">
-            <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
+          <v-avatar color="indigo" size="28">
+            <v-icon dark>mdi-account-circle</v-icon>
           </v-avatar>
 
-          <v-avatar color="red" size="28">
-            <span class="white--text headline">CJ</span>
+          <v-avatar color="indigo" size="28">
+            <v-icon dark>mdi-account-circle</v-icon>
           </v-avatar>
         </v-row>
       </v-carousel-item>

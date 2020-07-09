@@ -11,6 +11,7 @@
 <script>
 import { Logo, Cards } from '~/components'
 export default {
+  layout: 'homepage',
   components: {
     Logo,
     Cards

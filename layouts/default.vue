@@ -60,19 +60,19 @@
       </v-list>
     </v-navigation-drawer>
     <v-footer light padless>
-      <v-card class="flex" flat tile>
-        <v-card-title id="footer" class="white--text text-center">
-          <div class="subheading ">Seguici sui social:</div>
-
-          <v-spacer></v-spacer>
-
-          <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
+      <v-card
+        flat
+        tile
+        width="85vw%"
+        color="#42a5f5"
+        dark
+        shaped
+        class=" text-center"
+      >
+        <v-card-text>
+          <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
             <v-icon size="24px">{{ icon }}</v-icon>
           </v-btn>
-        </v-card-title>
-
-        <v-card-text class="py-2 black--text text-center">
-          {{ new Date().getFullYear() }} — <strong>Dog is good</strong>
         </v-card-text>
       </v-card>
     </v-footer>
@@ -86,7 +86,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
-      icons: ['mdi-facebook', 'mdi-instagram'],
+      icons: ['mdi-phone', 'mdi-email', 'mdi-whatsapp', 'mdi-facebook'],
       items: [
         {
           icon: 'mdi-home',

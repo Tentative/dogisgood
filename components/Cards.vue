@@ -142,7 +142,7 @@
         <v-expansion-panel id="panel-4">
           <v-expansion-panel-header id="card-exp-4" :ripple="true"
             >SERVIZI<template v-slot:actions :elevation="1">
-              <v-icon id="percorsi">mdi-dog</v-icon>
+              <v-icon id="servizi">mdi-dog</v-icon>
             </template></v-expansion-panel-header
           >
           <v-expansion-panel-content id="card-content-4">
@@ -205,15 +205,8 @@
       </v-carousel-item>
     </v-carousel>
     <div id="partners" class="text-center mx-auto">
-      <v-sheet color="#a5f542" class="title">Contattaci:</v-sheet>
+      <v-sheet color="#21f37e" class="title">Contattaci:</v-sheet>
     </div>
-    <v-card flat tile width="85vw%" shaped class="orange lighten-1 text-center">
-      <v-card-text>
-        <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
-          <v-icon size="24px">{{ icon }}</v-icon>
-        </v-btn>
-      </v-card-text>
-    </v-card>
   </div>
 </template>
 

@@ -287,7 +287,7 @@ export default {
     ],
     cards: [
       {
-        title: "Dog is good | L' asilo per cani",
+        title: "L' asilo per cani",
         icon: 'mdi-home',
         order: '1',
         content:

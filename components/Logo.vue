@@ -1,14 +1,20 @@
 <template>
   <div class="main-banner">
-    <v-img :src="imgSrc" />
+    <v-img :src="banner" />
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    imgSrc: {
+      type: String,
+      required: true
+    }
+  },
   data() {
     return {
-      imgSrc: require('@/static/homepage-banner-mobile.jpg')
+      banner: require(`@/static/${this.imgSrc}-banner-mobile.jpg`)
     }
   }
 }

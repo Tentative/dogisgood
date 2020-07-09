@@ -1,7 +1,7 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 class="main-banner">
-      <Logo />
+      <Logo :img-src="imgSrc" />
       <Cards />
     </v-flex>
     <v-flex xs12 sm8 md6> </v-flex>
@@ -15,6 +15,11 @@ export default {
   components: {
     Logo,
     Cards
+  },
+  data() {
+    return {
+      imgSrc: 'homepage'
+    }
   }
 }
 </script>

@@ -63,7 +63,7 @@
       <v-card
         flat
         tile
-        width="85vw%"
+        width="100vw"
         color="#42a5f5"
         dark
         shaped
@@ -73,6 +73,9 @@
           <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
             <v-icon size="24px">{{ icon }}</v-icon>
           </v-btn>
+          <v-btn class="mx-4" icon>
+            <div class="tiktok"><tiktok /></div
+          ></v-btn>
         </v-card-text>
       </v-card>
     </v-footer>
@@ -80,13 +83,17 @@
 </template>
 
 <script>
+import tiktok from '@/components/tiktok.vue'
 export default {
+  components: {
+    tiktok
+  },
   data() {
     return {
       clipped: false,
       drawer: false,
       fixed: false,
-      icons: ['mdi-phone', 'mdi-email', 'mdi-whatsapp', 'mdi-facebook'],
+      icons: ['mdi-whatsapp', 'mdi-facebook', 'mdi-instagram'],
       items: [
         {
           icon: 'mdi-home',

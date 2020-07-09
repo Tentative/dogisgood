@@ -205,7 +205,9 @@
       </v-carousel-item>
     </v-carousel>
     <div id="partners" class="text-center mx-auto">
-      <v-sheet color="#21f37e" class="title">Contattaci:</v-sheet>
+      <v-sheet color="#21f37e" class="title"
+        >Seguici sui nostri social:</v-sheet
+      >
     </div>
   </div>
 </template>

@@ -8,7 +8,7 @@
 export default {
   data() {
     return {
-      imgSrc: require('@/static/main-banner.jpg')
+      imgSrc: require('@/static/homepage-banner-mobile.jpg')
     }
   }
 }

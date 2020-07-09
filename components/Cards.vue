@@ -88,7 +88,7 @@
       <v-expansion-panels>
         <v-expansion-panel id="panel-3">
           <v-expansion-panel-header id="card-exp-3" :ripple="true"
-            >PERCORSI<template v-slot:actions :elevation="1">
+            >PERCORSI EDUCATIVI<template v-slot:actions :elevation="1">
               <v-icon id="percorsi">mdi-bone</v-icon>
             </template></v-expansion-panel-header
           >
@@ -96,7 +96,7 @@
             <v-container>
               <v-row dense>
                 <v-col cols="12">
-                  <v-card color="#a5f542" light>
+                  <v-card color="#21f37e" light>
                     <v-card-title class="headline"
                       >I nostri percorsi</v-card-title
                     >

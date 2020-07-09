@@ -179,43 +179,29 @@
       </v-expansion-panels>
     </v-card>
     <div id="partners" class="text-center mx-auto">
-      <v-sheet color="#a5f542" class="title ">I nostri partner:</v-sheet>
+      <v-sheet color="#21f37e" class="title ">I nostri partner:</v-sheet>
     </div>
+
     <v-carousel
+      height="80px"
       cycle
-      height="250"
       hide-delimiter-background
       show-arrows-on-hover
     >
       <v-carousel-item v-for="n in 3" :key="n">
-        <v-card class="mx-auto" max-width="85vw" tile>
-          <v-img
-            height="100%"
-            src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg"
-          >
-            <v-row align="end" class="fill-height">
-              <v-col align-self="start" class="pa-0" cols="12">
-                <v-avatar class="profile" color="grey" size="164" tile>
-                  <v-img
-                    src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"
-                  ></v-img>
-                </v-avatar>
-              </v-col>
-              <v-col class="py-0">
-                <v-list-item color="rgba(0, 0, 0, .4)" dark>
-                  <v-list-item-content>
-                    <v-list-item-title class="title "
-                      >Dog is good</v-list-item-title
-                    >
-                    <v-list-item-subtitle class="subtitle "
-                      >Asilo per cani</v-list-item-subtitle
-                    >
-                  </v-list-item-content>
-                </v-list-item>
-              </v-col>
-            </v-row>
-          </v-img>
-        </v-card>
+        <v-row justify="space-around">
+          <v-avatar color="indigo">
+            <v-icon dark>mdi-account-circle</v-icon>
+          </v-avatar>
+
+          <v-avatar>
+            <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" />
+          </v-avatar>
+
+          <v-avatar color="red">
+            <span class="white--text headline">CJ</span>
+          </v-avatar>
+        </v-row>
       </v-carousel-item>
     </v-carousel>
     <div id="partners" class="text-center mx-auto">

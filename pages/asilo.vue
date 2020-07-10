@@ -1,7 +1,7 @@
 <template>
   <v-layout id="top" column justify-center align-center>
     <v-flex xs12 class="main-banner">
-      <Logo :img-src="imgSrc" />
+      <Logo />
       <div id="content-title" class="title text-center">L'asilo</div>
       <div class="text-center">
         <v-sheet id="main-content" color="white"
@@ -64,6 +64,7 @@
 import Logo from '@/components/Logo.vue'
 // import Breadcrumbs from '@/components/Breadcrumbs.vue'
 export default {
+  name: 'Asilo',
   components: {
     Logo
     // Breadcrumbs
@@ -71,7 +72,7 @@ export default {
 
   data() {
     return {
-      imgSrc: 'asilo',
+      imgSrc: this.$route.name,
       fab: false,
       offsetTop: 0,
       asilo1: require('@/static/asilo-1.jpg')

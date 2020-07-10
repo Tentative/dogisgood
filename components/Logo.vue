@@ -6,15 +6,9 @@
 
 <script>
 export default {
-  props: {
-    imgSrc: {
-      type: String,
-      required: true
-    }
-  },
   data() {
     return {
-      banner: require(`@/static/${this.imgSrc}-banner-mobile.jpg`)
+      banner: require(`@/static/${this.$route.name}-banner-mobile.jpg`)
     }
   }
 }

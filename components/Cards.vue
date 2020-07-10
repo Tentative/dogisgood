@@ -54,7 +54,7 @@
                 >Condividi<v-icon right dark>mdi-share-variant</v-icon></v-btn
               >
 
-              <v-btn outlined color="purple" text>
+              <v-btn outlined color="purple" text to="/struttura">
                 Scopri
               </v-btn>
 

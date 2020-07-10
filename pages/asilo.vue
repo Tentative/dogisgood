@@ -1,5 +1,5 @@
 <template>
-  <v-layout column justify-center align-center>
+  <v-layout id="top" column justify-center align-center>
     <v-flex xs12 class="main-banner">
       <Logo :img-src="imgSrc" />
       <div id="content-title" class="title text-center">L'asilo</div>
@@ -51,7 +51,7 @@
         right
         small
         color="pink"
-        @click="$vuetify.goTo('#main-content', 2500)"
+        @click="$vuetify.goTo('#top', 2500)"
       >
         <v-icon>mdi-chevron-up</v-icon>
       </v-btn>

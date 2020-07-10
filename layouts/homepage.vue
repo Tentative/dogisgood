@@ -3,7 +3,6 @@
     <v-navigation-drawer
       v-model="drawer"
       class="accent"
-      :mini-variant="miniVariant"
       :clipped="clipped"
       fixed
       app

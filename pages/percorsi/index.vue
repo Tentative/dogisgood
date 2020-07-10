@@ -56,12 +56,11 @@
             </v-list-item>
           </v-card-actions>
         </v-card>
-        <div id="content-title" class="text-center title">
-          Il nostro asilo è aperto tutti i giorni
-        </div>
-        <div class="text-center subtitle-2" style="margin-bottom:20px">
-          dal lunedì al venerdì, dalle 7.30 alle 19
-        </div>
+        <v-sheet id="main-content" color="white"
+          >Se invece sei alla ricerca del tuo amico peloso, ti offriamo la
+          migliore consulenza, competente e attenta, che ti guidi in un percorso
+          di adozione maturo e responsabile.
+        </v-sheet>
       </div>
     </v-flex>
     <v-fab-transition>

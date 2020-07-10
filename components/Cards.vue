@@ -128,7 +128,7 @@
                         <v-img :src="item.src"></v-img>
                       </v-avatar>
                     </div>
-                    <v-btn :block="true">{{ item.button }}</v-btn>
+                    <v-btn :block="true" :to="item.to">{{ item.button }}</v-btn>
                   </v-card>
                 </v-col>
               </v-row>
@@ -254,7 +254,8 @@ export default {
         src: require('@/static/puppy-school.jpg'),
         title: 'Puppy school',
         artist: 'Obiettivi: benessere di cucciolo e proprietario',
-        button: 'Scopri'
+        button: 'Scopri',
+        to: '/percorsi/puppy-school'
       },
       {
         color: '#f542a5',

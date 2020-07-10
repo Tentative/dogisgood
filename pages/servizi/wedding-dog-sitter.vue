@@ -2,25 +2,18 @@
   <v-layout id="top" column justify-center align-center>
     <v-flex xs12 class="main-banner">
       <Logo />
-      <div id="content-title" class="title text-center">Bautique</div>
+      <div id="content-title" class="title text-center">Wedding Dog Sitter</div>
+      <div id="content-subtitle" class="subtitle-2 text-center">
+        Perché rinunciare al tuo migliore amico in uno dei giorni più belli? Con
+        Dog is Good tutto è possibile!
+      </div>
       <div class="text-center">
-        <v-sheet id="main-content" color="white"
-          >Vieni a curiosare nella nostra Bautique! Troverai un sacco di
-          prodotti esclusivi per il tuo cane, ma anche articoli sfiziosi per te!
-
-          <v-carousel
-            cycle
-            height="200px"
-            :hide-delimiters="true"
-            width="85vw"
-            style="margin-top:20px"
-          >
-            <v-carousel-item
-              v-for="(item, i) in items"
-              :key="i"
-              :src="item.src"
-            ></v-carousel-item>
-          </v-carousel>
+        <v-sheet id="main-content" color="white" style="margin-bottom:20px"
+          >Ci prenderemo cura di lui per tutta la giornata, assicurandoci che ci
+          sia nei momenti più importanti. Un membro del nostro team a
+          disposizione, un corredino firmato Lussianinda, un reportage della sua
+          giornata... cosa chiedere di più? Averlo al tuo fianco sarà uno dei
+          ricordi più belli!
         </v-sheet>
       </div>
     </v-flex>

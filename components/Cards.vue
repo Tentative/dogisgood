@@ -236,7 +236,8 @@ export default {
       {
         title: 'Wedding dog sitter',
         src: require('@/static/wedding-dog-sitter.jpg'),
-        flex: 6
+        flex: 6,
+        to: 'servizi/wedding-dog-sitter'
       },
       {
         title: 'Feste di compleanno',

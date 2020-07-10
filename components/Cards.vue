@@ -248,7 +248,8 @@ export default {
       {
         title: 'Osteopatia animale',
         src: require('@/static/osteopatia-animale.jpg'),
-        flex: 6
+        flex: 6,
+        to: 'servizi/osteopatia'
       },
       {
         title: 'Campo di educazione privato',

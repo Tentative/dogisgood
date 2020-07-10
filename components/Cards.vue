@@ -254,7 +254,8 @@ export default {
       {
         title: 'Campo di educazione privato',
         src: require('@/static/campo-addestramento-privato.jpg'),
-        flex: 12
+        flex: 12,
+        to: 'servizi/campo-educazione-privato'
       }
     ],
     items: [

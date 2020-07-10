@@ -30,16 +30,11 @@
       <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon class="white--text">mdi-home</v-icon>
       </v-btn>
-      <v-btn icon @click.stop="clipped = !clipped">
-        <v-icon class="white--text">mdi-paw</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="fixed = !fixed">
-        <v-icon class="white--text">mdi-bone</v-icon>
-      </v-btn>
+
       <v-spacer />
-      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
-        <v-img src="./root/dogisgood/static/logo-circle-main-nav.png"></v-img>
-      </v-btn>
+      <v-list-item-avatar color="grey darken-3">
+        <v-img class="elevation-6" :src="logoSrc"></v-img>
+      </v-list-item-avatar>
     </v-app-bar>
     <v-content>
       <v-container>
@@ -74,6 +69,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
+      logoSrc: require('@/static/logo.jpg'),
       icons: ['mdi-whatsapp', 'mdi-facebook', 'mdi-instagram'],
       items: [
         {

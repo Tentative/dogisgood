@@ -107,7 +107,7 @@
                     >
 
                     <v-card-actions>
-                      <v-btn text>Scopri</v-btn>
+                      <v-btn text to="/percorsi/">Scopri</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-col>

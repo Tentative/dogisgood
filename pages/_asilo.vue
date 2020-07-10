@@ -56,14 +56,17 @@
         <v-icon>mdi-chevron-up</v-icon>
       </v-btn>
     </v-fab-transition>
+    <Breadcrumbs :levels="1" />
   </v-layout>
 </template>
 
 <script>
 import Logo from '@/components/Logo.vue'
+import Breadcrumbs from '@/components/Breadcrumbs.vue'
 export default {
   components: {
-    Logo
+    Logo,
+    Breadcrumbs
   },
 
   data() {

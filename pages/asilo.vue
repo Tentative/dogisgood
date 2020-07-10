@@ -37,19 +37,25 @@
         <div class="text-center subtitle-2" style="margin-bottom:20px">
           dal lunedì al venerdì, dalle 7.30 alle 19
         </div>
-        <v-btn
-          absolute
-          dark
-          fab
-          bottom
-          right
-          color="pink"
-          @click="$vuetify.goTo('#main-content', 2000)"
-        >
-          <v-icon>mdi-plus</v-icon>
-        </v-btn>
       </div>
     </v-flex>
+    <v-fab-transition>
+      <v-btn
+        v-show="fab"
+        id="to-top"
+        v-scroll="onScroll"
+        fixed
+        dark
+        fab
+        bottom
+        right
+        small
+        color="pink"
+        @click="$vuetify.goTo('#main-content', 2500)"
+      >
+        <v-icon>mdi-chevron-up</v-icon>
+      </v-btn>
+    </v-fab-transition>
   </v-layout>
 </template>
 
@@ -63,13 +69,16 @@ export default {
   data() {
     return {
       imgSrc: 'asilo',
+      fab: false,
       offsetTop: 0,
       asilo1: require('@/static/asilo-1.jpg')
     }
   },
   methods: {
     onScroll(e) {
-      this.offsetTop = e.target.scrollTop
+      if (typeof window === 'undefined') return
+      const top = window.pageYOffset || e.target.scrollTop || 0
+      this.fab = top > 200
     }
   },
   layout: 'homepage'

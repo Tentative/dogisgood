@@ -242,7 +242,8 @@ export default {
       {
         title: 'Feste di compleanno',
         src: require('@/static/feste-di-compleanno.jpg'),
-        flex: 6
+        flex: 6,
+        to: 'servizi/compleanno'
       },
       {
         title: 'Osteopatia animale',

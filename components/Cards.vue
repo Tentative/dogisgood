@@ -227,7 +227,12 @@ export default {
         flex: 12,
         to: 'servizi/toelettatura'
       },
-      { title: 'Bautique', src: require('@/static/pet-shop.jpg'), flex: 6 },
+      {
+        title: 'Bautique',
+        src: require('@/static/pet-shop.jpg'),
+        flex: 6,
+        to: 'servizi/bautique'
+      },
       {
         title: 'Wedding dog sitter',
         src: require('@/static/wedding-dog-sitter.jpg'),

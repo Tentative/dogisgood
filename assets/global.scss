@@ -4,3 +4,13 @@
   margin: 0;
   padding: 0;
 }
+
+.tiktok {
+  & svg {
+    display: inline-block;
+    height: auto;
+    fill: white;
+  }
+  display: inline-block;
+  color: white !important;
+}

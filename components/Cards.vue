@@ -166,8 +166,8 @@
                     <v-card-actions>
                       <v-spacer></v-spacer>
 
-                      <v-btn icon>
-                        <v-icon>mdi-share-variant</v-icon>
+                      <v-btn outlined color="purple" text :to="card.to">
+                        Scopri
                       </v-btn>
                     </v-card-actions>
                   </v-card>
@@ -224,7 +224,8 @@ export default {
       {
         title: 'Toelettatura',
         src: require('@/static/toelettatura.jpg'),
-        flex: 12
+        flex: 12,
+        to: 'servizi/toelettatura'
       },
       { title: 'Bautique', src: require('@/static/pet-shop.jpg'), flex: 6 },
       {
@@ -279,6 +280,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@/assets/cards.scss';
 </style>

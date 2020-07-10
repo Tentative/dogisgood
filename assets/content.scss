@@ -41,3 +41,29 @@ iframe {
 #to-top {
   bottom: 10vh;
 }
+
+#sub-content {
+  margin: 20px auto;
+  padding: 10px;
+}
+
+#sub-expandible {
+  text-align: center;
+  margin: 20px auto;
+  & button:not(:first-child) {
+    padding: 16px 16px 16px 45%;
+  }
+  & button:first-child {
+    padding-right: 16px;
+  }
+
+  & .v-expansion-panel {
+    margin: 0 auto 10px auto;
+    border-radius: 100%;
+  }
+}
+
+#toelettatura-contacts {
+  width: 85vw;
+  text-align: center;
+}

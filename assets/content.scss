@@ -68,10 +68,14 @@ iframe {
     width: 100%;
     border-radius: 0.8rem !important;
   }
-  width: 100%;
+  width: 85vw;
   -webkit-box-shadow: 5px 5px 12px #d6ddda, -5px -5px 12px #fff !important;
   box-shadow: 5px 5px 12px #d6ddda, -5px -5px 12px #fff !important;
   margin: 20px auto;
+}
+
+#main-content .media1 {
+  width: 100%;
 }
 
 #to-top {

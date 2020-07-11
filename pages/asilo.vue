@@ -32,7 +32,7 @@
           eventualmente di un percorso di inserimento.
         </v-sheet>
         <div id="content-title" class="text-center title">
-          Il nostro asilo è aperto tutti i giorni
+          Il nostro asilo è aperto
         </div>
         <div class="text-center subtitle-2" style="margin-bottom:20px">
           dal lunedì al venerdì, dalle 7.30 alle 19

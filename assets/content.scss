@@ -15,9 +15,15 @@
   padding: 20px;
 }
 
+a#mail-contact.subtitle-2.subtitle-2.text-center.v-btn.v-btn--contained.v-btn--router.theme--light.v-size--default
+  span {
+  font-size: 12px !important;
+}
+
 iframe {
-  width: 85vw;
+  width: 100%;
   margin-top: 20px;
+  height: 250px;
 }
 
 #content-title {

@@ -6,8 +6,52 @@
         Contatti
       </div>
       <div class="text-center">
-        <v-sheet id="main-content" color="white" class="text-center">
-          Coming soon!</v-sheet
+        <v-sheet
+          id="main-content"
+          color="white"
+          class="text-center"
+          style="margin-bottom:20px"
+        >
+          <v-icon style="padding-right:20px">mdi-cellphone</v-icon
+          ><v-btn :to="mobile">339-7268386 </v-btn></v-sheet
+        >
+      </div>
+
+      <div class="text-center">
+        <v-sheet
+          id="main-content"
+          color="white"
+          class="text-center"
+          style="margin-bottom:20px"
+        >
+          <v-icon style="padding-right:20px">mdi-deskphone</v-icon
+          ><v-btn :to="phone">0362-1821674 </v-btn></v-sheet
+        >
+
+        <v-sheet
+          id="main-content"
+          color="white"
+          class="text-center"
+          style="margin-bottom:20px"
+        >
+          <v-icon style="padding-right:20px">mdi-email</v-icon
+          ><v-btn id="mail-contact" :to="mail" class="caption text-center"
+            >info.dogisgood@gmail.com</v-btn
+          ></v-sheet
+        >
+
+        <v-sheet
+          id="main-content"
+          color="white"
+          class="text-center"
+          style="margin-bottom:20px"
+        >
+          <v-icon style="padding-right:20px">mdi-google-maps</v-icon
+          ><v-btn id="mail-contact" :to="mail" class="caption text-center"
+            >Dove trovarci</v-btn
+          >
+          <Maps />
+          Via San Vitale, 129, Seregno (MB)</v-sheet
         >
       </div>
     </v-flex>
@@ -33,18 +77,22 @@
 </template>
 
 <script>
-import Logo from '@/components/Logo.vue'
+import { Logo, Maps } from '@/components'
 // import Breadcrumbs from '@/components/Breadcrumbs.vue'
 export default {
   name: 'CampoEducazionePrivato',
   components: {
-    Logo
+    Logo,
+    Maps
     // Breadcrumbs
   },
 
   data() {
     return {
       imgSrc: 'osteopatia animale',
+      mobile: 'tel:+393397268386',
+      phone: 'tel:+3903621821674',
+      mail: 'mailto:info.dogisgood@gmail.com',
       fab: false,
       offsetTop: 0,
       struttura1: require('@/static/struttura3.jpg'),

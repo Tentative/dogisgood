@@ -10,13 +10,7 @@
           offrire comfort, igiene e sicurezza adeguati al loro benessere. 400 mq
           e un ampio cortile privato a disposizione.
         </v-sheet>
-        <iframe
-          frameborder="0"
-          style="border:0"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCM9Ft7KvSSTRPOzXmHaRo583-JqEifRQY&q=Dog+is+Good,+Via+S.+Vitale,+129,+20831+Seregno+MB/@45.6562345,9.2024461,15z/data=!4m5!1m2!2m1!1smaps+asilo+dog+is+good!3m1!1s0x4786bd09259b16ff:0x37f2511351fa4b67"
-          allowfullscreen
-        >
-        </iframe>
+        <Maps />
         <div class="media1">
           <v-img :src="struttura1" />
         </div>
@@ -47,12 +41,13 @@
 </template>
 
 <script>
-import Logo from '@/components/Logo.vue'
+import { Logo, Maps } from '@/components/'
 // import Breadcrumbs from '@/components/Breadcrumbs.vue'
 export default {
   name: 'Struttura',
   components: {
-    Logo
+    Logo,
+    Maps
     // Breadcrumbs
   },
 

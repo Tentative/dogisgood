@@ -78,14 +78,19 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-bone',
-          title: 'Percorsi',
-          to: '/percorsi'
+          icon: 'mdi-paw',
+          title: 'Asilo',
+          to: '/asilo'
         },
         {
           icon: 'mdi-donkey',
           title: 'Toelettatura',
           to: 'servizi/toelettatura'
+        },
+        {
+          icon: 'mdi-bone',
+          title: 'Percorsi educativi',
+          to: '/percorsi'
         },
         {
           icon: 'mdi-email',

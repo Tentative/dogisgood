@@ -223,13 +223,13 @@ export default {
     cardsGrid: [
       {
         title: 'Toelettatura',
-        src: require('@/static/toelettatura.jpg'),
+        src: require('@/static/toelettatura-home.jpg'),
         flex: 12,
         to: 'servizi/toelettatura'
       },
       {
         title: 'Bautique',
-        src: require('@/static/pet-shop.jpg'),
+        src: require('@/static/bautique.jpg'),
         flex: 6,
         to: 'servizi/bautique'
       },
@@ -241,13 +241,13 @@ export default {
       },
       {
         title: 'Feste di compleanno',
-        src: require('@/static/feste-di-compleanno.jpg'),
+        src: require('@/static/compleanno-home.jpg'),
         flex: 6,
         to: 'servizi/compleanno'
       },
       {
         title: 'Osteopatia animale',
-        src: require('@/static/osteopatia-animale.jpg'),
+        src: require('@/static/osteopatia-home.jpg'),
         flex: 6,
         to: 'servizi/osteopatia'
       },

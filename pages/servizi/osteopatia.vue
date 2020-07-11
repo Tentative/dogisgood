@@ -16,6 +16,12 @@
           la capacità di autoregolazione interna di ogni organismo, senza l’uso
           di farmaci.
         </v-sheet>
+        <div id="content-title" class="title text-center">
+          Per info e appuntamenti:
+        </div>
+        <h4 class="text-center" style="margin-bottom:20px">
+          Sara Mariani <a href="tel:393490702884">349 0702884</a>
+        </h4>
       </div>
     </v-flex>
     <v-fab-transition>

@@ -10,8 +10,14 @@
       class=" text-center"
     >
       <v-card-text>
-        <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
-          <v-icon size="24px">{{ icon }}</v-icon>
+        <v-btn
+          v-for="icon in icons"
+          :key="icon"
+          class="mx-4"
+          icon
+          :href="icon.to"
+        >
+          <v-icon size="24px">{{ icon.icon }}</v-icon>
         </v-btn>
         <v-btn class="mx-4" icon>
           <div class="tiktok"><tiktok /></div
@@ -30,7 +36,20 @@ export default {
   },
   data() {
     return {
-      icons: ['mdi-whatsapp', 'mdi-facebook', 'mdi-instagram']
+      icons: [
+        {
+          icon: 'mdi-whatsapp',
+          to: ''
+        },
+        {
+          icon: 'mdi-facebook',
+          to: 'https://www.facebook.com/asilodogisgood/'
+        },
+        {
+          icon: 'mdi-instagram',
+          to: 'https://www.instagram.com/asilodogisgood/'
+        }
+      ]
     }
   }
 }

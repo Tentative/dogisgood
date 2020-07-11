@@ -4,7 +4,18 @@
       <Logo />
       <div id="content-title" class="title text-center">Osteopatia Animale</div>
       <div class="text-center">
-        <v-sheet id="main-content" color="white"> </v-sheet>
+        <v-sheet id="main-content" color="white"
+          >L’osteopatia animale è una disciplina olistica complementare alla
+          medicina veterinaria, che si avvale di manipolazioni e mobilizzazioni
+          terapeutiche, con lo scopo di promuovere il benessere psico-fisico
+          dell’animale a 360°. Numerose sono le problematiche che possono
+          beneficiare di questo approccio (disturbi dell’apparato
+          muscolo-scheletrico, problematiche viscerali, riabilitazione
+          post-chirurgica etc.), in quanto riduce significativamente il dolore e
+          l’infiammazione, ripristina il normale movimento somatico e promuove
+          la capacità di autoregolazione interna di ogni organismo, senza l’uso
+          di farmaci.
+        </v-sheet>
       </div>
     </v-flex>
     <v-fab-transition>

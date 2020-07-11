@@ -52,7 +52,7 @@
 
           <v-card class="mx-auto" max-width="85vw" style="margin-bottom:20px">
             <v-img :src="bagno" height="100px"></v-img>
-            <v-card-title class="body-1 text-center">
+            <v-card-title class=" text-center">
               Bagno con acqua ozonizzata
             </v-card-title>
 
@@ -68,9 +68,9 @@
                 <v-divider></v-divider>
 
                 <v-card-text>
-                  dona lucentezza, apre i nodi, elimina zecche e pulci, efficace
+                  Dona lucentezza, apre i nodi, elimina zecche e pulci, efficace
                   contro dermatosi e micosi, disinfetta e aiuta la
-                  cicatrizzazione di ferite
+                  cicatrizzazione di ferite.
                 </v-card-text>
               </div>
             </v-expand-transition>
@@ -78,8 +78,8 @@
 
           <v-card class="mx-auto" max-width="85vw" style="margin-bottom:20px">
             <v-img :src="spa" height="100px"></v-img>
-            <v-card-title class="body-1 text-center">
-              SPA
+            <v-card-title class="text-center card-title">
+              <span style="text-align:center">SPA</span>
             </v-card-title>
 
             <v-card-actions>
@@ -94,7 +94,7 @@
                 <v-divider></v-divider>
 
                 <v-card-text>
-                  con idromassaggio che riduce la tensione nervosa ed ha un
+                  Con idromassaggio che riduce la tensione nervosa ed ha un
                   effetto rilassante , massaggia a fondo la cute e tonifica la
                   muscolatura.
                 </v-card-text>

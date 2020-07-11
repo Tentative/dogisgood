@@ -26,6 +26,10 @@ iframe {
   height: 250px;
 }
 
+.card-title {
+  justify-content: center !important;
+}
+
 #content-title {
   color: $item-content-border;
   text-transform: uppercase;

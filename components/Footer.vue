@@ -19,7 +19,12 @@
         >
           <v-icon size="24px">{{ icon.icon }}</v-icon>
         </v-btn>
-        <v-btn class="mx-4" icon>
+        <v-btn
+          class="mx-4"
+          icon
+          href="https://www.tiktok.com/@asilodogisgood"
+          target="blank"
+        >
           <div class="tiktok"><tiktok /></div
         ></v-btn>
       </v-card-text>
@@ -39,7 +44,7 @@ export default {
       icons: [
         {
           icon: 'mdi-whatsapp',
-          to: ''
+          to: 'https://wa.me/393397268386'
         },
         {
           icon: 'mdi-facebook',

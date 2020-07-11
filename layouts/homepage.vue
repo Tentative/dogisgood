@@ -2,7 +2,7 @@
   <v-app light>
     <v-navigation-drawer
       v-model="drawer"
-      class="accent"
+      color="white"
       :clipped="clipped"
       fixed
       app
@@ -78,19 +78,19 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-checkbox-marked-circle-outline',
-          title: 'Servizi',
-          to: '/inspire'
+          icon: 'mdi-bone',
+          title: 'Percorsi',
+          to: '/percorsi'
         },
         {
-          icon: 'mdi-google-maps',
-          title: 'Dove trovarci',
-          to: '/contact-us'
+          icon: 'mdi-donkey',
+          title: 'Toelettatura',
+          to: 'servizi/toelettatura'
         },
         {
-          icon: 'mdi-view-carousel',
-          title: 'Gallery',
-          to: '/gallery'
+          icon: 'mdi-email',
+          title: 'Contatti',
+          to: '/contattaci'
         }
       ],
       miniVariant: false,

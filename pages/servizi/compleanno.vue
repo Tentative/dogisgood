@@ -10,20 +10,81 @@
         <v-sheet id="main-content" color="white" style="margin-bottom:20px"
           >Il tuo migliore amico compie gli anni? Festeggia insieme a noi!
           L'Asilo per Cani Dog is Good ti offre una vera festa a quattro zampe:
-          Torta esclusivamente artigianale con ingredienti adatti al tuo cane e
-          ai suoi ospiti Animazione dedicata seguita dai nostri esperti
-          educatori cinofili 1 foto 20x30 cm con zampa ricordo del tuo amico
-          peloso Foto in digitale del servizio fotografico Buonissimi e golosi
-          gadget personalizzati da regalare agli invitati
+          <v-card
+            color="#42a5f5"
+            class="mx-auto"
+            max-width="85vw"
+            tile
+            light
+            style="margin:20px"
+          >
+            <v-card-title class="text-center "
+              >Torta esclusivamente artigianale</v-card-title
+            >
+            <v-card-text class="white card-text">
+              Con ingredienti adatti al tuo cane e ai suoi ospiti.</v-card-text
+            ></v-card
+          >
+          <v-card
+            color="#21f37e"
+            class="mx-auto"
+            max-width="85vw"
+            tile
+            light
+            style="margin:20px"
+          >
+            <v-card-title class="text-center">Animazione dedicata</v-card-title>
+            <v-card-text class="white card-text">
+              Seguita dai nostri esperti educatori cinofili.</v-card-text
+            ></v-card
+          >
+          <v-card
+            color="#42a5f5"
+            class="mx-auto"
+            max-width="85vw"
+            tile
+            light
+            style="margin:20px"
+          >
+            <v-card-title class="text-center">1X foto</v-card-title>
+            <v-card-text class="white card-text">
+              20x30 cm con zampa ricordo del tuo amico peloso.</v-card-text
+            ></v-card
+          >
+          <v-card
+            color="#21f37e"
+            class="mx-auto"
+            max-width="85vw"
+            tile
+            light
+            style="margin:20px"
+          >
+            <v-card-title class="text-center"> Foto in digitale</v-card-title>
+            <v-card-text class="white card-text">
+              Del servizio fotografico.</v-card-text
+            ></v-card
+          >
+          <v-card
+            color="#42a5f5"
+            class="mx-auto"
+            max-width="85vw"
+            tile
+            light
+            style="margin:20px"
+          >
+            <v-card-title class="text-center"> Gadget</v-card-title>
+            <v-card-text class="white card-text">
+              Buonissimi e golosi personalizzati da regalare agli
+              invitati.</v-card-text
+            ></v-card
+          >
+          <div class="media1" max-width="85vw">
+            <v-img :src="compleanno1" />
+          </div>
         </v-sheet>
         <div id="content-title" class="text-center title">
+          Per avere più informazioni
           <v-btn block color="#21f37e" to="/contact-us">contattaci</v-btn>
-
-          per avere più informazioni!
-        </div>
-
-        <div class="media1">
-          <v-img :src="compleanno1" />
         </div>
       </div>
     </v-flex>

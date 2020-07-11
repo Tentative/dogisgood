@@ -34,8 +34,20 @@ iframe {
   width: 100%;
 }
 
+#main-content .v-card__title {
+  word-break: normal !important;
+  text-align: center !important;
+  justify-content: center;
+}
+
+.card-text {
+  color: black !important;
+  text-align: center;
+}
+
 .card-title {
   justify-content: center !important;
+  word-break: normal !important;
 }
 
 #content-title {
@@ -56,7 +68,7 @@ iframe {
     width: 100%;
     border-radius: 0.8rem !important;
   }
-  width: 85vw;
+  width: 100%;
   -webkit-box-shadow: 5px 5px 12px #d6ddda, -5px -5px 12px #fff !important;
   box-shadow: 5px 5px 12px #d6ddda, -5px -5px 12px #fff !important;
   margin: 20px auto;

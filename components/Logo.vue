@@ -1,6 +1,10 @@
 <template>
   <div class="main-banner">
-    <v-img :src="banner" />
+    <v-img
+      id="logo"
+      :src="banner"
+      gradient="to top right, rgba(100,115,201,.33), rgba(0,0,0,.7)"
+    />
   </div>
 </template>
 

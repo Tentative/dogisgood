@@ -1,7 +1,10 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 class="main-banner">
-      <Logo :img-src="imgSrc" />
+      <section id="first">
+        <Logo :img-src="imgSrc" />
+        <Intro />
+      </section>
       <Cards />
     </v-flex>
     <v-flex xs12 sm8 md6> </v-flex>
@@ -9,12 +12,13 @@
 </template>
 
 <script>
-import { Logo, Cards } from '~/components'
+import { Logo, Cards, Intro } from '~/components'
 export default {
   layout: 'homepage',
   components: {
     Logo,
-    Cards
+    Cards,
+    Intro
   },
   data() {
     return {

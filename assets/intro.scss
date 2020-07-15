@@ -1,0 +1,25 @@
+@import './global.scss';
+@import './variables.scss';
+
+#intro {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  #intro {
+    position: absolute;
+    display: block;
+    top: 15%;
+    left: 10%;
+    width: 500px;
+    & .intro_img {
+      width: 400px;
+      height: auto;
+      margin: 0 auto;
+    }
+    & .intro_content {
+      padding: 25px;
+      margin-top: -35px;
+    }
+  }
+}

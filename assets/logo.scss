@@ -4,10 +4,17 @@
 @media only screen and (min-width: 1200px) {
   .main-banner {
     width: 100%;
-
-    & .v-image__iamge {
+    height: 100vh;
+    & .v-image__image {
       height: 100vh;
-      background-color: rgba(0, 0, 0, 0.54) !important;
     }
+    & #logo {
+      height: 100vh;
+    }
+  }
+
+  #to-bottom {
+    bottom: 10% !important;
+    left: 50% !important;
   }
 }

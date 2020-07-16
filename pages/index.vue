@@ -5,24 +5,35 @@
         <Logo :img-src="imgSrc" />
         <Intro />
       </section>
-      <Cards />
+
+      <section id="second">
+        <Service v-show="!isMobile" />
+      </section>
+
+      <Cards v-show="isMobile" />
     </v-flex>
     <v-flex xs12 sm8 md6> </v-flex>
   </v-layout>
 </template>
 
 <script>
-import { Logo, Cards, Intro } from '~/components'
+import { Logo, Cards, Intro, Service } from '~/components'
 export default {
   layout: 'homepage',
   components: {
     Logo,
     Cards,
-    Intro
+    Intro,
+    Service
   },
   data() {
     return {
       imgSrc: 'homepage'
+    }
+  },
+  computed: {
+    isMobile() {
+      return !(window.innerWidth > 768)
     }
   }
 }

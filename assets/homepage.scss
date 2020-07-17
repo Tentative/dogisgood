@@ -17,4 +17,8 @@
 
 #second {
   height: 100vh;
+  background-size: contain !important;
+  & .v-data-table.theme--light {
+    background-color: transparent;
+  }
 }

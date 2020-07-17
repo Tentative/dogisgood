@@ -25,9 +25,17 @@
   }
   & .shape-content-right {
     background-color: #aae56d;
+    height: auto;
   }
 }
 
 .section-divider {
   border-color: red !important;
+}
+
+#shape-end {
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
 }

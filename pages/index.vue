@@ -6,7 +6,7 @@
         <Intro />
       </section>
 
-      <section id="second">
+      <section id="second" :style="style">
         <Service v-show="!isMobile" />
       </section>
 
@@ -28,7 +28,8 @@ export default {
   },
   data() {
     return {
-      imgSrc: 'homepage'
+      imgSrc: 'homepage',
+      style: "background:url('" + require('@/static/sfondo-servizi.jpg') + "');"
     }
   },
   computed: {

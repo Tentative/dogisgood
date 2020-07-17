@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="height:100%">
     <v-simple-table>
       <template v-slot:default>
         <thead>
@@ -10,21 +10,23 @@
         </thead>
       </template>
     </v-simple-table>
-
-    <v-row id="shape-content">
-      <v-col class="shape-content-left" :cols="4"> </v-col>
-      <v-col class="shape-content-right" :cols="8"
-        ><Card :service="toelettatura" :img="toelettatura.src" /><Card
-          :service="asilo"
-          :img="asilo.src"
-        /><Card :service="educazione" :img="educazione.src" />
-        <v-row align="center" align-content="center" justify="center">
-          <v-btn depressed large color="primary"
-            >Vieni a scoprire tutti i nostri servizi!</v-btn
-          ></v-row
-        ></v-col
-      >
-    </v-row>
+    <v-container fill-height>
+      <v-row id="shape-content" align="stretch" dense justify="space-between">
+        <v-col class="shape-content-left" :cols="4"> </v-col>
+        <v-col class="shape-content-right" :cols="8"
+          ><Card :service="toelettatura" :img="toelettatura.src" /><Card
+            :service="asilo"
+            :img="asilo.src"
+          /><Card :service="educazione" :img="educazione.src" />
+          <v-spacer></v-spacer>
+          <v-row align="center" align-content="center" justify="center">
+            <v-btn depressed large color="primary"
+              >Vieni a scoprire tutti i nostri servizi!</v-btn
+            ></v-row
+          >
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 

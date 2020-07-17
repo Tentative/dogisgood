@@ -19,13 +19,12 @@
 }
 
 #shape-content {
+  height: 100%;
   & .shape-content-left {
     background-color: transparent;
-    height: 100%;
   }
   & .shape-content-right {
     background-color: #aae56d;
-    height: auto;
   }
 }
 

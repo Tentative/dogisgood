@@ -6,8 +6,8 @@
         <Intro />
       </section>
 
-      <section id="second" :style="style">
-        <Service v-show="!isMobile" />
+      <section v-show="!isMobile" id="second" :style="style">
+        <Service />
       </section>
 
       <Cards v-show="isMobile" />

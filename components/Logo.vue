@@ -1,6 +1,6 @@
 <template>
   <div class="main-banner">
-    <v-img id="logo" :src="banner" :gradient="width">
+    <v-img id="logo" :src="src" :gradient="width">
       <v-btn
         v-show="!isMobile"
         id="to-bottom"
@@ -21,6 +21,7 @@
 
 <script>
 export default {
+  props: ['src'],
   data() {
     return {
       banner: require(`@/static/${this.$route.name}-banner-mobile.jpg`)

@@ -24,7 +24,12 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app class="primary">
+    <v-app-bar
+      :clipped-left="clipped"
+      :fixed="isMobile ? true : false"
+      app
+      :class="top > 200 && !isMobile ? 'closed' : 'primary'"
+    >
       <v-app-bar-nav-icon class="white--text" @click.stop="drawer = !drawer" />
 
       <v-btn icon to="/" @click.stop="miniVariant = !miniVariant">
@@ -101,12 +106,30 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'DogIsGood - Asilo per cani'
+      title: 'DogIsGood - Asilo per cani',
+      fix: !this.isMobile,
+      bar_color: top > 200 && !this.isMobile ? 'transparent' : '#5ea5ef',
+      top: 0
     }
   },
   computed: {
     isMobile() {
       return !(window.innerWidth > 768)
+    }
+  },
+
+  beforeMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+
+  methods: {
+    handleScroll() {
+      // Your scroll handling here
+      console.log(window.scrollY)
+      this.top = window.scrollY
     }
   }
 }

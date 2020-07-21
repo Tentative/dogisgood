@@ -5,6 +5,18 @@
 #main_app {
   font-family: 'Josefin Sans', sans-serif;
 }
+
+.closed {
+  height: 0 !important;
+  transition: height 0.7s;
+  background-color: #2196f3 !important;
+}
+
+.primary {
+  height: 64px;
+  transition: height 0.7s;
+}
+
 .custom-title {
   color: $main-text-color;
 }

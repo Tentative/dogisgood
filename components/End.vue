@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-img id="footer_logo" :src="src" />
-    <v-row id="container_row">
+    <v-row id="container_row" align="end">
       <v-col class="container_col_sx" :cols="6">
         <v-row class="empty_row"> </v-row>
         <v-row class="short_row">
@@ -21,20 +21,37 @@
       </v-col>
       <v-col class="container_col_dx" :cols="6">
         <v-row class="high_row social">
-          <v-col :cols="7">Asilo per cani dog is good</v-col></v-row
-        >
-        <v-row>asdasd</v-row>
+          <v-row align="end" align-content="space-between">
+            <v-col :cols="7"
+              >Asilo per cani dog is good
+              <div class="social_sub">
+                Via S. Vitale, 129, 20831 Seregno MB, Italia
+              </div>
+
+              <div class="social_sub_icon">
+                <v-icon color="white">mdi-phone</v-icon>
+                <v-icon>mdi-email</v-icon>
+                <v-icon>mdi-whatsapp</v-icon>
+              </div>
+            </v-col>
+            <v-col :cols="5">
+              <Maps />
+            </v-col>
+          </v-row>
+        </v-row>
       </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
+import { Maps } from '@/components/'
 import tiktok from '@/components/tiktok.vue'
 export default {
   name: 'End',
   components: {
-    tiktok
+    tiktok,
+    Maps
   },
   data() {
     return {

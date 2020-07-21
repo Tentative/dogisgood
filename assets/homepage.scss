@@ -1,6 +1,10 @@
 @import '@/assets/variables.scss';
 @import '@/assets/global.scss';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap');
 
+#main_app {
+  font-family: 'Josefin Sans', sans-serif;
+}
 .custom-title {
   color: $main-text-color;
 }

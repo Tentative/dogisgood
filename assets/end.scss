@@ -37,6 +37,7 @@ i.mdi-instagram {
     height: 100px;
     width: 100%;
   }
+
   & .short_row {
     background-color: #aae56d;
     width: 100%;
@@ -49,6 +50,14 @@ i.mdi-instagram {
   & .high_row {
     background-color: #2196f3;
     height: 100%;
+    &.social {
+      padding-top: 0;
+      padding-bottom: 0;
+      border-radius: 5px 0 0 0;
+      & iframe {
+        height: 150px;
+      }
+    }
   }
   & .container_col_sx {
     padding: 0;
@@ -61,7 +70,28 @@ i.mdi-instagram {
 .social {
   padding: 20px;
   align-items: center;
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: white;
   text-transform: uppercase;
+  & .social_sub {
+    font-size: 0.6em;
+  }
+  & .social_sub_icon {
+    padding: 12px;
+
+    & .mdi-phone {
+      font-size: 38px;
+    }
+    & .mdi-email {
+      font-size: 38px;
+      color: lightsalmon;
+    }
+    & .mdi-whatsapp {
+      font-size: 38px;
+      color: #00e676;
+    }
+  }
+  & i {
+    padding: 20px 20px 20px 0;
+  }
 }

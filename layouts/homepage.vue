@@ -1,5 +1,5 @@
 <template>
-  <v-app light>
+  <v-app id="main_app" light>
     <v-navigation-drawer
       v-model="drawer"
       color="white"

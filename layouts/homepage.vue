@@ -15,7 +15,11 @@
           router
           exact
         >
-          <v-list-item-action>
+          <v-list-item-action
+            :class="
+              top > 200 && !isMobile ? 'hamburger_hide' : 'hamburger_show'
+            "
+          >
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
@@ -32,13 +36,22 @@
     >
       <v-app-bar-nav-icon class="white--text" @click.stop="drawer = !drawer" />
 
-      <v-btn icon to="/" @click.stop="miniVariant = !miniVariant">
+      <v-btn
+        :class="top > 200 && !isMobile ? 'hamburger_hide' : 'hamburger_show'"
+        icon
+        to="/"
+        @click.stop="miniVariant = !miniVariant"
+      >
         <v-icon class="white--text">mdi-home</v-icon>
       </v-btn>
 
       <v-spacer />
       <v-list-item-avatar color="grey darken-3">
-        <v-img class="elevation-6" :src="logoSrc"></v-img>
+        <v-img
+          class="elevation-6 logo_drawer"
+          :src="logoSrc"
+          @click.stop="drawer = !drawer"
+        ></v-img>
       </v-list-item-avatar>
     </v-app-bar>
     <v-content>

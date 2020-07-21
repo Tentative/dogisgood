@@ -1,0 +1,33 @@
+@import './global.scss';
+@import './variables.scss';
+
+#footer_logo {
+  width: 200px;
+  height: auto;
+}
+
+#container_row {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  & .empty_row {
+    background-color: transparent;
+    height: 100px;
+    width: 100%;
+  }
+  & .short_row {
+    background-color: #aae56d;
+    width: 100%;
+  }
+  & .high_row {
+    background-color: #2196f3;
+    height: 100%;
+  }
+  & .container_col_sx {
+    padding: 0;
+  }
+  & .container_col_dx {
+    padding: 0;
+  }
+}

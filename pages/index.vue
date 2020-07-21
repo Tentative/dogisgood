@@ -5,14 +5,27 @@
         <Logo :src="src_home" />
         <Intro />
       </section>
+      <v-divider class="section_divider_one" color="transparent"></v-divider>
 
       <section v-show="!isMobile" id="second" :style="style">
         <Service />
       </section>
 
       <section v-show="!isMobile" id="third">
+        <v-divider class="section_divider_two" color="transparent"></v-divider>
         <Logo :src="src" />
         <Struttura />
+      </section>
+
+      <section v-show="!isMobile" id="fourth">
+        <v-divider class="section_divider_one" color="transparent"></v-divider>
+        <video-background
+          :src="src_video"
+          style="height: 100vh;"
+          overlay="linear-gradient(45deg,rgba(0,0,0,.2),rgba(0,0,0.2))"
+        >
+          <End />
+        </video-background>
       </section>
       <Cards v-show="isMobile" />
     </v-flex>
@@ -21,7 +34,8 @@
 </template>
 
 <script>
-import { Logo, Cards, Intro, Service, Struttura } from '~/components'
+import VideoBackground from 'vue-responsive-video-background-player'
+import { Logo, Cards, Intro, Service, Struttura, End } from '~/components'
 export default {
   layout: 'homepage',
   components: {
@@ -29,10 +43,13 @@ export default {
     Cards,
     Intro,
     Service,
-    Struttura
+    Struttura,
+    End,
+    VideoBackground
   },
   data() {
     return {
+      src_video: require('@/static/cagnociao.mp4'),
       imgSrc: 'homepage',
       src_home: require('@/static/index-banner-mobile.jpg'),
       src: require('@/static/struttura-desktop.jpg'),

@@ -53,7 +53,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <Footer />
+    <Footer v-show="isMobile" />
   </v-app>
 </template>
 
@@ -102,6 +102,11 @@ export default {
       right: true,
       rightDrawer: false,
       title: 'DogIsGood - Asilo per cani'
+    }
+  },
+  computed: {
+    isMobile() {
+      return !(window.innerWidth > 768)
     }
   }
 }

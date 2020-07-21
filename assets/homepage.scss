@@ -11,6 +11,18 @@
   }
 }
 
+.section_divider_one {
+  width: 100%;
+  height: 50px;
+  border: 5px solid #aae56d;
+}
+
+.section_divider_two {
+  width: 100%;
+  height: 50px;
+  border: 5px solid #2196f3;
+}
+
 #footer {
   background-color: $item-content-border;
 }
@@ -25,5 +37,11 @@
 }
 
 #third {
+  position: relative;
+  height: 100vh;
+}
+
+#fourth {
+  height: 100vh;
   position: relative;
 }

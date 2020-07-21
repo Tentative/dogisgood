@@ -15,11 +15,7 @@
           router
           exact
         >
-          <v-list-item-action
-            :class="
-              top > 200 && !isMobile ? 'hamburger_hide' : 'hamburger_show'
-            "
-          >
+          <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>

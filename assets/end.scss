@@ -6,6 +6,27 @@
   height: auto;
 }
 
+.tiktok_end {
+  padding: 20px;
+  display: inline-block;
+  align-items: center;
+
+  height: 34px;
+  & svg {
+    fill: rgba(0, 0, 0, 0.54) !important;
+    height: 34px !important;
+    width: 34px;
+  }
+}
+
+i.mdi-facebook {
+  color: #4267b2;
+}
+
+i.mdi-instagram {
+  color: #c93390;
+}
+
 #container_row {
   position: absolute;
   bottom: 0;
@@ -19,6 +40,11 @@
   & .short_row {
     background-color: #aae56d;
     width: 100%;
+    padding: 10px;
+    justify-content: flex-end;
+    & i {
+      padding: 20px;
+    }
   }
   & .high_row {
     background-color: #2196f3;
@@ -30,4 +56,12 @@
   & .container_col_dx {
     padding: 0;
   }
+}
+
+.social {
+  padding: 20px;
+  align-items: center;
+  font-size: 1.8em;
+  color: white;
+  text-transform: uppercase;
 }

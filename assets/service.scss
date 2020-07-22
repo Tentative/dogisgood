@@ -18,10 +18,16 @@
   }
 }
 
+.right_card {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 #shape-content {
-  height: 100%;
+  height: 100vh;
   & .shape-content-left {
     background-color: transparent;
+    max-height: 100%;
   }
   & .shape-content-right {
     background-color: #aae56d;

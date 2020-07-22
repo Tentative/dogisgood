@@ -14,10 +14,12 @@
       <v-row id="shape-content" align="stretch" dense justify="space-between">
         <v-col class="shape-content-left" :cols="4"> </v-col>
         <v-col class="shape-content-right" :cols="8"
-          ><Card :service="toelettatura" :img="toelettatura.src" /><Card
-            :service="asilo"
-            :img="asilo.src"
-          /><Card :service="educazione" :img="educazione.src" />
+          ><div class="right_card">
+            <Card :service="toelettatura" :img="toelettatura.src" /><Card
+              :service="asilo"
+              :img="asilo.src"
+            /><Card :service="educazione" :img="educazione.src" />
+          </div>
           <v-spacer></v-spacer>
           <v-row align="center" align-content="center" justify="center">
             <v-btn depressed large color="primary"

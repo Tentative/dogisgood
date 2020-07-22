@@ -137,7 +137,7 @@ export default {
   methods: {
     handleScroll() {
       // Your scroll handling here
-      console.log(window.scrollY)
+      // console.log(window.scrollY)
       this.top = window.scrollY
     }
   }

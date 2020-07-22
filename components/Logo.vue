@@ -1,5 +1,5 @@
 <template>
-  <div class="main-banner">
+  <div :class="isMobile ? 'main-banner' : 'large-banner'">
     <v-img id="logo" :src="src" :gradient="width"> </v-img>
   </div>
 </template>

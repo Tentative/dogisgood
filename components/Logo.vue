@@ -1,21 +1,6 @@
 <template>
   <div class="main-banner">
-    <v-img id="logo" :src="src" :gradient="width">
-      <v-btn
-        v-show="!isMobile"
-        id="to-bottom"
-        absolute
-        dark
-        fab
-        bottom
-        center
-        small
-        color="#5ea5ef"
-        @click="$vuetify.goTo('#top', 2500)"
-      >
-        <v-icon>mdi-chevron-down</v-icon>
-      </v-btn>
-    </v-img>
+    <v-img id="logo" :src="src" :gradient="width"> </v-img>
   </div>
 </template>
 

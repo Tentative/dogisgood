@@ -59,8 +59,13 @@
   background-color: $item-content-border;
 }
 
+#first {
+  position: relative;
+}
+
 #second {
   height: 100vh;
+  position: relative;
   background-size: contain !important;
   background-position: center;
   & .v-data-table.theme--light {
@@ -76,4 +81,32 @@
 #fourth {
   height: 100vh;
   position: relative;
+}
+
+#to-bottom {
+  bottom: 10% !important;
+  left: 50% !important;
+}
+
+#to-third {
+  bottom: 5% !important;
+  left: 40%;
+}
+
+#to-top {
+  bottom: 5% !important;
+  left: 45%;
+}
+
+.pulse {
+  animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    color: green;
+  }
+  100% {
+    color: #aae56d;
+  }
 }

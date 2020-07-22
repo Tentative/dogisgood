@@ -7,5 +7,6 @@ import Card from './Card.vue'
 import Struttura from './Struttura.vue'
 import End from './End.vue'
 import tiktok from './tiktok.vue'
+import GoTO from './GoTO.vue'
 
-export { Cards, Logo, Maps, Intro, Service, Card, Struttura, End, tiktok }
+export { Cards, Logo, Maps, Intro, Service, Card, Struttura, End, tiktok, GoTO }

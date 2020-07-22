@@ -4,17 +4,59 @@
       <section id="first">
         <Logo :src="src_home" />
         <Intro />
+        <v-btn
+          v-show="!isMobile"
+          id="to-bottom"
+          absolute
+          dark
+          fab
+          bottom
+          center
+          small
+          color="#5ea5ef"
+          @click="$vuetify.goTo('#second', options)"
+        >
+          <v-icon class="pulse">mdi-chevron-down</v-icon>
+        </v-btn>
       </section>
       <v-divider class="section_divider_one" color="transparent"></v-divider>
 
       <section v-show="!isMobile" id="second" :style="style">
         <Service />
+        <v-btn
+          v-show="!isMobile"
+          id="to-third"
+          absolute
+          dark
+          fab
+          bottom
+          center
+          small
+          color="#5ea5ef"
+          @click="$vuetify.goTo('#third', options)"
+        >
+          <v-icon class="pulse">mdi-chevron-down</v-icon>
+        </v-btn>
       </section>
 
       <section v-show="!isMobile" id="third">
         <v-divider class="section_divider_two" color="transparent"></v-divider>
         <Logo :src="src" />
         <Struttura />
+        <v-btn
+          v-show="!isMobile"
+          id="to-bottom"
+          absolute
+          dark
+          fab
+          bottom
+          center
+          small
+          color="#5ea5ef"
+          @click="$vuetify.goTo('#fourth', options)"
+        >
+          <v-icon class="pulse">mdi-chevron-down</v-icon>
+        </v-btn>
       </section>
 
       <section v-show="!isMobile" id="fourth">
@@ -26,6 +68,20 @@
         >
           <End />
         </video-background>
+        <v-btn
+          v-show="!isMobile"
+          id="to-top"
+          absolute
+          dark
+          fab
+          bottom
+          center
+          small
+          color="#5ea5ef"
+          @click="$vuetify.goTo('#first', options)"
+        >
+          <v-icon class="pulse">mdi-chevron-up</v-icon>
+        </v-btn>
       </section>
       <Cards v-show="isMobile" />
     </v-flex>
@@ -57,14 +113,26 @@ export default {
       style:
         "background:url('" + require('@/static/sfondo-servizi.jpg') + "');",
       style_servizi:
-        "background:url('" + require('@/static/struttura-desktop.jpg') + "');"
+        "background:url('" + require('@/static/struttura-desktop.jpg') + "');",
+      to_second: '$vuetify.goTo("#second", 2500)',
+
+      duration: 500,
+      offset: -64
     }
   },
   computed: {
     isMobile() {
       return !(window.innerWidth > 768)
+    },
+    options() {
+      return {
+        duration: this.duration,
+        offset: this.offset
+        // easing: this.easing
+      }
     }
-  }
+  },
+  methods: {}
 }
 </script>
 

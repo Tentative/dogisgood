@@ -12,6 +12,7 @@
       <Content class="d-xs-none d-sm-none d-md-flex" />
       <Summary class="d-xs-none d-sm-none d-md-flex" />
       <AsiloEnd class="d-xs-none d-sm-none d-md-flex" />
+      <Costi class="d-xs-none d-sm-none d-md-flex" />
       <v-container id="mobile" class="d-md-none d-lg-none d-xl-none">
         <div id="content-title" class="title text-center">L'asilo</div>
         <v-row>
@@ -86,7 +87,7 @@
 </template>
 
 <script>
-import { Logo, Content, Summary, AsiloEnd } from '@/components/'
+import { Logo, Content, Summary, AsiloEnd, Costi } from '@/components/'
 // import Breadcrumbs from '@/components/Breadcrumbs.vue'
 export default {
   name: 'Asilo',
@@ -94,7 +95,8 @@ export default {
     Logo,
     Content,
     Summary,
-    AsiloEnd
+    AsiloEnd,
+    Costi
     // Breadcrumbs
   },
 

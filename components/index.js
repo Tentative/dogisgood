@@ -11,6 +11,7 @@ import GoTO from './GoTO.vue'
 import Content from './Content.vue'
 import Summary from './Summary.vue'
 import AsiloEnd from './AsiloEnd.vue'
+import Costi from './Costi.vue'
 
 export {
   Cards,
@@ -25,5 +26,6 @@ export {
   GoTO,
   Content,
   Summary,
-  AsiloEnd
+  AsiloEnd,
+  Costi
 }

@@ -1,2 +1,16 @@
 @import './global.scss';
 @import './variables.scss';
+
+.on_scale {
+  & .v-image__image.v-image__image--cover:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+}
+
+.on_scale {
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}

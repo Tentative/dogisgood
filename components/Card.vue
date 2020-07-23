@@ -2,7 +2,7 @@
   <div class="right_cards">
     <v-card class="mx-auto" max-width="500" style="margin:3% auto">
       <v-img
-        class="white--text align-end"
+        class="white--text align-end on_scale"
         height="20vh"
         :src="img"
         gradient="to top right, rgba(0,0,0,.3), rgba(0,0,0,.1)"

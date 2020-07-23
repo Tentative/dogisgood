@@ -8,5 +8,22 @@ import Struttura from './Struttura.vue'
 import End from './End.vue'
 import tiktok from './tiktok.vue'
 import GoTO from './GoTO.vue'
+import Content from './Content.vue'
+import Summary from './Summary.vue'
+import AsiloEnd from './AsiloEnd.vue'
 
-export { Cards, Logo, Maps, Intro, Service, Card, Struttura, End, tiktok, GoTO }
+export {
+  Cards,
+  Logo,
+  Maps,
+  Intro,
+  Service,
+  Card,
+  Struttura,
+  End,
+  tiktok,
+  GoTO,
+  Content,
+  Summary,
+  AsiloEnd
+}

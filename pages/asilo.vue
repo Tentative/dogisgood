@@ -15,10 +15,10 @@
         :intro="asilo_intro"
         :sub="asilo_sub"
       />
-      <Content class="d-xs-none d-sm-none d-md-flex" />
-      <Summary class="d-xs-none d-sm-none d-md-flex" />
-      <AsiloEnd class="d-xs-none d-sm-none d-md-flex" />
-      <Costi class="d-xs-none d-sm-none d-md-flex" />
+      <Content class="hidden-sm-and-down d-sm-none d-md-flex" />
+      <Summary class="hidden-sm-and-down d-sm-none d-md-flex" />
+      <AsiloEnd class="hidden-sm-and-down d-sm-none d-md-flex" />
+      <Costi class="hidden-sm-and-down d-sm-none d-md-flex" />
 
       <v-container id="mobile" class="d-md-none d-lg-none d-xl-none">
         <div id="content-title" class="title text-center">L'asilo</div>

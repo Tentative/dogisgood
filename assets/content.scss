@@ -118,5 +118,29 @@ iframe {
   text-align: center;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 960px) {
+  #main-content,
+  #content {
+    width: inherit;
+    margin: 0 auto;
+    border-color: transparent;
+    outline: 0 none;
+    background: #f2f4f3;
+    border-radius: 0.8rem;
+    -webkit-box-shadow: 5px 5px 12px #d6ddda, -5px -5px 12px #fff !important;
+    box-shadow: 5px 5px 12px #d6ddda, -5px -5px 12px #fff !important;
+    text-align: justify;
+    padding: 20px;
+  }
+
+  .media1 {
+    & .v-responsive.v-image {
+      width: inherit;
+      border-radius: 0.8rem !important;
+    }
+    width: inherit;
+    -webkit-box-shadow: 5px 5px 12px #d6ddda, -5px -5px 12px #fff !important;
+    box-shadow: 5px 5px 12px #d6ddda, -5px -5px 12px #fff !important;
+    margin: 20px auto;
+  }
 }

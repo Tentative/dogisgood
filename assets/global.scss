@@ -8,11 +8,13 @@ body {
   font-family: 'Josefin Sans', sans-serif !important;
 }
 
-.display-3,
-.display-4,
-.body-1,
-.title {
-  font-family: 'Josefin Sans', sans-serif !important;
+.v-application {
+  & .display-3,
+  .display-4,
+  .body-1,
+  .title {
+    font-family: 'Josefin Sans', sans-serif !important;
+  }
 }
 
 .tiktok {
@@ -25,7 +27,7 @@ body {
   color: white !important;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 960px) {
   .container {
     max-width: 100%;
   }

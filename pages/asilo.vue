@@ -1,5 +1,11 @@
 <template>
-  <v-layout id="top" column justify-center align-center>
+  <v-layout
+    id="top"
+    style="max-width:100%!important"
+    column
+    justify-center
+    align-center
+  >
     <v-flex xs12 class="main-banner">
       <Logo
         class="d-md-none"
@@ -13,6 +19,7 @@
       <Summary class="d-xs-none d-sm-none d-md-flex" />
       <AsiloEnd class="d-xs-none d-sm-none d-md-flex" />
       <Costi class="d-xs-none d-sm-none d-md-flex" />
+
       <v-container id="mobile" class="d-md-none d-lg-none d-xl-none">
         <div id="content-title" class="title text-center">L'asilo</div>
         <v-row>
@@ -49,6 +56,7 @@
                 necessita eventualmente di un percorso di inserimento.
               </v-sheet>
             </div>
+            <Costi class="d-xs-flex d-sm-flex" />
           </v-col>
 
           <v-col xs="12" sm="12" md="5">

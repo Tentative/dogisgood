@@ -1,0 +1,16 @@
+@import './global.scss';
+@import './variables.scss';
+
+#stripe {
+  width: 85vw;
+
+  & tr:nth-child(odd) {
+    background-color: #aae56d;
+  }
+}
+
+#table {
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+}

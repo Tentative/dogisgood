@@ -1,12 +1,10 @@
 @import './global.scss';
 @import './variables.scss';
 
-.on_scale {
-  & .v-image__image.v-image__image--cover:hover {
-    transform: scale(1.1);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
+.on_scale div.v-responsive__content:hover {
+  transform: translate(0, -20px);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .on_scale {

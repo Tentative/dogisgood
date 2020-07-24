@@ -29,8 +29,8 @@
       <section id="content_description">
         <v-row align="start" class="mx-auto">
           <v-row style="width:100%">
-            <div id="content-title" class="title text-center">
-              Percorsi educativi
+            <div id="content-title" class="display-2 text-center">
+              Educazione
             </div>
           </v-row>
           <v-col :cols="12" md="6" xs="12">
@@ -109,10 +109,8 @@
             </v-card>
           </v-col>
         </v-row>
-        <div class="media1">
-          <v-img :src="asilo1" />
-        </div>
       </section>
+      <Prezzi />
     </v-flex>
     <v-fab-transition>
       <v-btn
@@ -136,12 +134,13 @@
 </template>
 
 <script>
-import Logo from '@/components/Logo.vue'
+import { Logo, Prezzi } from '@/components/'
 // import Breadcrumbs from '@/components/Breadcrumbs.vue'
 export default {
   name: 'Percorsi',
   components: {
-    Logo
+    Logo,
+    Prezzi
     // Breadcrumbs
   },
 

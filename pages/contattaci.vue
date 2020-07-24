@@ -12,8 +12,18 @@
           class="text-center"
           style="margin-bottom:20px"
         >
-          <v-icon style="padding-right:20px">mdi-cellphone</v-icon
-          ><v-btn :to="mobile">339-7268386 </v-btn></v-sheet
+          <v-row class="mx-auto">
+            <v-btn
+              class="mx-auto"
+              tile
+              outlined
+              color="success"
+              href="mailto:info.dogisgood@gmail.com"
+            >
+              <v-icon size="32px" left>mdi-email</v-icon>
+              info.dogisgood@gmail.com
+            </v-btn>
+          </v-row></v-sheet
         >
       </div>
 

@@ -24,7 +24,7 @@
         <div id="content-title" class="title text-center text-xs-body-2">
           L'asilo
         </div>
-        <v-row>
+        <v-row justify="center" style="margin-left:auto;margin-right:auto">
           <v-col xs="12" sm="12" md="7">
             <div class="text-center">
               <v-sheet
@@ -61,11 +61,9 @@
             <Costi class="d-xs-flex d-sm-flex d-md-hide" />
           </v-col>
 
-          <v-col xs="12" sm="12" md="5">
-            <div class="media1">
-              <v-img :src="asilo1" />
-            </div> </v-col
-          >.
+          <div class="media1">
+            <v-img :src="asilo1" />
+          </div>
         </v-row>
       </v-container>
       <div id="content-title" class="text-center title">

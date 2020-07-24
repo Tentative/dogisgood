@@ -1,7 +1,7 @@
 <template>
   <v-layout id="top" column justify-center align-center>
     <v-flex xs12 class="main-banner">
-      <Logo />
+      <Logo :src="percorsi1" />
       <div id="content-title" class="title text-center">Percorsi educativi</div>
       <div class="text-center">
         <v-sheet id="main-content" color="white"

@@ -11,12 +11,26 @@
           e un ampio cortile privato a disposizione.
         </v-sheet>
         <Maps />
-        <div class="media1">
-          <v-img :src="struttura1" />
-        </div>
-        <div class="media1">
-          <v-img :src="struttura2" />
-        </div>
+        <v-row class="hidden-md-and-up">
+          <v-col md="6" xs="12">
+            <v-carousel
+              cycle
+              height="400"
+              hide-delimiter-background
+              :show-arrows="false"
+              style="margin: 20px auto"
+              class="subheading"
+            >
+              <v-carousel-item v-for="(carousel, i) in carousels" :key="i">
+                <v-sheet height="100%">
+                  <v-row class="fill-height" align="center" justify="center">
+                    <v-img :src="carousel.src" />
+                  </v-row>
+                </v-sheet>
+              </v-carousel-item>
+            </v-carousel>
+          </v-col>
+        </v-row>
       </div>
     </v-flex>
     <v-fab-transition>
@@ -57,7 +71,24 @@ export default {
       fab: false,
       offsetTop: 0,
       struttura1: require('@/static/struttura3.jpg'),
-      struttura2: require('@/static/struttura2.jpg')
+      struttura2: require('@/static/struttura2.jpg'),
+      carousels: [
+        {
+          src: require('@/static/struttura3.jpg')
+        },
+        {
+          src: require('@/static/struttura-banner-mobile.jpg')
+        },
+        {
+          src: require('@/static/struttura4.jpg')
+        },
+        {
+          src: require('@/static/struttura5.jpg')
+        },
+        {
+          src: require('@/static/struttura6.jpg')
+        }
+      ]
     }
   },
   methods: {

@@ -65,12 +65,17 @@ iframe {
   margin: 20px auto;
   max-width: 85vw;
   font-size: 2em;
+  font-weight: 300;
 }
 
 .sub_heading {
   color: #fff;
   font-weight: light;
   line-height: 1.467;
+}
+
+.text-xs-body-2 {
+  font-size: 2em !important;
 }
 
 #content-subtitle {

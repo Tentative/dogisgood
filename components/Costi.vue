@@ -2,7 +2,9 @@
   <section id="costi" style="margin-top:20px">
     <v-container>
       <v-row class="mx-auto" justify="center">
-        <div class="display-3 text-center blue--text text-uppercase">
+        <div
+          class="display-3 text-xs-body-2 text-center blue--text text-uppercase"
+        >
           I nostri prezzi
         </div>
       </v-row>

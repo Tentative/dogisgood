@@ -21,7 +21,9 @@
       <Costi class="hidden-sm-and-down d-sm-none d-md-flex" />
 
       <v-container id="mobile" class="d-md-none d-lg-none d-xl-none">
-        <div id="content-title" class="title text-center">L'asilo</div>
+        <div id="content-title" class="title text-center text-xs-body-2">
+          L'asilo
+        </div>
         <v-row>
           <v-col xs="12" sm="12" md="7">
             <div class="text-center">
@@ -56,7 +58,7 @@
                 necessita eventualmente di un percorso di inserimento.
               </v-sheet>
             </div>
-            <Costi class="d-xs-flex d-sm-flex" />
+            <Costi class="d-xs-flex d-sm-flex d-md-hide" />
           </v-col>
 
           <v-col xs="12" sm="12" md="5">

@@ -26,7 +26,6 @@
     </v-navigation-drawer>
     <v-app-bar
       :clipped-left="clipped"
-      :fixed="isMobile ? true : false"
       app
       :class="top > 200 && !isMobile ? 'closed' : 'primary'"
     >

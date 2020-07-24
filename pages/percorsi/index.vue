@@ -82,7 +82,12 @@
                   </v-list-item-content>
 
                   <v-row align="center" justify="end">
-                    <v-btn outlined color="purple" text to="./puppy-school">
+                    <v-btn
+                      outlined
+                      color="purple"
+                      text
+                      to="./percorsi/puppy-school"
+                    >
                       Scopri
                     </v-btn>
                   </v-row>

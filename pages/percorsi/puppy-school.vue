@@ -62,7 +62,7 @@
               </v-carousel>
             </v-col>
           </v-row>
-          <v-row style="max-width:960px" class="mx-auto">
+          <v-row style="max-width:960px" class="mx-auto hidden-sm-and-down">
             <v-col :cols="6">
               <v-sheet color="blue" height="100%" dark>
                 <v-row class="fill-height" align="center" justify="center">
@@ -114,24 +114,22 @@
               </v-sheet>
             </v-col>
           </v-row>
-          Questo percorso prevede 6 incontri di un'ora circa, a cadenza
-          settimanale, per cuccioli, dai 2 ai 6 mesi, di taglie e razze diverse.
-          Nel pacchetto sono compresi anche 3 ingressi da mezza giornata in
-          asilo per favorire l'incontro e la socializzazione del cucciolo con
-          altri cani in modo del tutto sicuro e protetto sotto la guida dei
-          nostri educatori esperti.
+          <v-row style="max-width:960px;margin-top:20px" class="mx-auto">
+            Questo percorso prevede 6 incontri di un'ora circa, a cadenza
+            settimanale, per cuccioli, dai 2 ai 6 mesi, di taglie e razze
+            diverse. Nel pacchetto sono compresi anche 3 ingressi da mezza
+            giornata in asilo per favorire l'incontro e la socializzazione del
+            cucciolo con altri cani in modo del tutto sicuro e protetto sotto la
+            guida dei nostri educatori esperti.
+          </v-row>
         </v-sheet>
         <div id="content-title" class="text-center title">
           Per ulteriori informazioni ed iscrizioni non esitate a<v-btn
-            block
             color="#21f37e"
             to="/contact-us"
+            style="width:50%;"
             >contattarci</v-btn
           >
-        </div>
-
-        <div class="media1">
-          <v-img :src="struttura1" />
         </div>
       </div>
     </v-flex>

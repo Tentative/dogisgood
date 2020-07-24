@@ -1,30 +1,119 @@
 <template>
   <v-layout id="top" column justify-center align-center>
     <v-flex xs12 class="main-banner">
-      <Logo />
-      <div id="content-title" class="title text-center">Puppy School</div>
+      <Logo :src="puppy_school" class="hidden-md-and-up" />
+      <section id="content_large" :style="style" class="hidden-sm-and-down">
+        <v-container style="background-color:rgba(0,0,0,0.6)">
+          <v-row id="main_row" justify="center">
+            <v-col :cols="12">
+              <div
+                id="content-title"
+                class="  text-center display-4"
+                style="color:white"
+              >
+                Puppy School
+              </div>
+            </v-col>
+          </v-row>
+          <v-row id="main_row" justify="center">
+            <v-col :cols="12">
+              <div class="sub_heading text-center display-3 pa-10">
+                Gli obiettivi di questo percorso sono diversi e contribuiscono
+                tutti al benessere di cucciolo e proprietario e alla crescita
+                serena del nostro piccolo amico
+              </div>
+            </v-col>
+          </v-row>
+          <v-row id="main_row" justify="center"> </v-row>
+        </v-container>
+      </section>
+      <div id="content-title" class="title text-center hidden-sm-and-down">
+        Nello specifico ci occuperemo di:
+      </div>
+      <div id="content-title" class="title text-center hidden-md-and-up">
+        Puppy school
+      </div>
       <div class="text-center">
         <v-sheet id="main-content" color="white"
-          >Gli obiettivi di questo percorso sono diversi e contribuiscono tutti
-          al benessere di cucciolo e proprietario e alla crescita serena del
-          nostro piccolo amico. Nello specifico ci occuperemo di:
-          <v-carousel
-            cycle
-            height="200"
-            hide-delimiter-background
-            :show-arrows="false"
-            style="margin: 20px auto"
-          >
-            <v-carousel-item v-for="(slide, i) in slides" :key="i">
-              <v-sheet :color="colors[i]" height="100%">
+          ><div class="hidden-md-and-up">
+            Gli obiettivi di questo percorso sono diversi e contribuiscono tutti
+            al benessere di cucciolo e proprietario e alla crescita serena del
+            nostro piccolo amico. Nello specifico ci occuperemo di:
+          </div>
+          <v-row class="hidden-md-and-up">
+            <v-col md="6" xs="12">
+              <v-carousel
+                cycle
+                height="400"
+                hide-delimiter-background
+                :show-arrows="false"
+                style="margin: 20px auto"
+                class="subheading"
+              >
+                <v-carousel-item v-for="(slide, i) in slides" :key="i">
+                  <v-sheet :color="colors[i]" height="100%">
+                    <v-row class="fill-height" align="center" justify="center">
+                      <div class="text text-center" style="padding:20px">
+                        {{ slide }}
+                      </div>
+                    </v-row>
+                  </v-sheet>
+                </v-carousel-item>
+              </v-carousel>
+            </v-col>
+          </v-row>
+          <v-row style="max-width:960px" class="mx-auto">
+            <v-col :cols="6">
+              <v-sheet color="blue" height="100%" dark>
                 <v-row class="fill-height" align="center" justify="center">
-                  <div class="text text-center" style="padding:20px">
-                    {{ slide }}
+                  <div class="text text-center subheading" style="padding:20px">
+                    Guidare il cucciolo nella socializzazione con i propri
+                    simili in ambienti diversi, contraddistinti da rumori e
+                    odori, per prevenire disturbi del comportamento
                   </div>
                 </v-row>
               </v-sheet>
-            </v-carousel-item>
-          </v-carousel>
+            </v-col>
+            <v-col :cols="6">
+              <v-sheet color="#aae56d" height="100%" light>
+                <v-row class="fill-height" align="center" justify="center">
+                  <div class="text text-center subheading" style="padding:20px">
+                    Stimolarne le capacità cognitive
+                  </div>
+                </v-row>
+              </v-sheet>
+            </v-col>
+            <v-col :cols="4">
+              <v-sheet color="blue" height="100%" dark>
+                <v-row class="fill-height" align="center" justify="center">
+                  <div class="text text-center subheading" style="padding:20px">
+                    Educare alla relazione con il proprietario affinché sia
+                    solida e nutrita di fiducia e rispetto reciproci
+                  </div>
+                </v-row>
+              </v-sheet>
+            </v-col>
+            <v-col :cols="4">
+              <v-sheet color="#aae56d" height="100%" light>
+                <v-row class="fill-height" align="center" justify="center">
+                  <div class="text text-center subheading" style="padding:20px">
+                    Formare il proprietario affinché sia consapevole di tutti i
+                    bisogni, psicologici e fisici, del cucciolo
+                  </div>
+                </v-row>
+              </v-sheet>
+            </v-col>
+            <v-col :cols="4">
+              <v-sheet color="blue" height="100%" dark>
+                <v-row class="fill-height" align="center" justify="center">
+                  <div class="text text-center subheading" style="padding:20px">
+                    Formare il cucciolo affinché riconosca, comprenda e rispetti
+                    le regole del proprio nucleo famigliare
+                  </div>
+                </v-row>
+              </v-sheet>
+            </v-col>
+          </v-row>
           Questo percorso prevede 6 incontri di un'ora circa, a cadenza
           settimanale, per cuccioli, dai 2 ai 6 mesi, di taglie e razze diverse.
           Nel pacchetto sono compresi anche 3 ingressi da mezza giornata in
@@ -80,17 +169,16 @@ export default {
   data() {
     return {
       imgSrc: 'struttura',
+      puppy_school: require('@/static/contattaci-banner-mobile.jpg'),
+      style:
+        'background:url(' +
+        require('@/static/contattaci-banner-mobile.jpg') +
+        '); background-position: center center; background-size:cover',
       fab: false,
       offsetTop: 0,
       struttura1: require('@/static/struttura3.jpg'),
       struttura2: require('@/static/struttura2.jpg'),
-      colors: [
-        'indigo',
-        'warning',
-        'pink darken-2',
-        'red lighten-1',
-        'deep-purple accent-4'
-      ],
+      colors: ['blue', '#aae56d', 'blue', '#aae56d', 'blue'],
       slides: [
         'Guidare il cucciolo nella socializzazione con i propri simili in ambienti diversi, contraddistinti da rumori e odori, per prevenire disturbi del comportamento',
         'Stimolarne le capacità cognitive',

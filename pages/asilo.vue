@@ -72,7 +72,7 @@
           ></v-carousel>
         </v-row>
       </v-container>
-      <div id="content-title" class="text-center title">
+      <div id="content-title" class="text-center title text-xs-body-2">
         Il nostro asilo è aperto
       </div>
       <div class="text-center subtitle-2" style="margin-bottom:20px">

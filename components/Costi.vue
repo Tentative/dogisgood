@@ -3,7 +3,7 @@
     <v-container>
       <v-row class="mx-auto" justify="center">
         <div
-          class="display-3 text-xs-body-2 text-center blue--text text-uppercase"
+          class="display-3 text-xs-subheading text-center blue--text text-uppercase"
         >
           I nostri prezzi
         </div>

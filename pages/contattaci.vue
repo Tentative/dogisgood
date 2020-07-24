@@ -12,10 +12,11 @@
           class="text-center"
           style="margin-bottom:20px"
         >
-          <v-row class="mx-auto">
+          <v-row class="mx-auto" justify="start">
             <v-btn
-              class="mx-auto"
+              class="pa-5"
               tile
+              block
               outlined
               color="success"
               href="mailto:info.dogisgood@gmail.com"
@@ -25,45 +26,58 @@
             </v-btn>
           </v-row></v-sheet
         >
+
+        <v-sheet
+          id="main-content"
+          color="white"
+          class="text-center mt-2"
+          style="margin-bottom:20px"
+        >
+          <v-row class="mx-auto" justify="start">
+            <v-btn
+              class="pa-5"
+              tile
+              block
+              outlined
+              color="success"
+              href="tel:+393397268386"
+            >
+              <v-icon size="32px" left>mdi-cellphone</v-icon>
+              339-7268386
+            </v-btn>
+          </v-row></v-sheet
+        >
+        <v-sheet
+          id="main-content"
+          color="white"
+          class="text-center"
+          style="margin-bottom:20px"
+        >
+          <v-row class="mx-auto" justify="start">
+            <v-btn
+              class="pa-5"
+              tile
+              block
+              outlined
+              color="success"
+              href="tel:+3903621821674"
+            >
+              <v-icon size="32px" left>mdi-deskphone</v-icon>
+              0362-1821674
+            </v-btn>
+          </v-row></v-sheet
+        >
       </div>
 
-      <div class="text-center">
-        <v-sheet
-          id="main-content"
-          color="white"
-          class="text-center"
-          style="margin-bottom:20px"
-        >
-          <v-icon style="padding-right:20px">mdi-deskphone</v-icon
-          ><v-btn :to="phone">0362-1821674 </v-btn></v-sheet
-        >
-
-        <v-sheet
-          id="main-content"
-          color="white"
-          class="text-center"
-          style="margin-bottom:20px"
-        >
-          <v-icon style="padding-right:20px">mdi-email</v-icon
-          ><v-btn id="mail-contact" :to="mail" class="caption text-center"
-            >info.dogisgood@gmail.com</v-btn
-          ></v-sheet
-        >
-
-        <v-sheet
-          id="main-content"
-          color="white"
-          class="text-center"
-          style="margin-bottom:20px"
-        >
-          <v-icon style="padding-right:20px">mdi-google-maps</v-icon
-          ><v-btn id="mail-contact" :to="mail" class="caption text-center"
-            >Dove trovarci</v-btn
-          >
-          <Maps />
-          Via San Vitale, 129, Seregno (MB)</v-sheet
-        >
-      </div>
+      <v-sheet
+        id="main-content"
+        color="white"
+        class="text-center"
+        style="margin-bottom:20px"
+      >
+        <Maps />
+        Via San Vitale, 129, Seregno (MB)</v-sheet
+      >
     </v-flex>
     <v-fab-transition>
       <v-btn

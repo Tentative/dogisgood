@@ -199,9 +199,6 @@
                         /></v-avatar>
                         <strong class="display-2">Contatti:</strong>
                         <v-spacer></v-spacer>
-                        <v-btn icon>
-                          <v-icon>mdi-account</v-icon>
-                        </v-btn>
                       </v-row>
                       <v-row
                         align="center"

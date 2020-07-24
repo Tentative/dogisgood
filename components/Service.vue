@@ -29,7 +29,7 @@
           </div>
           <v-spacer></v-spacer>
           <v-row align="center" align-content="center" justify="center">
-            <v-btn depressed large color="primary"
+            <v-btn depressed large color="primary" to="./servizi/"
               >Vieni a scoprire tutti i nostri servizi!</v-btn
             ></v-row
           >

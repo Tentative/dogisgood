@@ -9,6 +9,10 @@ body {
   font-family: 'Josefin Sans', sans-serif !important;
 }
 
+.v-card__title {
+  word-break: normal;
+}
+
 .v-application {
   & .display-3,
   .display-4,

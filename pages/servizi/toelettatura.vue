@@ -181,9 +181,29 @@
             <div id="content-title" class="title">
               Venite a trovarci!
             </div>
-            <div class="body-2">
-              Per info e appuntamenti:
-            </div>
+            <v-row justify="center" class="pa-3" style="width:100%">
+              <div class="title">
+                Per info e appuntamenti:
+              </div>
+            </v-row>
+            <v-row justify="center" class="pa-3" style="width:100%">
+              <div class="body-2">
+                <v-icon class="pr-3">mdi-phone</v-icon>
+              </div>
+              <div class="title">
+                <a href="tel:+393491011358">349 1011358</a>
+              </div>
+            </v-row>
+            <v-row justify="center" class="pa-3" style="width:100%">
+              <div class="body-2">
+                <v-icon class="pr-3" color="orange">mdi-email</v-icon>
+              </div>
+              <div class="title">
+                <a href="mailto:spelacchiodog@gmail.com"
+                  >spelacchiodog@gmail.com</a
+                >
+              </div>
+            </v-row>
           </v-row>
           <v-row justify="center" style="margin-top:20px">
             <v-card class="mx-auto" max-width="300" tile>
@@ -199,13 +219,6 @@
                       <v-list-item-content>
                         <v-list-item-title class="title"
                           >SPELACCHIO</v-list-item-title
-                        >
-                        <v-list-item-subtitle class="title"
-                          ><a
-                            class="white--text"
-                            href="mailto:spelacchiodog@gmail.com"
-                            >spelacchiodog@gmail.com</a
-                          ></v-list-item-subtitle
                         >
                       </v-list-item-content>
                     </v-list-item>

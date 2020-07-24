@@ -13,109 +13,207 @@
           class="text-center"
           color="white"
           style="margin-top: 20px"
-          >Servizi offerti:
-          <v-sheet id="sub-content" dark color="#42a5f5" class="text-center"
-            >Bagno di igiene</v-sheet
-          >
+        >
+          <v-img :src="Toelettatura" height="300px" dark>
+            <v-row class="fill-height">
+              <v-spacer></v-spacer>
 
-          <v-sheet id="sub-content" dark color="#42a5f5" class="text-center"
-            >Taglio a forbice</v-sheet
-          >
+              <v-card-subtitle
+                class="white--text  pt-12 mt-12"
+                style="padding-top:40%!important"
+              >
+                <div class="headline  pt-12 mt-12">Servizi offerti:</div>
+              </v-card-subtitle>
+            </v-row>
+          </v-img>
 
-          <v-sheet id="sub-content" dark color="#42a5f5" class="text-center"
-            >Tosatura</v-sheet
-          >
+          <v-list two-line>
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon color="indigo">mdi-shower</v-icon>
+              </v-list-item-icon>
 
-          <v-sheet id="sub-content" dark color="#42a5f5" class="text-center"
-            >Snodatura</v-sheet
-          >
+              <v-list-item-content>
+                <v-list-item-title>Bagni di igiene</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
 
-          <v-sheet id="sub-content" dark color="#42a5f5" class="text-center"
-            >Stripping</v-sheet
-          >
+            <v-divider inset></v-divider>
 
-          <v-sheet id="sub-content" dark color="#42a5f5" class="text-center"
-            >Pulizia orecchie e taglio unghie</v-sheet
-          >
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon color="indigo">mdi-content-cut</v-icon>
+              </v-list-item-icon>
 
-          <v-sheet id="sub-content" dark color="#42a5f5" class="text-center"
-            >Cromoterapia</v-sheet
-          >
+              <v-list-item-content>
+                <v-list-item-title>Taglio a forbice</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
 
-          <v-sheet id="sub-content" dark color="#42a5f5" class="text-center"
-            >Taglio a forbice</v-sheet
-          >
+            <v-divider inset></v-divider>
 
-          <v-sheet id="sub-content" dark color="#42a5f5" class="text-center">
-            Toelettatura sanitaria gatti</v-sheet
-          >
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon color="indigo">mdi-scissors-cutting</v-icon>
+              </v-list-item-icon>
 
-          <v-card class="mx-auto" max-width="85vw" style="margin-bottom:20px">
-            <v-img :src="bagno" height="100px"></v-img>
-            <v-card-title class=" text-center">
-              Bagno con acqua ozonizzata
-            </v-card-title>
+              <v-list-item-content>
+                <v-list-item-title>Tosatura</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
 
-            <v-card-actions>
-              <v-btn icon @click="show = !show">
-                <v-icon>{{
-                  show ? 'mdi-chevron-up' : 'mdi-chevron-down'
-                }}</v-icon>
-              </v-btn>
-            </v-card-actions>
-            <v-expand-transition>
-              <div v-show="show">
-                <v-divider></v-divider>
+            <v-divider inset></v-divider>
 
-                <v-card-text>
-                  Dona lucentezza, apre i nodi, elimina zecche e pulci, efficace
-                  contro dermatosi e micosi, disinfetta e aiuta la
-                  cicatrizzazione di ferite.
-                </v-card-text>
-              </div>
-            </v-expand-transition>
-          </v-card>
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon color="indigo">mdi-hair-dryer</v-icon>
+              </v-list-item-icon>
 
-          <v-card class="mx-auto" max-width="85vw" style="margin-bottom:20px">
-            <v-img :src="spa" height="100px"></v-img>
-            <v-card-title class="text-center card-title">
-              <span style="text-align:center">SPA</span>
-            </v-card-title>
+              <v-list-item-content>
+                <v-list-item-title>Snodatura</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
 
-            <v-card-actions>
-              <v-btn icon @click="showspa = !showspa">
-                <v-icon>{{
-                  showspa ? 'mdi-chevron-up' : 'mdi-chevron-down'
-                }}</v-icon>
-              </v-btn>
-            </v-card-actions>
-            <v-expand-transition>
-              <div v-show="showspa">
-                <v-divider></v-divider>
+            <v-divider inset></v-divider>
 
-                <v-card-text>
-                  Con idromassaggio che riduce la tensione nervosa ed ha un
-                  effetto rilassante , massaggia a fondo la cute e tonifica la
-                  muscolatura.
-                </v-card-text>
-              </div>
-            </v-expand-transition>
-          </v-card>
-          Bellezza e salute del cane sono ciò in cui crediamo, il nostro motto è
-          "amore, cura e rispetto!"
-          <div class="title text-center" style="margin-top:20px">
-            Venite a trovarci!
-          </div>
-          <div class="subtitle-2 text-center">
-            <p>Per info e appuntamenti:</p>
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon color="indigo">mdi-filmstrip-off</v-icon>
+              </v-list-item-icon>
 
-            <v-btn icon href="mailto:spelacchiodog@gmail.com">
-              spelacchiodog@gmail.com</v-btn
-            >
-          </div>
-          <div class="subtitle-2 text-center">
-            <v-btn icon href="tel:393491011358"> 3491011358</v-btn>
-          </div>
+              <v-list-item-content>
+                <v-list-item-title>Stripping</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+
+            <v-divider inset></v-divider>
+
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon color="indigo">mdi-dog</v-icon>
+              </v-list-item-icon>
+
+              <v-list-item-content>
+                <v-list-item-title class="text-no-wrap"
+                  >Pulizia orecchie
+                </v-list-item-title>
+                <v-list-item-title>e taglio unghie</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+
+            <v-divider inset></v-divider>
+
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon color="indigo">mdi-palette</v-icon>
+              </v-list-item-icon>
+
+              <v-list-item-content>
+                <v-list-item-title class="text-no-wrap"
+                  >Cromoterapia
+                </v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+
+            <v-divider inset></v-divider>
+
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon color="indigo">mdi-cat</v-icon>
+              </v-list-item-icon>
+
+              <v-list-item-content>
+                <v-list-item-title class="text-no-wrap"
+                  >Toelettatura sanitaria
+                </v-list-item-title>
+                <v-list-item-title>gatti</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+
+            <v-divider inset></v-divider>
+
+            <v-list-item style="width:100%;padding:0;">
+              <!-- <v-list-item-icon>
+                <v-icon color="indigo">mdi-shower-head</v-icon>
+              </v-list-item-icon> -->
+
+              <v-list-item-content>
+                <v-expansion-panels>
+                  <v-expansion-panel>
+                    <v-expansion-panel-header color="blue" class="white--text"
+                      >Bagno </v-expansion-panel-header
+                    ><v-expansion-panel-content
+                      class="body-1"
+                      style="width:100%"
+                    >
+                      Con acqua ozonizzata. Dona lucentezza, apre i nodi,
+                      elimina zecche e pulci, efficace contro dermatosi e
+                      micosi, disinfetta e aiuta la cicatrizzazione di ferite.
+                    </v-expansion-panel-content></v-expansion-panel
+                  >
+                </v-expansion-panels>
+              </v-list-item-content>
+            </v-list-item>
+
+            <v-divider inset></v-divider>
+
+            <v-list>
+              <v-list-item-content>
+                <v-expansion-panels>
+                  <v-expansion-panel>
+                    <v-expansion-panel-header color="blue" class="white--text"
+                      >SPA</v-expansion-panel-header
+                    ><v-expansion-panel-content
+                      class="body-1"
+                      style="width:100%"
+                    >
+                      Con idromassaggio che riduce la tensione nervosa ed ha un
+                      effetto rilassante, massaggio a fondo la cute e tonifica
+                      la muscolatura.
+                    </v-expansion-panel-content></v-expansion-panel
+                  >
+                </v-expansion-panels>
+              </v-list-item-content>
+              <v-divider inset></v-divider>
+            </v-list>
+          </v-list>
+          <v-row justify="center">
+            <div id="content-title" class="title">
+              Venite a trovarci!
+            </div>
+            <div class="body-2">
+              Per info e appuntamenti:
+            </div>
+          </v-row>
+          <v-row justify="center" style="margin-top:20px">
+            <v-card class="mx-auto" max-width="300" tile>
+              <v-img height="100%" :src="Toelettatura">
+                <v-row align="end" class="fill-height">
+                  <v-col align-self="start" class="pa-0" cols="12">
+                    <v-avatar class="profile" color="grey" size="164" tile>
+                      <v-img :src="spelacchio"></v-img>
+                    </v-avatar>
+                  </v-col>
+                  <v-col class="py-0">
+                    <v-list-item color="rgba(0, 0, 0, .4)" dark>
+                      <v-list-item-content>
+                        <v-list-item-title class="title"
+                          >SPELACCHIO</v-list-item-title
+                        >
+                        <v-list-item-subtitle class="title"
+                          ><a
+                            class="white--text"
+                            href="mailto:spelacchiodog@gmail.com"
+                            >spelacchiodog@gmail.com</a
+                          ></v-list-item-subtitle
+                        >
+                      </v-list-item-content>
+                    </v-list-item>
+                  </v-col>
+                </v-row>
+              </v-img>
+            </v-card>
+          </v-row>
         </v-sheet>
       </div>
     </v-flex>
@@ -153,12 +251,14 @@ export default {
   data() {
     return {
       show: false,
+      spelacchio: require('@/static/spelacchio-logo grande.jpeg'),
       showspa: false,
       imgSrc: 'struttura',
       fab: false,
       offsetTop: 0,
       bagno: require('@/static/bagno-ozonizzante.jpg'),
-      spa: require('@/static/spa.jpg')
+      spa: require('@/static/spa.jpg'),
+      Toelettatura: require('@/static/servizi-toelettatura-banner-mobile.jpg')
     }
   },
   methods: {

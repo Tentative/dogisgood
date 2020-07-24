@@ -6,13 +6,16 @@
         height="20vh"
         :src="img"
         gradient="to top right, rgba(0,0,0,.3), rgba(0,0,0,.1)"
+        @click="$nuxt.$router.push(to)"
       >
-        <v-card-title>{{ service.name }}</v-card-title>
-        <v-card-text class="text--primary ">
+        <v-card-title
+          ><div class="display-1">{{ service.name }}</div></v-card-title
+        >
+        <!-- <v-card-text class="text--primary ">
           <div style="color:white">
             {{ service.text }}
           </div>
-        </v-card-text>
+        </v-card-text> -->
       </v-img>
     </v-card>
   </div>
@@ -21,7 +24,7 @@
 <script>
 export default {
   name: 'Card',
-  props: ['service', 'img'],
+  props: ['service', 'img', 'to'],
   computed: {
     isXL() {
       return !window.innerWidth > 1904

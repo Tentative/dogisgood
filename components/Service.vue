@@ -5,7 +5,9 @@
         <thead>
           <tr id="shape">
             <th class="text-left shape-left">&nbsp;</th>
-            <th class="text-right shape-right">Servizi</th>
+            <th class="text-right shape-right display-2 font-weight-bold">
+              Servizi
+            </th>
           </tr>
         </thead>
       </template>
@@ -15,10 +17,15 @@
         <v-col class="shape-content-left" :cols="4"> </v-col>
         <v-col class="shape-content-right" :cols="8"
           ><div class="right_card">
-            <Card :service="toelettatura" :img="toelettatura.src" /><Card
-              :service="asilo"
-              :img="asilo.src"
-            /><Card :service="educazione" :img="educazione.src" />
+            <Card
+              :service="toelettatura"
+              :img="toelettatura.src"
+              :to="toelettatura.to"
+            /><Card :service="asilo" :img="asilo.src" :to="asilo.to" /><Card
+              :service="educazione"
+              :img="educazione.src"
+              :to="educazione.to"
+            />
           </div>
           <v-spacer></v-spacer>
           <v-row align="center" align-content="center" justify="center">
@@ -46,18 +53,21 @@ export default {
         subtitle: 'Toelettatura Dog Is Good by Spelacchio!',
         text:
           'Bellezza e salute del cane sono ciò in cui crediamo, il nostro motto è "amore, cura e rispetto"',
-        src: require('@/static/toelettatura-home.jpg')
+        src: require('@/static/toelettatura-home.jpg'),
+        to: './servizi/toelettatura'
       },
       asilo: {
         name: 'Asilo',
         text: "L'asilo per cani Dog Is Good",
-        src: require('@/static/struttura.jpg')
+        src: require('@/static/struttura.jpg'),
+        to: './asilo'
       },
       educazione: {
         name: 'Percorsi Educativi',
         text:
           "Il nostro addestramento è detto 'Gentile', adatto a qualunque cane",
-        src: require('@/static/servizi-campo-educazione-privato-banner-mobile.jpg')
+        src: require('@/static/servizi-campo-educazione-privato-banner-mobile.jpg'),
+        to: './percorsi/'
       }
     }
   }

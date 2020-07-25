@@ -25,7 +25,7 @@
             ></v-col>
             <v-col :cols="6">
               <v-card class="pa-5">
-                <v-card-text class="body-1"
+                <v-card-text class="title"
                   >L’asilo è quindi il luogo che può, con competenza e serietà,
                   sostituirsi al suo compagno umano nei momenti di assenza,
                   quando sono necessarie attenzioni particolari sia per i
@@ -33,7 +33,7 @@
                   semplicemente quando le condizioni atmosferiche non ci
                   consentono lunghe passeggiate.
                 </v-card-text>
-                <v-card-text class="body-1"
+                <v-card-text class="title"
                   >Affinché tutti i cani possano interagire nella maniera
                   migliore, ogni nostro ospite usufruirà di un’ora di prova
                   gratuita per comprendere se l’asilo è il posto migliore per

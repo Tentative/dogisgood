@@ -23,12 +23,7 @@
             </v-col>
           </v-row>
           <v-row id="main_row" justify="center">
-            <v-col :cols="12">
-              <div class=" text-center">
-                <v-btn color="blue pa-5">Scopri</v-btn>
-                <v-btn color="#aae56d" class=" pa-5 ma-5">Info e costi</v-btn>
-              </div>
-            </v-col>
+            <v-col :cols="12"> </v-col>
           </v-row>
         </v-container>
       </section>

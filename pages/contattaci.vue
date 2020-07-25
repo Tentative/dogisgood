@@ -93,13 +93,25 @@
               justify="center"
             >
               <div class="tt_end " style="padding-right:20px">
-                <a href="www.google.com"><tiktok /></a>
+                <v-btn icon href="https://www.tiktok.com/@asilodogisgood"
+                  ><tiktok
+                /></v-btn>
               </div>
-              <v-btn icon href="www.google.it" :ripple="false"
+              <v-btn
+                icon
+                href="https://m.facebook.com/asilodogisgood/"
+                :ripple="false"
                 ><v-icon size="38px">mdi-facebook</v-icon></v-btn
               >
-              <v-icon size="38px">mdi-instagram</v-icon>
-              <v-icon>mdi-whatsapp</v-icon>
+              <v-btn
+                icon
+                href="https://www.instagram.com/asilodogisgood/"
+                :ripple="false"
+                ><v-icon size="38px">mdi-instagram</v-icon></v-btn
+              >
+              <v-btn icon href="https://wa.me/393397268386" :ripple="false"
+                ><v-icon size="38px">mdi-whatsapp</v-icon></v-btn
+              >
             </v-row>
           </v-col>
           <v-col :cols="6">
@@ -157,6 +169,7 @@ export default {
       tt: require('@/static/tik-tok.png'),
       phone: 'tel:+3903621821674',
       mail: 'mailto:info.dogisgood@gmail.com',
+      src: require('@/static/logo-circle.png'),
 
       style:
         'background:url(' +
@@ -198,8 +211,25 @@ export default {
 }
 
 #social {
-  &
+  & .v-btn {
+    padding: 40px;
+  }
+  & .theme--light.v-btn.v-btn--icon .mdi-facebook {
+    color: $facebook;
+  }
+  & .theme--light.v-btn.v-btn--icon .mdi-instagram {
+    color: $instagram;
+  }
+  & .theme--light.v-btn.v-btn--icon .mdi-whatsapp {
+    color: $whatsapp;
+  }
 }
+
+#end {
+  background-color: #2196f3;
+}
+
 @import '~/assets/content.scss';
 @import '~/assets/end.scss';
+@import '~/assets/variables.scss';
 </style>

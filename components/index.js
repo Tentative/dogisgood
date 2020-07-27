@@ -13,6 +13,7 @@ import Summary from './Summary.vue'
 import AsiloEnd from './AsiloEnd.vue'
 import Costi from './Costi.vue'
 import Prezzi from './Prezzi.vue'
+import FooterLarge from './FooterLarge.vue'
 
 export {
   Cards,
@@ -29,5 +30,6 @@ export {
   Summary,
   AsiloEnd,
   Costi,
-  Prezzi
+  Prezzi,
+  FooterLarge
 }

@@ -512,16 +512,18 @@
         <!-- <Breadcrumbs :levels="1" /> -->
       </v-layout>
     </section>
+    <FooterLarge />
   </div>
 </template>
 
 <script>
-import Logo from '@/components/Logo.vue'
+import { Logo, FooterLarge } from '@/components/'
 // import Breadcrumbs from '@/components/Breadcrumbs.vue'
 export default {
   name: 'Struttura',
   components: {
-    Logo
+    Logo,
+    FooterLarge
     // Breadcrumbs
   },
 

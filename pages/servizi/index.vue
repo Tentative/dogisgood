@@ -15,11 +15,11 @@
         </v-row>
       </v-container>
     </section>
-    <section style="max-width:960px" class="mx-auto">
-      <v-container>
-        <v-row id="main_row" justify="center">
+    <section class="mx-auto">
+      <v-container fill-height>
+        <v-row id="main_row" justify="center" align="center">
           <v-col :cols="12">
-            <v-card max-width="960px" class="mx-auto">
+            <v-card max-width="960px" class="mx-auto pa-5 mt-5" color="blue">
               <v-container fluid>
                 <v-row dense>
                   <v-col
@@ -28,7 +28,7 @@
                     :cols="service.flex"
                     :md="service.md"
                   >
-                    <v-card>
+                    <v-card class="pa-5">
                       <v-img
                         :src="service.src"
                         class="white--text align-end"

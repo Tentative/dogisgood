@@ -4,7 +4,8 @@
     <section id="content_large" :style="style">
       <v-container
         class="hidden-sm-and-down"
-        style="background-color:rgba(0,0,0,0.4)"
+        style="background-color:rgba(0,0,0,0.6);height:100vh"
+        align-center
       >
         <v-row id="main_row" justify="center">
           <v-col :cols="12">
@@ -22,9 +23,10 @@
           class="mx-auto"
           justify="center"
           style="width:100%"
+          align="center"
         >
           <v-col :cols="6">
-            <v-row class="mx-auto" justify="center">
+            <v-row class="mx-auto" justify="center" align="center">
               <div class="text-center">
                 <v-sheet
                   color="white"
@@ -114,10 +116,10 @@
               >
             </v-row>
           </v-col>
-          <v-col :cols="6">
+          <v-col :cols="6" class="pa-5">
             <v-sheet
               color="white"
-              class="text-center"
+              class="text-center pa-5"
               style="margin-bottom:20px"
             >
               <Maps />
@@ -174,7 +176,7 @@ export default {
       style:
         'background:url(' +
         require('@/static/struttura-banner-mobile.jpg') +
-        ');background-size:cover;background-position:center;',
+        ');background-size:cover;background-position:center;height:100vh',
       fab: false,
       offsetTop: 0,
       struttura1: require('@/static/struttura3.jpg'),
@@ -193,6 +195,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+iframe {
+  width: 100%;
+  margin-top: 20px;
+  height: 450px !important;
+}
 .tt_end {
   // padding: 20px;
   display: flex;

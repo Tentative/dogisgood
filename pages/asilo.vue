@@ -84,23 +84,7 @@
           dal lunedì al venerdì, dalle 7.30 alle 19
         </div>
       </v-flex>
-      <v-fab-transition>
-        <v-btn
-          v-show="fab"
-          id="to-top"
-          v-scroll="onScroll"
-          fixed
-          dark
-          fab
-          bottom
-          right
-          small
-          color="pink"
-          @click="$vuetify.goTo('#top', 2500)"
-        >
-          <v-icon>mdi-chevron-up</v-icon>
-        </v-btn>
-      </v-fab-transition>
+
       <!-- <Breadcrumbs :levels="1" /> -->
     </v-layout>
     <FooterLarge class="hidden-sm-and-down" />

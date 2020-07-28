@@ -11,17 +11,26 @@
             </v-row>
           </v-col>
           <v-col :cols="5">
-            <v-row>
-              <div class="tiktok_end"><tiktok /></div>
-              <v-icon size="38px">mdi-facebook</v-icon>
-              <v-icon size="38px">mdi-instagram</v-icon>
+            <v-row justify="center">
+              <a href="https://www.tiktok.com/@asilodogisgood" target="_blank"
+                ><div class="tiktok_end">
+                  <tiktok /></div
+              ></a>
+              <a href="https://www.facebook.com/asilodogisgood/" target="_blank"
+                ><div><v-icon size="38px">mdi-facebook</v-icon></div></a
+              >
+              <a
+                href="https://www.instagram.com/asilodogisgood/"
+                target="_blank"
+                ><div><v-icon size="38px">mdi-instagram</v-icon></div></a
+              >
             </v-row>
           </v-col>
         </v-row>
       </v-col>
       <v-col class="container_col_dx" :cols="6">
         <v-row class="high_row social">
-          <v-row align="end" align-content="space-between">
+          <v-row align="center" justify="center" align-content="space-between">
             <v-col :cols="7"
               >Asilo per cani dog is good
               <div class="social_sub">
@@ -29,9 +38,19 @@
               </div>
 
               <div class="social_sub_icon">
-                <v-icon color="white">mdi-phone</v-icon>
-                <v-icon>mdi-email</v-icon>
-                <v-icon>mdi-whatsapp</v-icon>
+                <v-btn text icon color="white" class="mx-5"
+                  ><v-icon>mdi-phone</v-icon></v-btn
+                >
+                <v-btn
+                  href="mailto:info.dogisgood@gmail.com"
+                  class="mx-5"
+                  text
+                  icon
+                  ><v-icon>mdi-email</v-icon></v-btn
+                >
+                <v-btn href="https://wa.me/393397268386" class="mx-5" text icon
+                  ><v-icon>mdi-whatsapp</v-icon></v-btn
+                >
               </div>
             </v-col>
             <v-col :cols="5">

@@ -106,6 +106,11 @@ export default {
           icon: 'mdi-email',
           title: 'Contatti',
           to: '/contattaci'
+        },
+        {
+          icon: 'mdi-play-box-outline',
+          title: 'Gallery',
+          to: '/gallery'
         }
       ],
       miniVariant: false,

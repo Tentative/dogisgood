@@ -4,13 +4,13 @@
       <v-col class="container_col_sx" :cols="6">
         <v-row class="empty_row"> </v-row>
         <v-row class="short_row">
-          <v-col :cols="7">
-            <v-row class="social">
+          <v-col :cols="7" align-self="center">
+            <v-row class="social title">
               <div>Seguici sui nostri social!</div>
             </v-row>
           </v-col>
           <v-col :cols="5">
-            <v-row>
+            <v-row justify="center">
               <div class="tiktok_end"><tiktok /></div>
               <v-icon size="38px">mdi-facebook</v-icon>
               <v-icon size="38px">mdi-instagram</v-icon>

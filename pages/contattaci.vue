@@ -198,7 +198,8 @@ export default {
 iframe {
   width: 100%;
   margin-top: 20px;
-  height: 450px !important;
+  height: 350px !important;
+  max-height: 600px;
 }
 .tt_end {
   // padding: 20px;

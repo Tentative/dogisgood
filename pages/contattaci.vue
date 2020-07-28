@@ -1,9 +1,9 @@
 <template>
   <v-layout id="top" column justify-center align-center>
-    <Logo class="hidden-md-and-up" />
-    <section id="content_large" :style="style">
+    <Logo class="hidden-md-and-up" :src="src_logo" />
+
+    <section id="content_large" :style="style" class="hidden-sm-and-down">
       <v-container
-        class="hidden-sm-and-down"
         style="background-color:rgba(0,0,0,0.6);height:100vh"
         align-center
       >
@@ -130,7 +130,80 @@
         <v-row id="main_row" justify="center"> </v-row>
       </v-container>
     </section>
+    <section class="hidden-md-and-up">
+      <div
+        id="main-content"
+        class="text-center title ma-5 text-uppercase blue white--text"
+      >
+        CONTATTACI
+      </div>
+      <v-sheet style="max-width:85vw" class="mx-auto">
+        <v-row class="mx-auto" justify="center" align="center">
+          <div class="text-center">
+            <v-sheet
+              color="white"
+              class="text-center transparent"
+              style="margin-bottom:20px"
+            >
+              <v-row class="mx-auto" justify="center">
+                <v-btn
+                  class="pa-5 text-truncate"
+                  tile
+                  block
+                  outlined
+                  color="success"
+                  href="mailto:info.dogisgood@gmail.com"
+                >
+                  <v-icon size="32px" left>mdi-email</v-icon>
+                  <span class="text-truncate">info</span>
+                </v-btn>
+              </v-row></v-sheet
+            >
 
+            <v-sheet
+              color="white"
+              class="text-center mt-2 transparent"
+              style="margin-bottom:20px"
+            >
+              <v-row class="mx-auto" justify="center">
+                <v-btn
+                  class="pa-5"
+                  tile
+                  block
+                  outlined
+                  color="success"
+                  href="tel:+393397268386"
+                >
+                  <v-icon size="32px" left>mdi-cellphone</v-icon>
+                  339-7268386
+                </v-btn>
+              </v-row></v-sheet
+            >
+            <v-sheet
+              color="white"
+              class="text-center transparent"
+              style="margin-bottom:20px"
+            >
+              <v-row class="mx-auto" justify="center">
+                <v-btn
+                  class="pa-5"
+                  tile
+                  outlined
+                  color="success"
+                  href="tel:+3903621821674"
+                >
+                  <v-icon size="32px" left>mdi-deskphone</v-icon>
+                  0362-1821674
+                </v-btn>
+              </v-row></v-sheet
+            >
+            <Maps class="hidden-md-and-up" />
+          </div>
+        </v-row>
+      </v-sheet>
+    </section>
+
+    <!-- 
     <v-fab-transition>
       <v-btn
         v-show="fab"
@@ -147,13 +220,13 @@
       >
         <v-icon>mdi-chevron-up</v-icon>
       </v-btn>
-    </v-fab-transition>
+    </v-fab-transition> -->
     <!-- <Breadcrumbs :levels="1" /> -->
   </v-layout>
 </template>
 
 <script>
-import { Logo, Maps, tiktok } from '@/components'
+import { Maps, tiktok, Logo } from '@/components'
 // import Breadcrumbs from '@/components/Breadcrumbs.vue'
 export default {
   name: 'CampoEducazionePrivato',
@@ -172,6 +245,7 @@ export default {
       phone: 'tel:+3903621821674',
       mail: 'mailto:info.dogisgood@gmail.com',
       src: require('@/static/logo-circle.png'),
+      src_logo: require('@/static/struttura-banner-mobile.jpg'),
 
       style:
         'background:url(' +

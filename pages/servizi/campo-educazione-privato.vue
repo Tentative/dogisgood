@@ -25,11 +25,14 @@
             <v-row id="main_row" justify="center"> </v-row>
           </v-container>
         </section>
+        <section class="hidden-md-and-up">
+          <div class="text-center" id="main-content">Coming soon!</div>
+        </section>
       </v-flex>
 
       <!-- <Breadcrumbs :levels="1" /> -->
     </v-layout>
-    <FooterLarge />
+    <FooterLarge class="hidden-sm-and-down" />
   </div>
 </template>
 

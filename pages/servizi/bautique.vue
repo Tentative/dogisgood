@@ -1,64 +1,107 @@
 <template>
-  <v-layout id="top" column justify-center align-center>
-    <v-flex xs12 class="main-banner">
-      <Logo />
-      <div id="content-title" class="title text-center">Bautique</div>
-      <div class="text-center">
-        <v-sheet id="main-content" color="white"
-          >Vieni a curiosare nella nostra Bautique! Troverai un sacco di
-          prodotti esclusivi per il tuo cane, ma anche articoli sfiziosi per te!
-
-          <v-carousel
-            cycle
-            height="200px"
-            :hide-delimiters="true"
-            width="85vw"
-            style="margin-top:20px"
+  <div>
+    <v-layout id="top" column justify-center align-center>
+      <v-flex xs12 class="main-banner">
+        <!-- <Logo :src="items[0].src" class="hidden-sm-and-down" /> -->
+        <section id="bautique" :style="style" class="hidden-sm-and-down">
+          <v-row
+            justify="center"
+            class="mx-auto"
+            style="background-color:rgba(0,0,0,0.4)"
           >
-            <v-carousel-item
-              v-for="(item, i) in items"
-              :key="i"
-              :src="item.src"
-            ></v-carousel-item>
-          </v-carousel>
-        </v-sheet>
-      </div>
-    </v-flex>
-    <v-fab-transition>
-      <v-btn
-        v-show="fab"
-        id="to-top"
-        v-scroll="onScroll"
-        fixed
-        dark
-        fab
-        bottom
-        right
-        small
-        color="pink"
-        @click="$vuetify.goTo('#top', 2500)"
-      >
-        <v-icon>mdi-chevron-up</v-icon>
-      </v-btn>
-    </v-fab-transition>
-    <!-- <Breadcrumbs :levels="1" /> -->
-  </v-layout>
+            <v-carousel
+              cycle
+              height="100vh"
+              :hide-delimiters="true"
+              width="85vw"
+            >
+              <v-carousel-item
+                v-for="(item, i) in items"
+                :key="i"
+                :src="item.src"
+                ><v-col :cols="12" style="background-color:rgba(0,0,0,0.4)">
+                  <div class="display-2 text-center text-uppercase white--text">
+                    Bautique
+                  </div>
+                  <div class="title text-center white--text">
+                    Vieni a curiosare nella nostra Bautique! Troverai un sacco
+                    di prodotti esclusivi per il tuo cane, ma anche articoli
+                    sfiziosi per te!
+                  </div></v-col
+                ></v-carousel-item
+              >
+            </v-carousel>
+          </v-row>
+        </section>
+        <div id="content-title" class="title text-center hidden-md-and-up">
+          Bautique
+        </div>
+        <div class="text-center hidden-md-and-up">
+          <v-sheet id="main-content" color="white"
+            >Vieni a curiosare nella nostra Bautique! Troverai un sacco di
+            prodotti esclusivi per il tuo cane, ma anche articoli sfiziosi per
+            te!
+
+            <v-carousel
+              cycle
+              height="200px"
+              :hide-delimiters="true"
+              width="85vw"
+              style="margin-top:20px"
+            >
+              <v-carousel-item
+                v-for="(item, i) in items"
+                :key="i"
+                :src="item.src"
+              ></v-carousel-item>
+            </v-carousel>
+          </v-sheet>
+        </div>
+        <FooterLarge
+          id="to-top"
+          v-scroll="onScroll"
+          :is_toelettatura="is_toelettatura"
+        />
+      </v-flex>
+      <v-fab-transition>
+        <v-btn
+          v-show="fab"
+          fixed
+          dark
+          fab
+          bottom
+          right
+          small
+          color="pink"
+          @click="$vuetify.goTo('#top', 2500)"
+        >
+          <v-icon>mdi-chevron-up</v-icon>
+        </v-btn>
+      </v-fab-transition>
+      <!-- <Breadcrumbs :levels="1" /> -->
+    </v-layout>
+  </div>
 </template>
 
 <script>
-import Logo from '@/components/Logo.vue'
+// import Logo from '@/components/Logo.vue'
 // import Breadcrumbs from '@/components/Breadcrumbs.vue'
+import { FooterLarge } from '@/components/'
 export default {
   name: 'Struttura',
   components: {
-    Logo
+    // Logo
     // Breadcrumbs
+    FooterLarge
   },
 
   data() {
     return {
       imgSrc: 'struttura',
       fab: false,
+      is_toelettatura: true,
+
+      style: 'height:100vh;width:100%;background-position:center center;',
       offsetTop: 0,
       struttura1: require('@/static/struttura3.jpg'),
       struttura2: require('@/static/struttura2.jpg'),

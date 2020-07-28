@@ -52,13 +52,11 @@ export default {
     tiktok,
     Maps
   },
+  props: ['is_toelettatura'],
   data() {
     return {
       src: require('@/static/logo-circle.png'),
-      style:
-        this.$nuxt.$route.name === 'servizi-retoelettatura'
-          ? 'background-color:#3f51b5 '
-          : ''
+      style: this.is_toelettatura ? 'background-color:#3f51b5 ' : ''
     }
   }
 }

@@ -512,7 +512,7 @@
         <!-- <Breadcrumbs :levels="1" /> -->
       </v-layout>
     </section>
-    <FooterLarge />
+    <FooterLarge :is_toelettatura="is_toelettatura" />
   </div>
 </template>
 
@@ -530,6 +530,7 @@ export default {
   data() {
     return {
       show: false,
+      is_toelettatura: true,
       length: 3,
       window: 0,
       style:

@@ -1,45 +1,48 @@
 <template>
-  <v-layout id="top" column justify-center align-center>
-    <v-flex xs12 class="main-banner">
-      <Logo />
-      <div id="content-title" class="title text-center">
-        Campo di educazione privato
-      </div>
-      <div class="text-center">
-        <v-sheet id="main-content" color="white" class="text-center">
-          Coming soon!</v-sheet
-        >
-      </div>
-    </v-flex>
-    <v-fab-transition>
-      <v-btn
-        v-show="fab"
-        id="to-top"
-        v-scroll="onScroll"
-        fixed
-        dark
-        fab
-        bottom
-        right
-        small
-        color="pink"
-        @click="$vuetify.goTo('#top', 2500)"
-      >
-        <v-icon>mdi-chevron-up</v-icon>
-      </v-btn>
-    </v-fab-transition>
-    <!-- <Breadcrumbs :levels="1" /> -->
-  </v-layout>
+  <div>
+    <v-layout id="top" column justify-center align-center>
+      <v-flex xs12 class="main-banner">
+        <!-- <Logo /> -->
+        <section id="content_large" class="hidden-sm-and-down" :style="style">
+          <v-container style="background-color:rgba(0,0,0,0.4);width:100vw">
+            <v-col :cols="12">
+              <div
+                id="content-title"
+                class="  text-center display-4"
+                style="color:white"
+              >
+                Campo di educazione privato
+              </div>
+            </v-col>
+
+            <v-row id="main_row" justify="center">
+              <v-col :cols="12">
+                <div class="sub_heading text-center display-3 pa-10">
+                  Coming soon
+                </div>
+              </v-col>
+            </v-row>
+            <v-row id="main_row" justify="center"> </v-row>
+          </v-container>
+        </section>
+      </v-flex>
+
+      <!-- <Breadcrumbs :levels="1" /> -->
+    </v-layout>
+    <FooterLarge />
+  </div>
 </template>
 
 <script>
-import Logo from '@/components/Logo.vue'
+// import Logo from '@/components/Logo.vue'
 // import Breadcrumbs from '@/components/Breadcrumbs.vue'
+import { FooterLarge } from '@/components/'
 export default {
   name: 'CampoEducazionePrivato',
   components: {
-    Logo
+    // Logo
     // Breadcrumbs
+    FooterLarge
   },
 
   data() {

@@ -151,7 +151,7 @@
           </div>
         </div>
       </v-flex>
-      <v-fab-transition>
+      <!-- <v-fab-transition>
         <v-btn
           v-show="fab"
           id="to-top"
@@ -167,7 +167,7 @@
         >
           <v-icon>mdi-chevron-up</v-icon>
         </v-btn>
-      </v-fab-transition>
+      </v-fab-transition> -->
       <!-- <Breadcrumbs :levels="1" /> -->
     </v-layout>
     <FooterLarge />

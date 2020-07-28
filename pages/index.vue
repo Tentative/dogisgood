@@ -68,7 +68,7 @@
         >
           <End />
         </video-background>
-        <v-btn
+        <!-- <v-btn
           v-show="!isMobile"
           id="to-top"
           absolute
@@ -81,7 +81,7 @@
           @click="$vuetify.goTo('#first', options)"
         >
           <v-icon class="pulse">mdi-chevron-up</v-icon>
-        </v-btn>
+        </v-btn> -->
       </section>
       <Cards v-show="isMobile" />
     </v-flex>

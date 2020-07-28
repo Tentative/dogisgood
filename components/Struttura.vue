@@ -6,9 +6,9 @@
         rispondere al meglio a tutte le esigenze dei nostri amici pelosi e
         offrire comfort, igiene e sicurezza adeguati al loro benessere. 400 mq e
         un ampio cortile privato a disposizione.
-        <p style="text-align:center">
-          <v-btn depressed large color="primary">Info</v-btn>
-        </p>
+        <!-- <p style="text-align:center">
+          <v-btn depressed large color="primary" to="/struttura">Info</v-btn>
+        </p> -->
       </v-sheet>
     </v-sheet>
   </div>

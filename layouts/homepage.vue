@@ -24,11 +24,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar
-      :clipped-left="clipped"
-      app
-      :class="top > 200 && !isMobile ? 'closed' : 'primary'"
-    >
+    <v-app-bar :clipped-left="clipped" app class="primary">
       <v-app-bar-nav-icon class="white--text" @click.stop="drawer = !drawer" />
 
       <v-btn

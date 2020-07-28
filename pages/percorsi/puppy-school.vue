@@ -170,7 +170,7 @@
       </v-fab-transition> -->
       <!-- <Breadcrumbs :levels="1" /> -->
     </v-layout>
-    <FooterLarge />
+    <FooterLarge class="hidden-sm-and-down" />
   </div>
 </template>
 

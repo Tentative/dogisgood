@@ -1,51 +1,134 @@
 <template>
-  <v-layout id="top" column justify-center align-center>
-    <v-flex xs12 class="main-banner">
-      <Logo />
-      <div id="content-title" class="title text-center">Wedding Dog Sitter</div>
-      <div id="content-subtitle" class="subtitle-2 text-center">
-        Perché rinunciare al tuo migliore amico in uno dei giorni più belli? Con
-        Dog is Good tutto è possibile!
-      </div>
-      <div class="text-center">
-        <v-sheet id="main-content" color="white" style="margin-bottom:20px"
-          >Ci prenderemo cura di lui per tutta la giornata, assicurandoci che ci
-          sia nei momenti più importanti. Un membro del nostro team a
-          disposizione, un corredino firmato Lussianinda, un reportage della sua
-          giornata... cosa chiedere di più? Averlo al tuo fianco sarà uno dei
-          ricordi più belli!
-        </v-sheet>
-      </div>
-    </v-flex>
-    <v-fab-transition>
-      <v-btn
-        v-show="fab"
-        id="to-top"
-        v-scroll="onScroll"
-        fixed
-        dark
-        fab
-        bottom
-        right
-        small
-        color="pink"
-        @click="$vuetify.goTo('#top', 2500)"
-      >
-        <v-icon>mdi-chevron-up</v-icon>
-      </v-btn>
-    </v-fab-transition>
-    <!-- <Breadcrumbs :levels="1" /> -->
-  </v-layout>
+  <div>
+    <v-layout id="top" column justify-center align-center>
+      <v-flex xs12 class="main-banner">
+        <!-- <Logo :src="src" class="hidden-md-and-up" /> -->
+        <section id="bautique" :style="style" class="hidden-sm-and-down">
+          <v-row
+            justify="center"
+            class="mx-auto"
+            style="background-color:rgba(0,0,0,0.4)"
+          >
+            <v-carousel
+              cycle
+              height="100vh"
+              :hide-delimiters="true"
+              width="85vw"
+            >
+              <v-carousel-item
+                v-for="(item, i) in items"
+                :key="i"
+                :src="item.src"
+                ><v-col :cols="12" style="background-color:rgba(0,0,0,0.4)">
+                  <div class="display-2 text-center text-uppercase white--text">
+                    Wedding dog sitter
+                  </div>
+                  <div class="title text-center white--text">
+                    Perché rinunciare al tuo migliore amico in uno dei giorni
+                    più belli? Con Dog is Good tutto è possibile!
+                  </div></v-col
+                ></v-carousel-item
+              ><v-row justify="center">
+                <v-col :cols="6">
+                  <v-row justify="center">
+                    <div id="wedding" class="title text-center white--text">
+                      Ci prenderemo cura di lui per tutta la giornata,
+                      assicurandoci che ci sia nei momenti più importanti. Un
+                      membro del nostro team a disposizione, un corredino
+                      firmato Lussianinda, un reportage della sua giornata...
+                      cosa chiedere di più? Averlo al tuo fianco sarà uno dei
+                      ricordi più belli!
+                    </div>
+                  </v-row>
+                </v-col>
+              </v-row>
+            </v-carousel>
+          </v-row>
+        </section>
+        <section id="bautique" :style="style" class="hidden-md-and-up">
+          <v-row
+            justify="center"
+            class="mx-auto"
+            style="background-color:rgba(0,0,0,0.4)"
+          >
+            <v-carousel
+              cycle
+              height="100vh"
+              :hide-delimiters="true"
+              width="85vw"
+            >
+              <v-carousel-item
+                v-for="(item, i) in items"
+                :key="i"
+                :src="item.src"
+                ><v-col :cols="12" style="background-color:rgba(0,0,0,0.4)">
+                  <div class="display-2 text-center text-uppercase white--text">
+                    Wedding dog sitter
+                  </div>
+                  <div class="title text-center white--text">
+                    Perché rinunciare al tuo migliore amico in uno dei giorni
+                    più belli? Con Dog is Good tutto è possibile!
+                  </div></v-col
+                ></v-carousel-item
+              >
+            </v-carousel>
+          </v-row>
+        </section>
+        <div id="content-title" class="title text-center">
+          Wedding Dog Sitter
+        </div>
+        <!-- <div id="content-subtitle" class="subtitle-2 text-center">
+          Perché rinunciare al tuo migliore amico in uno dei giorni più belli?
+          Con Dog is Good tutto è possibile!
+        </div> -->
+        <div class="text-center">
+          <v-sheet
+            id="main-content"
+            color="white"
+            style="margin-bottom:20px;max-width:960px;"
+            >Ci prenderemo cura di lui per tutta la giornata, assicurandoci che
+            ci sia nei momenti più importanti. Un membro del nostro team a
+            disposizione, un corredino firmato Lussianinda, un reportage della
+            sua giornata... cosa chiedere di più? Averlo al tuo fianco sarà uno
+            dei ricordi più belli!
+          </v-sheet>
+        </div>
+      </v-flex>
+      <v-fab-transition>
+        <v-btn
+          v-show="fab"
+          id="to-top"
+          v-scroll="onScroll"
+          fixed
+          dark
+          fab
+          bottom
+          right
+          small
+          color="pink"
+          @click="$vuetify.goTo('#top', 2500)"
+        >
+          <v-icon>mdi-chevron-up</v-icon>
+        </v-btn>
+      </v-fab-transition>
+      <!-- <Breadcrumbs :levels="1" /> -->
+    </v-layout>
+    <FooterLarge class="hidden-sm-and-down" />
+  </div>
 </template>
 
 <script>
-import Logo from '@/components/Logo.vue'
+// import Logo from '@/components/Logo.vue'
 // import Breadcrumbs from '@/components/Breadcrumbs.vue'
+// import { Footer } from '@/components/'
+import { FooterLarge } from '@/components/'
 export default {
   name: 'Struttura',
   components: {
-    Logo
+    // Logo
     // Breadcrumbs
+    // Footer
+    FooterLarge
   },
 
   data() {
@@ -53,23 +136,16 @@ export default {
       imgSrc: 'struttura',
       fab: false,
       offsetTop: 0,
+      src: require('@/static/wedding1.jpg'),
+      style: 'height:100vh;width:100%;background-position:center center;',
       struttura1: require('@/static/struttura3.jpg'),
       struttura2: require('@/static/struttura2.jpg'),
       items: [
         {
-          src: require('@/static/bautique-slide-1.jpg')
+          src: require('@/static/wedding1.jpg')
         },
         {
-          src: require('@/static/bautique-slide-2.jpg')
-        },
-        {
-          src: require('@/static/bautique-slide-3.jpg')
-        },
-        {
-          src: require('@/static/bautique-slide-4.jpg')
-        },
-        {
-          src: require('@/static/bautique-slide-5.jpg')
+          src: require('@/static/wedding2.jpeg')
         }
       ]
     }

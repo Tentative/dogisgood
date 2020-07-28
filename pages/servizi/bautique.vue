@@ -61,6 +61,7 @@
           id="to-top"
           v-scroll="onScroll"
           :is_toelettatura="is_toelettatura"
+          class="hidden-sm-and-down"
         />
       </v-flex>
       <v-fab-transition>

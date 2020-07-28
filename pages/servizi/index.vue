@@ -59,11 +59,16 @@
         <v-row id="main_row" justify="center"> </v-row>
       </v-container>
     </section>
+    <FooterLarge class="hidden-sm-and-down" />
   </div>
 </template>
 
 <script>
+import { FooterLarge } from '@/components/'
 export default {
+  components: {
+    FooterLarge
+  },
   layout: 'homepage',
   data() {
     return {
@@ -84,7 +89,7 @@ export default {
         },
         {
           title: 'Wedding dog sitter',
-          src: require('@/static/wedding-dog-sitter.jpg'),
+          src: require('@/static/wedding1.jpg'),
           flex: 6,
           md: 4,
           to: './wedding-dog-sitter'

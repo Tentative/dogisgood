@@ -66,16 +66,17 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <Footer v-show="isMobile" />
+    <Footer class="hidden-md-and-up" />
   </v-app>
 </template>
 
 <script>
-import Footer from '@/components/Footer.vue'
+import { Footer } from '@/components/'
 export default {
   name: 'Home',
   components: {
     Footer
+    // FooterLarge
   },
   data() {
     return {

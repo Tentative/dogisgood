@@ -1,6 +1,6 @@
 <template>
   <v-layout id="top" column justify-center align-center>
-    <Logo class="hidden-md-and-up" :src="src_logo" />
+    <Logo class="hidden-md-and-up" :src="src_logo" style="width:100%" />
 
     <section id="content_large" :style="style" class="hidden-sm-and-down">
       <v-container
@@ -188,6 +188,7 @@
                 <v-btn
                   class="pa-5"
                   tile
+                  block
                   outlined
                   color="success"
                   href="tel:+3903621821674"

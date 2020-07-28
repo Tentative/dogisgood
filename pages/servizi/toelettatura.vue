@@ -512,7 +512,10 @@
         <!-- <Breadcrumbs :levels="1" /> -->
       </v-layout>
     </section>
-    <FooterLarge :is_toelettatura="is_toelettatura" />
+    <FooterLarge
+      class="hidden-sm-and-down"
+      :is_toelettatura="is_toelettatura"
+    />
   </div>
 </template>
 

@@ -46,7 +46,7 @@
               </v-row>
               <v-row>
                 <v-col :cols="12" md="6" xs="12">
-                  <div class="text-center">
+                  <div class="text-left">
                     <v-sheet id="main-content" color="#aae56d"
                       >Il nostro è il metodo di educazione detto gentile, adatto
                       a qualunque cane, indipendentemente da razza, età, sesso e

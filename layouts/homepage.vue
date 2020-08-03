@@ -103,6 +103,11 @@ export default {
           to: '/percorsi'
         },
         {
+          icon: 'mdi-dog',
+          title: 'Servizi',
+          to: '/servizi'
+        },
+        {
           icon: 'mdi-email',
           title: 'Contatti',
           to: '/contattaci'

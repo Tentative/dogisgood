@@ -7,8 +7,9 @@
           Il nostro cane è un compagno di vita e condivide con noi avventure e
           tempo libero, ma gli impegni quotidiani, spesso, ci tengono fuori casa
           per parecchie ore costringendo il nostro amico a rimanere solo e
-          recluso. L’idea del nostro asilo nasce proprio da una riflessione
-          intorno alle esigenze di entrambi.
+          recluso.<br /><br />
+          L’idea del nostro asilo nasce proprio da una riflessione intorno alle
+          esigenze di entrambi.
         </div>
       </v-sheet>
     </v-sheet>

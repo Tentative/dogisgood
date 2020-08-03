@@ -46,7 +46,9 @@
           <tbody id="stripe" style="margin-top:20px">
             <tr v-for="service in services" :key="service.name">
               <td class="title">{{ service.name }}</td>
-              <td class="title">{{ service.prezzo }}</td>
+              <td class="title" style="width:30%;text-align:right">
+                {{ service.prezzo }}
+              </td>
             </tr>
           </tbody>
         </template>

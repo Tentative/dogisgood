@@ -17,11 +17,12 @@
         <v-col class="shape-content-left" :cols="4"> </v-col>
         <v-col class="shape-content-right" :cols="8"
           ><div class="right_card">
+            <Card :service="asilo" :img="asilo.src" :to="asilo.to" />
             <Card
               :service="toelettatura"
               :img="toelettatura.src"
               :to="toelettatura.to"
-            /><Card :service="asilo" :img="asilo.src" :to="asilo.to" /><Card
+            /><Card
               :service="educazione"
               :img="educazione.src"
               :to="educazione.to"

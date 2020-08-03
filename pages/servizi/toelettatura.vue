@@ -113,9 +113,9 @@
                             <p class="title pa-3">Snodatura</p>
                           </v-row>
                           <v-row class="pa-3" align="center">
-                            <v-icon size="48" color="indigo"
-                              >mdi-filmstrip-off</v-icon
-                            >
+                            <div style="text-align:left;float:left">
+                              <stripping />
+                            </div>
                             <p class="title pa-3">Stripping</p>
                           </v-row>
                           <v-row class="pa-3" align="center">
@@ -538,7 +538,7 @@
 </template>
 
 <script>
-import { Logo, FooterLarge, razor, comb } from '@/components/'
+import { Logo, FooterLarge, razor, comb, stripping } from '@/components/'
 // import Breadcrumbs from '@/components/Breadcrumbs.vue'
 export default {
   name: 'Struttura',
@@ -546,7 +546,8 @@ export default {
     Logo,
     FooterLarge,
     razor,
-    comb
+    comb,
+    stripping
     // Breadcrumbs
   },
 

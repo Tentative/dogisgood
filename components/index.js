@@ -17,6 +17,7 @@ import FooterLarge from './FooterLarge.vue'
 import Footer from './Footer.vue'
 import razor from './razor.vue'
 import comb from './comb.vue'
+import stripping from './stripping.vue'
 
 export {
   Cards,
@@ -30,6 +31,7 @@ export {
   tiktok,
   razor,
   comb,
+  stripping,
   GoTO,
   Content,
   Summary,

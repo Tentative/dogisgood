@@ -28,28 +28,38 @@
         </section>
         <section id="toelettatura_desktop">
           <v-row align="center" class="pa-3">
-            <v-item-group
-              v-model="window"
-              class="shrink mx-auto pa-3"
-              mandatory
-              tag="v-flex"
-            >
-              <v-item
-                v-for="n in length"
-                :key="n"
-                v-slot:default="{ active, toggle }"
-                class="pa-3"
-              >
-                <div>
-                  <v-btn :input-value="active" icon @click="toggle">
-                    <v-icon>mdi-record</v-icon>
-                  </v-btn>
-                </div>
-              </v-item>
-            </v-item-group>
+            <v-col :cols="12" order="2">
+              <v-row justify="center">
+                <v-item-group
+                  v-model="window"
+                  class="shrink mx-auto pa-3"
+                  mandatory
+                  tag="v-flex"
+                >
+                  <v-item
+                    v-for="n in length"
+                    :key="n"
+                    v-slot:default="{ active, toggle }"
+                    class="pa-3"
+                    style="display:inline-block"
+                  >
+                    <div>
+                      <v-btn :input-value="active" icon @click="toggle">
+                        <v-icon>mdi-record</v-icon>
+                      </v-btn>
+                    </div>
+                  </v-item>
+                </v-item-group>
+              </v-row>
+            </v-col>
 
             <v-col>
-              <v-window v-model="window" class="elevation-1" vertical>
+              <v-window
+                v-model="window"
+                class="elevation-1"
+                vertical
+                show-arrows
+              >
                 <v-window-item>
                   <v-card flat>
                     <v-card-text>
@@ -150,7 +160,11 @@
                           :cols="12"
                           style="margin-left:auto;margin-right:auto"
                         >
-                          <v-row class="pa-3 " align="center" justify="center">
+                          <v-row
+                            class="pa-5 mx-5 "
+                            align="center"
+                            justify="center"
+                          >
                             <v-expansion-panels>
                               <v-expansion-panel>
                                 <v-expansion-panel-header
@@ -168,7 +182,11 @@
                             </v-expansion-panels>
                           </v-row>
 
-                          <v-row class="pa-3 " align="center" justify="center">
+                          <v-row
+                            class="pa-5 mx-5 "
+                            align="center"
+                            justify="center"
+                          >
                             <v-expansion-panels>
                               <v-expansion-panel>
                                 <v-expansion-panel-header

@@ -107,9 +107,9 @@
                         </v-col>
                         <v-col :cols="6">
                           <v-row class="pa-3" align="center">
-                            <v-icon size="48" color="indigo"
-                              >mdi-hair-dryer</v-icon
-                            >
+                            <div style="text-align:left;float:left">
+                              <comb />
+                            </div>
                             <p class="title pa-3">Snodatura</p>
                           </v-row>
                           <v-row class="pa-3" align="center">
@@ -538,14 +538,15 @@
 </template>
 
 <script>
-import { Logo, FooterLarge, razor } from '@/components/'
+import { Logo, FooterLarge, razor, comb } from '@/components/'
 // import Breadcrumbs from '@/components/Breadcrumbs.vue'
 export default {
   name: 'Struttura',
   components: {
     Logo,
     FooterLarge,
-    razor
+    razor,
+    comb
     // Breadcrumbs
   },
 

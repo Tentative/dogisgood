@@ -18,7 +18,7 @@
             <v-col :cols="12">
               <div class="sub_heading text-center display-3 pa-10">
                 Perché un cane educato e stanco è un cane felice, con un
-                proprietario sereno e contento.
+                compagno umano sereno e contento.
               </div>
             </v-col>
           </v-row>

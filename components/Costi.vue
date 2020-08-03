@@ -52,7 +52,7 @@ export default {
           prezzo: '€ 125'
         },
         {
-          name: 'CARNET 5 INTRESSI (validità 2 mesi) MEZZA GIORNATA',
+          name: 'CARNET 5 INGRESSI (validità 2 mesi) MEZZA GIORNATA',
           prezzo: '€ 100'
         },
         {
@@ -60,7 +60,7 @@ export default {
           prezzo: '€ 230'
         },
         {
-          name: 'CARNET 10 INTRESSI (validità 4 mesi) MEZZA GIORNATA',
+          name: 'CARNET 10 INGRESSI (validità 4 mesi) MEZZA GIORNATA',
           prezzo: '€ 180'
         },
         {

@@ -1,5 +1,5 @@
 <template>
-  <section id="costi" style="margin-top:20px">
+  <section id="costi" style="margin-top:60px">
     <v-container>
       <v-row class="mx-auto" justify="center">
         <div

@@ -93,9 +93,9 @@
                             <p class="title pa-3">Taglio a forbice</p>
                           </v-row>
                           <v-row class="pa-3" align="center">
-                            <v-icon size="48" color="indigo"
-                              >mdi-scissors-cutting</v-icon
-                            >
+                            <div style="text-align:left;float:left">
+                              <razor />
+                            </div>
                             <p class="title pa-3">Tosatura</p>
                           </v-row>
                           <v-row class="pa-3" align="center">
@@ -538,13 +538,14 @@
 </template>
 
 <script>
-import { Logo, FooterLarge } from '@/components/'
+import { Logo, FooterLarge, razor } from '@/components/'
 // import Breadcrumbs from '@/components/Breadcrumbs.vue'
 export default {
   name: 'Struttura',
   components: {
     Logo,
-    FooterLarge
+    FooterLarge,
+    razor
     // Breadcrumbs
   },
 

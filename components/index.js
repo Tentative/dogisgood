@@ -15,6 +15,7 @@ import Costi from './Costi.vue'
 import Prezzi from './Prezzi.vue'
 import FooterLarge from './FooterLarge.vue'
 import Footer from './Footer.vue'
+import razor from './razor.vue'
 
 export {
   Cards,
@@ -26,6 +27,7 @@ export {
   Struttura,
   End,
   tiktok,
+  razor,
   GoTO,
   Content,
   Summary,

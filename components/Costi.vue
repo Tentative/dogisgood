@@ -16,14 +16,14 @@
           <template v-slot:default>
             <thead>
               <tr>
-                <th class="text-left body-2">Asilo</th>
+                <!-- <th class="text-left body-2">Asilo</th> -->
                 <th class="text-left"></th>
               </tr>
             </thead>
             <tbody id="stripe">
               <tr v-for="service in services" :key="service.name">
                 <td>{{ service.name }}</td>
-                <td>{{ service.prezzo }}</td>
+                <td style="width:30%;text-align:right">{{ service.prezzo }}</td>
               </tr>
             </tbody>
           </template>

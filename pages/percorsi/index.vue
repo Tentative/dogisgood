@@ -72,10 +72,9 @@
                     height="100%"
                   >
                     <v-card-title>
-                      <v-icon large left>
-                        mdi-paw
-                      </v-icon>
-                      <span class="title font-weight-light">Puppy School</span>
+                      <span class="display-1 font-weight-bold"
+                        >Puppy School</span
+                      >
                     </v-card-title>
 
                     <v-card-text class="headline font-weight-bold">
@@ -87,13 +86,7 @@
 
                     <v-card-actions>
                       <v-list-item class="grow">
-                        <v-list-item-avatar color="grey darken-3">
-                          <v-img class="elevation-6" :src="logoSrc"></v-img>
-                        </v-list-item-avatar>
-
-                        <v-list-item-content>
-                          <v-list-item-title>Dog Is Good</v-list-item-title>
-                        </v-list-item-content>
+                        <v-list-item-content> </v-list-item-content>
 
                         <v-row align="center" justify="end">
                           <v-btn

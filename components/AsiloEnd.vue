@@ -17,8 +17,8 @@
                   <v-col :cols="6"> <v-img :src="grid_2"/></v-col
                 ></v-row>
                 <v-row>
-                  <v-col :cols="6">
-                    <v-img :src="grid_3" />
+                  <v-col :cols="6" style="background-size:cover;">
+                    <v-img :src="grid_3" style="height:100%" />
                   </v-col>
                   <v-col :cols="6"> <v-img :src="grid_4"/></v-col
                 ></v-row> </v-card
@@ -56,7 +56,7 @@ export default {
       name: 'AsiloEnd',
       grid_1: require('@/static/struttura3.jpg'),
       grid_2: require('@/static/struttura2.jpg'),
-      grid_3: require('@/static/spa.jpg'),
+      grid_3: require('@/static/struttura3-bis.jpg'),
       grid_4: require('@/static/servizi-campo-educazione-privato-banner-mobile.jpg')
     }
   }

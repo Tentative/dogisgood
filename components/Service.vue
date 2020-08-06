@@ -30,7 +30,13 @@
           </div>
           <v-spacer></v-spacer>
           <v-row align="center" align-content="center" justify="center">
-            <v-btn depressed large color="primary" to="./servizi/"
+            <v-btn
+              raised
+              primary
+              elevation="7"
+              large
+              color="primary"
+              to="./servizi/"
               >Altri servizi</v-btn
             ></v-row
           >

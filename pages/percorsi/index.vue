@@ -4,7 +4,7 @@
       <v-flex xs12 class="main-banner">
         <Logo :src="percorsi1" class="hidden-md-and-up" />
         <section id="content_large" :style="style" class="hidden-sm-and-down">
-          <v-container style="background-color:rgba(0,0,0,0.6)">
+          <v-container style="background-color:rgba(0,0,0,0.6);padding:5%">
             <v-row id="main_row" justify="center">
               <v-col :cols="12">
                 <div
@@ -162,11 +162,11 @@ export default {
       imgSrc: this.$route.name,
       style:
         'background:url(' +
-        require('@/static/struttura2.jpg') +
-        ');background-position:center ;background-size:cover',
+        require('@/static/percorsi-puppy-school-banner-mobile.jpg') +
+        ');background-position:center top;background-size:cover;height:100%',
       fab: false,
       offsetTop: 0,
-      percorsi1: require('@/static/struttura2.jpg'),
+      percorsi1: require('@/static/percorsi-puppy-school-banner-mobile.jpg'),
       logoSrc: require('@/static/logo.jpg')
     }
   },

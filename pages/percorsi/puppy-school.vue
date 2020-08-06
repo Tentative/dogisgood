@@ -188,11 +188,11 @@ export default {
   data() {
     return {
       imgSrc: 'struttura',
-      puppy_school: require('@/static/contattaci-banner-mobile.jpg'),
+      puppy_school: require('@/static/puppy.jpg'),
       style:
         'background:url(' +
-        require('@/static/contattaci-banner-mobile.jpg') +
-        '); background-position: center center; background-size:cover',
+        require('@/static/puppy.jpg') +
+        '); background-position: center top; background-size:cover',
       fab: false,
       offsetTop: 0,
       struttura1: require('@/static/struttura3.jpg'),

@@ -134,7 +134,7 @@
           </v-sheet>
           <div id="content-title" class="text-center title">
             <p>Per ulteriori informazioni ed iscrizioni non esitate a</p>
-            <v-btn color="#21f37e" to="/contact-us" style="width:50%;"
+            <v-btn color="#21f37e" to="/contattaci" style="width:50%;"
               >contattarci</v-btn
             >
           </div>

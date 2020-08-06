@@ -31,7 +31,7 @@
               ><v-row justify="center">
                 <v-col :cols="6">
                   <v-row justify="center">
-                    <div id="wedding" class="title text-center white--text">
+                    <div id="wedding" class="title text-left white--text">
                       Ci prenderemo cura di lui per tutta la giornata,
                       assicurandoci che ci sia nei momenti più importanti. Un
                       membro del nostro team a disposizione, un corredino
@@ -85,6 +85,7 @@
           <v-sheet
             id="main-content"
             color="white"
+            class="text-left"
             style="margin-bottom:20px;max-width:960px;"
             >Ci prenderemo cura di lui per tutta la giornata, assicurandoci che
             ci sia nei momenti più importanti. Un membro del nostro team a

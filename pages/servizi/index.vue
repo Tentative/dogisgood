@@ -85,35 +85,35 @@ export default {
           src: require('@/static/bautique.jpg'),
           flex: 6,
           md: 4,
-          to: './bautique'
+          to: 'servizi/bautique'
         },
         {
           title: 'Wedding dog sitter',
           src: require('@/static/wedding1.jpg'),
           flex: 6,
           md: 4,
-          to: './wedding-dog-sitter'
+          to: 'servizi/wedding-dog-sitter'
         },
         {
           title: 'Feste di compleanno',
           src: require('@/static/compleanno-home.jpg'),
           flex: 6,
           md: 4,
-          to: './compleanno'
+          to: 'servizi/compleanno'
         },
         {
           title: 'Osteopatia animale',
           src: require('@/static/osteopatia-home.jpg'),
           flex: 6,
           md: 4,
-          to: './osteopatia'
+          to: 'servizi/osteopatia'
         },
         {
           title: 'Campo di educazione privato',
           src: require('@/static/campo-addestramento-privato.jpg'),
           flex: 12,
           md: 4,
-          to: './campo-educazione-privato'
+          to: 'servizi/campo-educazione-privato'
         }
       ]
     }

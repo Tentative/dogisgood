@@ -145,7 +145,7 @@ export default {
           src: require('@/static/wedding1.jpg')
         },
         {
-          src: require('@/static/wedding2.jpeg')
+          src: require('@/static/wedding.jpg')
         }
       ]
     }

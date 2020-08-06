@@ -71,10 +71,7 @@
               <v-col :cols="6">
                 <v-sheet color="blue" height="100%" dark>
                   <v-row class="fill-height" align="center" justify="center">
-                    <div
-                      class="text text-center subheading"
-                      style="padding:20px"
-                    >
+                    <div class="text text-left subheading" style="padding:20px">
                       Guidare il cucciolo nella socializzazione con i propri
                       simili in ambienti diversi, contraddistinti da rumori e
                       odori, per prevenire disturbi del comportamento
@@ -84,11 +81,8 @@
               </v-col>
               <v-col :cols="6">
                 <v-sheet color="#aae56d" height="100%" light>
-                  <v-row class="fill-height" align="center" justify="center">
-                    <div
-                      class="text text-center subheading"
-                      style="padding:20px"
-                    >
+                  <v-row class="fill-height" align="center">
+                    <div class="text text-left subheading" style="padding:20px">
                       Stimolarne le capacità cognitive
                     </div>
                   </v-row>
@@ -97,10 +91,7 @@
               <v-col :cols="4">
                 <v-sheet color="blue" height="100%" dark>
                   <v-row class="fill-height" align="center" justify="center">
-                    <div
-                      class="text text-center subheading"
-                      style="padding:20px"
-                    >
+                    <div class="text text-left subheading" style="padding:20px">
                       Educare alla relazione con il proprietario affinché sia
                       solida e nutrita di fiducia e rispetto reciproci
                     </div>
@@ -110,10 +101,7 @@
               <v-col :cols="4">
                 <v-sheet color="#aae56d" height="100%" light>
                   <v-row class="fill-height" align="center" justify="center">
-                    <div
-                      class="text text-center subheading"
-                      style="padding:20px"
-                    >
+                    <div class="text text-left subheading" style="padding:20px">
                       Formare il proprietario affinché sia consapevole di tutti
                       i bisogni, psicologici e fisici, del cucciolo
                     </div>
@@ -123,10 +111,7 @@
               <v-col :cols="4">
                 <v-sheet color="blue" height="100%" dark>
                   <v-row class="fill-height" align="center" justify="center">
-                    <div
-                      class="text text-center subheading"
-                      style="padding:20px"
-                    >
+                    <div class="text text-left subheading" style="padding:20px">
                       Formare il cucciolo affinché riconosca, comprenda e
                       rispetti le regole del proprio nucleo famigliare
                     </div>
@@ -134,13 +119,17 @@
                 </v-sheet>
               </v-col>
             </v-row>
-            <v-row style="max-width:960px;margin-top:20px" class="mx-auto">
+            <v-row
+              style="max-width:960px;margin-top:20px"
+              class="mx-auto text-left"
+            >
               Questo percorso prevede 6 incontri di un'ora circa, a cadenza
               settimanale, per cuccioli, dai 2 ai 6 mesi, di taglie e razze
-              diverse. Nel pacchetto sono compresi anche 3 ingressi da mezza
-              giornata in asilo per favorire l'incontro e la socializzazione del
-              cucciolo con altri cani in modo del tutto sicuro e protetto sotto
-              la guida dei nostri educatori esperti.
+              diverse. <br class="hidden-md-and-up" />
+              Nel pacchetto sono compresi anche 3 ingressi da mezza giornata in
+              asilo per favorire l'incontro e la socializzazione del cucciolo
+              con altri cani in modo del tutto sicuro e protetto sotto la guida
+              dei nostri educatori esperti.
             </v-row>
           </v-sheet>
           <div id="content-title" class="text-center title">

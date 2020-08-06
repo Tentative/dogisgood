@@ -137,7 +137,8 @@ export default {
       fab: false,
       offsetTop: 0,
       src: require('@/static/wedding1.jpg'),
-      style: 'height:100vh;width:100%;background-position:center center;',
+      style:
+        'height:100vh;width:100%;background-position:center center;background-size:cover',
       struttura1: require('@/static/struttura3.jpg'),
       struttura2: require('@/static/struttura2.jpg'),
       items: [

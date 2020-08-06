@@ -134,7 +134,7 @@
           </v-sheet>
           <div id="content-title" class="text-center title">
             Per avere più informazioni
-            <p><v-btn color="#21f37e" to="/contact-us">contattaci</v-btn></p>
+            <p><v-btn color="#21f37e" to="/contattaci">contattaci</v-btn></p>
           </div>
         </div>
       </v-flex>

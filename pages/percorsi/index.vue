@@ -112,7 +112,7 @@
                       >Se invece sei alla ricerca del tuo amico peloso, ti
                       offriamo la migliore consulenza, competente e attenta, che
                       ti guidi in un percorso di adozione maturo e
-                      responsabile..</v-card-subtitle
+                      responsabile.</v-card-subtitle
                     >
                   </v-card>
                 </v-col>

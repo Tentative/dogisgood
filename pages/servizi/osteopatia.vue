@@ -4,7 +4,9 @@
       <v-flex xs12 class="main-banner">
         <Logo :src="src" class="hidden-md-and-up" />
         <section id="content_large" class="hidden-sm-and-down" :style="style">
-          <v-container style="background-color:rgba(0,0,0,0.4);width:100vw">
+          <v-container
+            style="background-color:rgba(0,0,0,0.4);width:100vw;padding:5%"
+          >
             <v-col :cols="12">
               <div
                 id="content-title"
@@ -16,13 +18,16 @@
             </v-col>
 
             <v-row id="main_row" justify="center">
-              <v-col :cols="12" style="height:400px"> </v-col>
+              <v-col :cols="12">
+                <div class="sub_heading text-center display-3 pa-10">
+                  Per il completo benessere del tuo amico a quattro zampe.
+                </div>
+              </v-col>
             </v-row>
-            <v-row id="main_row" justify="center"> </v-row>
           </v-container>
         </section>
         <div id="content-title" class=" text-center">Osteopatia Animale</div>
-        <div class="text-center">
+        <div class="text-left">
           <v-sheet id="main-content" color="white" style="max-width:960px"
             ><div>
               L’osteopatia animale è una disciplina olistica complementare alla
@@ -83,11 +88,11 @@ export default {
     return {
       imgSrc: 'osteopatia animale',
       fab: false,
-      src: require('@/static/osteopatia-home.jpg'),
+      src: require('@/static/wedding2.jpeg'),
       style:
         'background:url(' +
-        require('@/static/osteopatia-home.jpg') +
-        ');background-position:center center; background-size:cover;width:100%;',
+        require('@/static/wedding2.jpeg') +
+        ');background-position:center left; background-size:cover;width:100%;',
       offsetTop: 0,
       struttura1: require('@/static/struttura3.jpg'),
       struttura2: require('@/static/struttura2.jpg'),

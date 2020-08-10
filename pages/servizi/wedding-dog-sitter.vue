@@ -36,8 +36,8 @@
                       assicurandoci che ci sia nei momenti più importanti. Un
                       membro del nostro team a disposizione, un corredino
                       firmato Lussianinda, un reportage della sua giornata...
-                      cosa chiedere di più? Averlo al tuo fianco sarà uno dei
-                      ricordi più belli!
+                      cosa chiedere di più? <br /><br />Averlo al tuo fianco
+                      sarà uno dei ricordi più belli!
                     </div>
                   </v-row>
                 </v-col>
@@ -90,8 +90,8 @@
             >Ci prenderemo cura di lui per tutta la giornata, assicurandoci che
             ci sia nei momenti più importanti. Un membro del nostro team a
             disposizione, un corredino firmato Lussianinda, un reportage della
-            sua giornata... cosa chiedere di più? Averlo al tuo fianco sarà uno
-            dei ricordi più belli!
+            sua giornata... cosa chiedere di più? <br />Averlo al tuo fianco
+            sarà uno dei ricordi più belli!
           </v-sheet>
         </div>
       </v-flex>

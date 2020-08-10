@@ -24,6 +24,13 @@
                 target="_blank"
                 ><div><v-icon size="38px">mdi-instagram</v-icon></div></a
               >
+              <a
+                href="https://www.instagram.com/asilodogisgood/"
+                target="_blank"
+                ><div>
+                  <v-icon size="38px" color="red">mdi-youtube</v-icon>
+                </div></a
+              >
             </v-row>
           </v-col>
         </v-row>

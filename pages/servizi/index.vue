@@ -110,7 +110,7 @@ export default {
         },
         {
           title: 'Campo di educazione privato',
-          src: require('@/static/campo-addestramento-privato.jpg'),
+          src: require('@/static/camp2.JPG'),
           flex: 12,
           md: 4,
           to: 'servizi/campo-educazione-privato'

@@ -53,6 +53,10 @@ export default {
         {
           icon: 'mdi-instagram',
           to: 'https://www.instagram.com/asilodogisgood/'
+        },
+        {
+          icon: 'mdi-youtube',
+          to: 'https://www.youtube.com/c/DogisGoodAsiloperCani/'
         }
       ]
     }

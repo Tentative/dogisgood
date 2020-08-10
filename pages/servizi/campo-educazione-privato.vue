@@ -2,7 +2,7 @@
   <div>
     <v-layout id="top" column justify-center align-center>
       <v-flex xs12 class="main-banner">
-        <!-- <Logo /> -->
+        <Logo :src="src" class="hidden-md-and-up" />
         <section id="content_large" class="hidden-sm-and-down" :style="style">
           <v-container style="background-color:rgba(0,0,0,0.4);width:100vw">
             <v-col :cols="12">
@@ -26,7 +26,7 @@
           </v-container>
         </section>
         <section class="hidden-md-and-up">
-          <div class="text-center" id="main-content">Coming soon!</div>
+          <div id="main-content" class="text-center">Coming soon!</div>
         </section>
       </v-flex>
 
@@ -37,13 +37,13 @@
 </template>
 
 <script>
-// import Logo from '@/components/Logo.vue'
+import Logo from '@/components/Logo.vue'
 // import Breadcrumbs from '@/components/Breadcrumbs.vue'
 import { FooterLarge } from '@/components/'
 export default {
   name: 'CampoEducazionePrivato',
   components: {
-    // Logo
+    Logo,
     // Breadcrumbs
     FooterLarge
   },
@@ -51,10 +51,15 @@ export default {
   data() {
     return {
       imgSrc: 'osteopatia animale',
+      src: require('static/camp2.JPG'),
       fab: false,
       offsetTop: 0,
       struttura1: require('@/static/struttura3.jpg'),
-      struttura2: require('@/static/struttura2.jpg')
+      struttura2: require('@/static/struttura2.jpg'),
+      style:
+        'background:url(' +
+        require('static/camp2.JPG') +
+        ');background-size:cover;background-position:center -55px'
     }
   },
   methods: {

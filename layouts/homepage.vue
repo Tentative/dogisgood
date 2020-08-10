@@ -14,6 +14,7 @@
           :to="item.to"
           router
           exact
+          :class="item.class"
         >
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
@@ -85,37 +86,44 @@ export default {
         {
           icon: 'mdi-home',
           title: 'Homepage',
-          to: '/'
+          to: '/',
+          class: ''
         },
         {
           icon: 'mdi-paw',
           title: 'Asilo',
-          to: '/asilo'
+          to: '/asilo',
+          class: ''
         },
         {
           icon: 'mdi-donkey',
           title: 'Toelettatura',
-          to: 'servizi/toelettatura'
+          to: 'servizi/toelettatura',
+          class: ''
         },
         {
           icon: 'mdi-bone',
           title: 'Percorsi educativi',
-          to: '/percorsi'
+          to: '/percorsi',
+          class: 'hidden-sm-and-down'
         },
         {
           icon: 'mdi-dog',
           title: 'Servizi',
-          to: '/servizi'
+          to: '/servizi',
+          class: ''
         },
         {
           icon: 'mdi-email',
           title: 'Contatti',
-          to: '/contattaci'
+          to: '/contattaci',
+          class: ''
         },
         {
           icon: 'mdi-play-box-outline',
           title: 'Gallery',
-          to: '/gallery'
+          to: '/gallery',
+          class: ''
         }
       ],
       miniVariant: false,

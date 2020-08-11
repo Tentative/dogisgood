@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section id="bautique">
-      <v-carousel>
+    <section id="bautique" style="height:100vh">
+      <v-carousel height="100vh">
         <v-carousel-item
           v-for="(item, i) in items"
           :key="i"
@@ -12,17 +12,14 @@
             style="background-color:rgba(0,0,0,0.54)"
             class="subheading pa-5 text-center white--text text-uppercase "
           >
-            Gallery
+            {{ item.title }}
           </div>
         </v-carousel-item>
       </v-carousel>
     </section>
-    <v-row justify="center" class="hidden-sm-and-down">
-      <v-img :src="src" max-width="200px" height="200px" />
-    </v-row>
 
     <FooterLarge
-      style="position:absolute;bottom:0;width:100%"
+      style="position:relative;bottom:0;width:100%"
       class="hidden-sm-and-down"
     />
   </div>
@@ -40,19 +37,78 @@ export default {
   },
   data() {
     return {
-      src: require('@/static/logo-circle.png'),
       items: [
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+          src: require('@/static/gallery/bautique-4.jpg'),
+          title: 'Bautique'
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+          src: require('@/static/gallery/bautique-5.jpg'),
+          title: 'Bautique'
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
+          src: require('@/static/gallery/camp.JPG'),
+          title: 'Campo di addestramento privato'
         },
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+          src: require('@/static/gallery/camp3.JPG'),
+          title: 'Campo di addestramento privato'
+        },
+        {
+          src: require('@/static/gallery/compleanni-1.jpg'),
+          title: 'Feste di compleanno'
+        },
+        {
+          src: require('@/static/gallery/compleanni-2.JPG'),
+          title: 'Feste di compleanno'
+        },
+        {
+          src: require('@/static/gallery/compleanni-3.JPG'),
+          title: 'Feste di compleanno'
+        },
+        {
+          src: require('@/static/gallery/compleanni-4.JPG'),
+          title: 'Feste di compleanno'
+        },
+        {
+          src: require('@/static/gallery/compleanni-5.JPG'),
+          title: 'Feste di compleanno'
+        },
+        {
+          src: require('@/static/gallery/asilo-1.jpg'),
+          title: "L'asilo"
+        },
+        {
+          src: require('@/static/gallery/asilo-2.jpg'),
+          title: "Attività all'aperto"
+        },
+        {
+          src: require('@/static/gallery/asilo-3.jpg'),
+          title: "L'asilo"
+        },
+        {
+          src: require('@/static/gallery/asilo-4.jpg'),
+          title: "L'asilo"
+        },
+        {
+          src: require('@/static/gallery/asilo-5.jpg'),
+          title: "L'asilo"
+        },
+        {
+          src: require('@/static/gallery/asilo-6.jpg'),
+          title: "L'asilo"
+        },
+        {
+          src: require('@/static/gallery/asilo-7.jpg'),
+          title: "L'asilo"
+        },
+        {
+          src: require('@/static/gallery/struttura-1.jpg'),
+          title: 'Palestra'
+        },
+        {
+          src: require('@/static/gallery/toelettatura.jpg'),
+          title: 'Toelettatura'
         }
       ]
     }

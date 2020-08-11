@@ -108,7 +108,7 @@ export default {
       src_video: require('@/static/cagnociao.mp4'),
       imgSrc: 'homepage',
       src_home: require('@/static/index-banner-mobile.jpg'),
-      src: require('@/static/struttura-desktop.jpg'),
+      src: require('@/static/struttura-alt.jpg'),
       imgSrc_struttura: 'struttura',
       style:
         "background:url('" + require('@/static/sfondo-servizi.jpg') + "');",

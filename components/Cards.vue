@@ -161,29 +161,19 @@
       I nostri partner:
     </div>
 
-    <v-carousel
-      height="40px"
-      cycle
-      hide-delimiter-background
-      show-arrows-on-hover
-      style="margin-top:20px"
-    >
-      <v-carousel-item v-for="n in 3" :key="n">
-        <v-row justify="space-around">
-          <v-avatar color="indigo" size="28">
-            <v-icon dark>mdi-account-circle</v-icon>
-          </v-avatar>
-
-          <v-avatar color="indigo" size="28">
-            <v-icon dark>mdi-account-circle</v-icon>
-          </v-avatar>
-
-          <v-avatar color="indigo" size="28">
-            <v-icon dark>mdi-account-circle</v-icon>
-          </v-avatar>
-        </v-row>
-      </v-carousel-item>
-    </v-carousel>
+    <v-row justify="center" class="mx-auto">
+      <v-col
+        v-for="partner in partners"
+        :key="partner"
+        cols="4"
+        class="mx-auto"
+        style="text-align:center"
+      >
+        <v-avatar size="32">
+          <v-img :src="partner.icon" />
+        </v-avatar>
+      </v-col>
+    </v-row>
     <div id="partners" class="text-center mx-auto title">
       Seguici sui nostri social
     </div>
@@ -245,6 +235,17 @@ export default {
         src: require('@/static/toelettatura-home.jpg'),
         flex: 12,
         to: 'servizi/toelettatura'
+      }
+    ],
+    partners: [
+      {
+        icon: require('@/static/partners/gammavet.png')
+      },
+      {
+        icon: require('@/static/partners/lussianinda.png')
+      },
+      {
+        icon: require('@/static/partners/mariani.png')
       }
     ],
     items: [

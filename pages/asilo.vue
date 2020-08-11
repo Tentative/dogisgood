@@ -27,7 +27,7 @@
           </div>
           <v-row justify="center" style="margin-left:auto;margin-right:auto">
             <v-col xs="12" sm="12" md="7">
-              <div class="text-center">
+              <div class="text-left">
                 <v-sheet
                   id="main-content"
                   color="white"

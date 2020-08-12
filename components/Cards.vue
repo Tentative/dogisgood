@@ -206,7 +206,7 @@ export default {
       },
       {
         title: 'Wedding dog sitter',
-        src: require('@/static/wedding-dog-sitter.jpg'),
+        src: require('@/static/wedding1.jpg'),
         flex: 6,
         to: 'servizi/wedding-dog-sitter'
       },
@@ -224,7 +224,7 @@ export default {
       },
       {
         title: 'Campo di educazione privato',
-        src: require('@/static/campo-addestramento-privato.jpg'),
+        src: require('@/static/camp2.JPG'),
         flex: 12,
         to: 'servizi/campo-educazione-privato'
       }

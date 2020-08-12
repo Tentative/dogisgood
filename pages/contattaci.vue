@@ -128,7 +128,7 @@
               >
             </v-col>
 
-            <v-row id="main_row" justify="center">
+            <v-row id="main_row" justify="center" class="mt-5">
               <v-row justify="center" style="width:100%" class="mt-5 pt-5">
                 <div id="partners" class="text-center mx-auto display-3">
                   I nostri partner:

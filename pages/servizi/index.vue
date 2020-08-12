@@ -36,7 +36,12 @@
                         height="200px"
                       >
                         <v-card-title
-                          class="display-1 font-weight-bold text-uppercase text-center mx-auto"
+                          class="display-1 font-weight-bold text-uppercase text-center mx-auto hidden-sm-and-down"
+                          style="margin-left:auto;margin-right:auto"
+                          v-text="service.title"
+                        ></v-card-title>
+                        <v-card-title
+                          class="body-2 font-weight-bold text-uppercase text-center mx-auto hidden-md-and-up"
                           style="margin-left:auto;margin-right:auto"
                           v-text="service.title"
                         ></v-card-title>

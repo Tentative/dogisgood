@@ -93,7 +93,7 @@
                             outlined
                             color="purple"
                             text
-                            to="./puppy-school"
+                            to="percorsi/puppy-school"
                           >
                             Scopri
                           </v-btn>

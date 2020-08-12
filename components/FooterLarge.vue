@@ -89,5 +89,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.v-application a {
+  color: transparent !important;
+  &:visited {
+    color: transparent !important;
+  }
+}
 @import '@/assets/FooterLarge.scss';
 </style>

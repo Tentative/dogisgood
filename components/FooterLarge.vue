@@ -4,12 +4,12 @@
       <v-col class="container_col_sx" :cols="6">
         <v-row class="empty_row"> </v-row>
         <v-row class="short_row">
-          <v-col :cols="7" align-self="center">
+          <v-col :cols="5" align-self="center">
             <v-row class="social title">
               <div>Seguici sui nostri social!</div>
             </v-row>
           </v-col>
-          <v-col :cols="5">
+          <v-col :cols="7">
             <v-row justify="center">
               <a href="https://www.tiktok.com/@asilodogisgood" target="_blank"
                 ><div class="tiktok_end">

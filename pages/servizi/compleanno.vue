@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-layout id="top" column justify-center align-center>
-      <v-flex xs12 class="main-banner">
+      <v-flex xs12 class="main-banner" style="width:100%">
         <Logo class="hidden-md-and-up" :src="src" />
         <section id="content_large" :style="style" class="hidden-sm-and-down">
           <v-container style="background-color:rgba(0,0,0,0.4)">
@@ -19,8 +19,7 @@
             <v-row id="main_row" justify="center">
               <v-col :cols="12">
                 <div class="sub_heading text-center display-3 pa-10">
-                  Il tuo migliore amico compie gli anni? Festeggia insieme a
-                  noi!
+                  Il tuo migliore amico compie gli anni?
                 </div>
               </v-col>
             </v-row>
@@ -37,7 +36,18 @@
         <div class="text-center mx-auto" style="max-width:960px">
           <v-sheet id="main-content" color="white"
             ><div style="margin-bottom:40px">
-              Il tuo migliore amico compie gli anni? Festeggia insieme a noi!
+              <div
+                class="text-center hidden-sm-and-down"
+                style="font-size:1.8em"
+              >
+                Festeggia insieme a noi!
+              </div>
+              <div
+                class="text-center hidden-md-and-up text-uppercase"
+                style="font-size:1em"
+              >
+                Festeggia insieme a noi!<br /><br />
+              </div>
               L'Asilo per Cani Dog is Good ti offre una vera festa a quattro
               zampe:
             </div>
@@ -86,11 +96,11 @@
               style="margin:20px"
             >
               <v-card-title class="text-center"
-                ><div class="headline">1X foto</div></v-card-title
+                ><div class="headline">1X foto 20x30cm</div></v-card-title
               >
               <v-card-text class="white card-text"
                 ><div class="title">
-                  20x30 cm con zampa ricordo del tuo amico peloso.
+                  Il ricordo con zampa del tuo amico peloso.
                 </div></v-card-text
               ></v-card
             >
@@ -107,7 +117,7 @@
               >
               <v-card-text class="white card-text"
                 ><div class="title">
-                  Del servizio fotografico.
+                  Il servizio fotografico di una giornata da non dimenticare.
                 </div></v-card-text
               ></v-card
             >
@@ -120,11 +130,11 @@
               style="margin:20px"
             >
               <v-card-title class="text-center"
-                ><div class="headline">Gadget</div></v-card-title
+                ><div class="headline">Gadget personalizzati</div></v-card-title
               >
               <v-card-text class="white card-text"
                 ><div class="title">
-                  Buonissimi e golosi personalizzati da regalare agli invitati.
+                  Buonissimi e golosi da regalare agli invitati.
                 </div></v-card-text
               ></v-card
             >
@@ -138,7 +148,7 @@
           </div>
         </div>
       </v-flex>
-      <v-fab-transition>
+      <!-- <v-fab-transition>
         <v-btn
           v-show="fab"
           id="to-top"
@@ -154,7 +164,7 @@
         >
           <v-icon>mdi-chevron-up</v-icon>
         </v-btn>
-      </v-fab-transition>
+      </v-fab-transition> -->
       <!-- <Breadcrumbs :levels="1" /> -->
     </v-layout>
     <FooterLarge class="hidden-sm-and-down" />
@@ -184,7 +194,7 @@ export default {
       style:
         'background:url(' +
         require('@/static/compleanno.jpg') +
-        ');background-size:cover;background-position:center'
+        ');background-size:cover;background-position:center;width:100%'
     }
   },
   methods: {

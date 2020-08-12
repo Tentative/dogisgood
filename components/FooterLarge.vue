@@ -9,8 +9,8 @@
               <div>Seguici sui nostri social!</div>
             </v-row>
           </v-col>
-          <v-col :cols="7">
-            <v-row justify="center">
+          <v-col :cols="7" align-self="center">
+            <v-row justify="center" align="center" align-content="center">
               <a href="https://www.tiktok.com/@asilodogisgood" target="_blank"
                 ><div class="tiktok_end">
                   <tiktok /></div

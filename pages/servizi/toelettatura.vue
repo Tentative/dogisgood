@@ -69,9 +69,9 @@
                         /></v-avatar>
                         <strong class="display-2">Servizi offerti:</strong>
                         <v-spacer></v-spacer>
-                        <v-btn icon>
+                        <!-- <v-btn icon>
                           <v-icon>mdi-account</v-icon>
-                        </v-btn>
+                        </v-btn> -->
                       </v-row>
                       <v-row
                         align="center"
@@ -329,7 +329,9 @@
 
                 <v-list-item>
                   <v-list-item-icon>
-                    <v-icon color="indigo">mdi-scissors-cutting</v-icon>
+                    <div style="text-align:left;float:left">
+                      <razor style="width:24px;height:auto;margin-top:50%" />
+                    </div>
                   </v-list-item-icon>
 
                   <v-list-item-content>
@@ -341,7 +343,9 @@
 
                 <v-list-item>
                   <v-list-item-icon>
-                    <v-icon color="indigo">mdi-hair-dryer</v-icon>
+                    <div style="text-align:left;float:left">
+                      <comb style="width:24px;height:auto;margin-top:50%" />
+                    </div>
                   </v-list-item-icon>
 
                   <v-list-item-content>
@@ -353,7 +357,11 @@
 
                 <v-list-item>
                   <v-list-item-icon>
-                    <v-icon color="indigo">mdi-filmstrip-off</v-icon>
+                    <div style="text-align:left;float:left">
+                      <stripping
+                        style="width:24px;height:auto;margin-top:50%"
+                      />
+                    </div>
                   </v-list-item-icon>
 
                   <v-list-item-content>

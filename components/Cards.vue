@@ -161,18 +161,34 @@
       I nostri partner:
     </div>
 
-    <v-row justify="center" class="mx-auto">
-      <v-col
-        v-for="partner in partners"
-        :key="partner"
-        cols="4"
-        class="mx-auto"
-        style="text-align:center"
+    <v-row justify="center" class="mx-auto mt-3">
+      <v-carousel
+        cycle
+        height="200"
+        width="85vw"
+        hide-delimiter-background
+        show-arrows
+        interval="3000"
       >
-        <v-avatar size="32">
-          <v-img :src="partner.icon" />
-        </v-avatar>
-      </v-col>
+        <v-row class="mx-auto" justify="center">
+          <v-carousel-item
+            v-for="partner in partners"
+            :key="partner"
+            :href="partner.to"
+            class="mx-auto"
+          >
+            <v-img
+              :src="partner.icon"
+              width="30vw"
+              height="auto"
+              class="text-center mx-auto"
+            />
+            <div class="title text-center">
+              {{ partner.title }}
+            </div>
+          </v-carousel-item>
+        </v-row>
+      </v-carousel>
     </v-row>
     <div id="partners" class="text-center mx-auto title">
       Seguici sui nostri social
@@ -239,13 +255,19 @@ export default {
     ],
     partners: [
       {
-        icon: require('@/static/partners/gammavet.png')
+        icon: require('@/static/partners/gammavet.png'),
+        title: 'Gammavet',
+        to: 'http://www.gammavet.it/'
       },
       {
-        icon: require('@/static/partners/lussianinda.png')
+        icon: require('@/static/partners/lussianinda.png'),
+        title: 'Lussianinda',
+        to: 'https://shop.lussianinda.com/'
       },
       {
-        icon: require('@/static/partners/mariani.png')
+        icon: require('@/static/partners/mariani.png'),
+        title: 'Ilaria Mariani CRF',
+        to: 'https://ilariamarianicrf.com/'
       }
     ],
     items: [

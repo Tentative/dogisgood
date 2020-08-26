@@ -183,7 +183,7 @@
               height="auto"
               class="text-center mx-auto"
             />
-            <div class="title text-center">
+            <div class="title text-center black--text">
               {{ partner.title }}
             </div>
           </v-carousel-item>

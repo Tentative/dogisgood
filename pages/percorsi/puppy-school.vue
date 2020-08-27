@@ -31,15 +31,16 @@
         <div id="content-title" class="title text-center hidden-sm-and-down">
           Nello specifico ci occuperemo di:
         </div>
-        <div id="content-title" class="title text-center hidden-md-and-up">
+        <div id="content-title" class="display-1 text-center hidden-md-and-up">
           Puppy school
         </div>
-        <div class="text-center">
+        <div class="text-left">
           <v-sheet id="main-content" color="white"
             ><div class="hidden-md-and-up">
               Gli obiettivi di questo percorso sono diversi e contribuiscono
               tutti al benessere di cucciolo e proprietario e alla crescita
-              serena del nostro piccolo amico. Nello specifico ci occuperemo di:
+              serena del nostro piccolo amico. <br /><br />Nello specifico ci
+              occuperemo di:
             </div>
             <v-row class="hidden-md-and-up">
               <v-col md="6" xs="12">
@@ -58,7 +59,7 @@
                         align="center"
                         justify="center"
                       >
-                        <div class="text text-center" style="padding:20px">
+                        <div class="text text-left" style="padding:20px">
                           {{ slide }}
                         </div>
                       </v-row>
@@ -125,7 +126,7 @@
             >
               Questo percorso prevede 6 incontri di un'ora circa, a cadenza
               settimanale, per cuccioli, dai 2 ai 6 mesi, di taglie e razze
-              diverse. <br class="hidden-md-and-up" />
+              diverse. <br /><br class="hidden-md-and-up" />
               Nel pacchetto sono compresi anche 3 ingressi da mezza giornata in
               asilo per favorire l'incontro e la socializzazione del cucciolo
               con altri cani in modo del tutto sicuro e protetto sotto la guida

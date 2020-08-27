@@ -77,11 +77,11 @@ export default {
         },
         {
           src: require('@/static/gallery/camp.JPG'),
-          title: 'Campo di addestramento privato'
+          title: 'Campo di educazione privato'
         },
         {
           src: require('@/static/gallery/camp3.JPG'),
-          title: 'Campo di addestramento privato'
+          title: 'Campo di educazione privato'
         },
         {
           src: require('@/static/gallery/compleanni-1.jpg'),

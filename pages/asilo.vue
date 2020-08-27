@@ -35,24 +35,36 @@
                   >Il nostro cane è un compagno di vita e condivide con noi
                   avventure e tempo libero, ma gli impegni quotidiani, spesso,
                   ci tengono fuori casa per parecchie ore costringendo il nostro
-                  amico a rimanere solo e recluso. L’idea del nostro asilo nasce
-                  proprio da una riflessione intorno alle esigenze di entrambi.
+                  amico a rimanere solo e recluso.<br /><br />
+                  L’idea del nostro asilo nasce proprio da una riflessione
+                  intorno alle esigenze di entrambi.<br />
                   L’asilo è lo spazio dove il nostro cane può giocare, correre,
                   riposarsi, uscire nel nostro cortile privato e fare tante
                   attività nel nostro grande campo di educazione.
                 </v-sheet>
+                <v-img
+                  :src="asilo2"
+                  width="85vw"
+                  style="border-radius:10px;margin-bottom:20px"
+                  class="mx-auto"
+                />
 
                 <v-sheet id="content" color="white">
                   Può vivere quindi nel migliore dei modi quella esperienza di
                   socializzazione fondamentale per il suo benessere psicofisico,
                   sempre sotto la sorveglianza attenta frutto dei nostri studi
-                  di educazione cinofila. Perché un cane educato e stanco è un
-                  cane felice, con un proprietario sereno e contento. L’asilo è
-                  quindi il luogo che può, con competenza e serietà, sostituirsi
-                  al suo compagno umano nei momenti di assenza, quando sono
-                  necessarie attenzioni particolari sia per i cuccioli, sia per
-                  i soggetti molto anziani, o anche semplicemente quando le
-                  condizioni atmosferiche non ci consentono lunghe passeggiate.
+                  di educazione cinofila.<br /><br />
+                  Perché un cane <strong>educato</strong> e
+                  <strong>stanco</strong> è un cane
+                  <span class="primary--text">felice</span>, con un proprietario
+                  <strong>sereno</strong> e <strong>contento</strong>.<br />
+                  <br />
+                  L’asilo è quindi il luogo che può, con competenza e serietà,
+                  sostituirsi al suo compagno umano nei momenti di assenza,
+                  quando sono necessarie attenzioni particolari sia per i
+                  cuccioli, sia per i soggetti molto anziani, o anche
+                  semplicemente quando le condizioni atmosferiche non ci
+                  consentono lunghe passeggiate.<br /><br />
                   Affinché tutti i cani possano interagire nella maniera
                   migliore, ogni nostro ospite usufruirà di un’ora di prova
                   gratuita per comprendere se l’asilo è il posto migliore per
@@ -127,7 +139,7 @@ export default {
   data() {
     return {
       imgSrc: this.$route.name,
-      asilo_src: require('@/static/asilo-banner-mobile.jpg'),
+      asilo_src: require('@/static/asilo-1.jpg'),
       asilo_content:
         "L'asilo è lo spazio dove il nostro cane può giocare, correre, riposarsi, uscire nel nostro cortile privato e fare tante attività nel nostro grande campo di educazione.",
       fab: false,
@@ -135,6 +147,7 @@ export default {
       offsetTop: 0,
       asilo1: require('@/static/asilo-1.jpg'),
       asilo_intro: "L'asilo",
+      asilo2: require('@/static/asilo-2.jpg'),
       asilo_sub:
         'Il nostro cane è un compagno di vita e condivide con noi avventure e tempo libero, ma gli impegni quotidiani, spesso, ci tengono fuori casa per parecchie ore costringendo il nostro amico a rimanere solo e recluso. L’idea del nostro asilo nasce proprio da una riflessione intorno alle esigenze di entrambi. Può vivere quindi nel migliore dei modi quella esperienza di socializzazione fondamentale per il suo benessere psicofisico, sempre sotto la sorveglianza attenta frutto dei nostri studi di educazione cinofila. Perché un cane educato e stanco è un cane felice, con un proprietario sereno e contento. L’asilo è quindi il luogo che può, con competenza e serietà, sostituirsi al suo compagno umano nei momenti di assenza, quando sono necessarie attenzioni particolari sia per i cuccioli, sia per i soggetti molto anziani, o anche semplicemente quando le condizioni atmosferiche non ci consentono lunghe passeggiate. Affinché tutti i cani possano interagire nella maniera migliore, ogni nostro ospite usufruirà di un’ora di prova gratuita per comprendere se l’asilo è il posto migliore per lui e se necessita eventualmente di un percorso di inserimento. ',
       slides: [
@@ -145,7 +158,7 @@ export default {
           src: require('@/static/struttura2.jpg')
         },
         {
-          src: require('@/static/spa.jpg')
+          src: require('@/static/struttura5.jpg')
         },
         {
           src: require('@/static/servizi-campo-educazione-privato-banner-mobile.jpg')

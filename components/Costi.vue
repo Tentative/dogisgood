@@ -1,9 +1,15 @@
 <template>
-  <section id="costi" style="margin-top:60px">
+  <section id="costi">
     <v-container>
       <v-row class="mx-auto" justify="center">
         <div
-          class="display-3 text-xs-subheading text-center blue--text text-uppercase"
+          class="display-3 text-xs-subheading text-center blue--text text-uppercase hidden-sm-and-down mt-5 pt-5"
+        >
+          I nostri prezzi
+        </div>
+        <div
+          id="content-title"
+          class="title text-center text-xs-body-2 hidden-md-and-up mt-5 pt-5"
         >
           I nostri prezzi
         </div>
@@ -14,12 +20,12 @@
       >
         <v-simple-table id="table">
           <template v-slot:default>
-            <thead>
+            <!-- <thead>
               <tr>
-                <!-- <th class="text-left body-2">Asilo</th> -->
+                 <th class="text-left body-2">Asilo</th> 
                 <th class="text-left"></th>
               </tr>
-            </thead>
+            </thead -->
             <tbody id="stripe">
               <tr v-for="service in services" :key="service.name">
                 <td>{{ service.name }}</td>
@@ -48,19 +54,19 @@ export default {
           prezzo: '€ 23'
         },
         {
-          name: 'CARNET 5 INGRESSI (validità 2 mesi) GIORNATA INTERA',
+          name: 'CARNET 5 INGRESSI GIORNATA INTERA (validità 2 mesi)',
           prezzo: '€ 125'
         },
         {
-          name: 'CARNET 5 INGRESSI (validità 2 mesi) MEZZA GIORNATA',
+          name: 'CARNET 5 INGRESSI MEZZA GIORNATA (validità 2 mesi)',
           prezzo: '€ 100'
         },
         {
-          name: 'CARNET 10 INGRESSI (validità 4 mesi) GIORNATA INTERA',
+          name: 'CARNET 10 INGRESSI GIORNATA INTERA (validità 4 mesi)',
           prezzo: '€ 230'
         },
         {
-          name: 'CARNET 10 INGRESSI (validità 4 mesi) MEZZA GIORNATA',
+          name: 'CARNET 10 INGRESSI MEZZA GIORNATA (validità 4 mesi)',
           prezzo: '€ 180'
         },
         {

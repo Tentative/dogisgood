@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section id="bautique" style="height:100vh">
-      <v-carousel height="100vh" cycle interval="3000">
+    <section id="bautique" class="hidden-sm-and-down">
+      <v-carousel cycle height="100vh" interval="3000" hide-delimiters>
         <v-carousel-item
           v-for="(item, i) in items"
           :key="i"
@@ -16,6 +16,34 @@
           </div>
         </v-carousel-item>
       </v-carousel>
+    </section>
+    <section id="bautique" class="hidden-md-and-up">
+      <v-carousel cycle interval="3000" hide-delimiters>
+        <v-carousel-item
+          v-for="(item, i) in items"
+          :key="i"
+          :src="item.src"
+          reverse-transition="fade-transition"
+          transition="fade-transition"
+          cover
+          style="margin-top:0"
+          ><div
+            style="background-color:rgba(0,0,0,0.54)"
+            class="subheading pa-5 text-center white--text text-uppercase "
+          >
+            {{ item.title }}
+          </div>
+        </v-carousel-item>
+      </v-carousel>
+      <div class="display-1 primary--text text-center mt-5">
+        Asilo per cani Dog Is Good
+      </div>
+      <div class="headline text-center primary--text mt-2">
+        Via San Vitale 129 - Seregno (MB)
+      </div>
+      <v-row class="mt-5 mx-auto" justify="center">
+        <v-img :src="logo" height="250" width="auto" contain="" />
+      </v-row>
     </section>
 
     <FooterLarge
@@ -37,6 +65,7 @@ export default {
   },
   data() {
     return {
+      logo: require('@/static/logo.jpg'),
       items: [
         {
           src: require('@/static/gallery/bautique-4.jpg'),

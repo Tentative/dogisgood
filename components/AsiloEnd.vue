@@ -56,7 +56,7 @@ export default {
       name: 'AsiloEnd',
       grid_1: require('@/static/struttura3.jpg'),
       grid_2: require('@/static/struttura2.jpg'),
-      grid_3: require('@/static/struttura3-bis.jpg'),
+      grid_3: require('@/static/struttura5.jpg'),
       grid_4: require('@/static/servizi-campo-educazione-privato-banner-mobile.jpg')
     }
   }

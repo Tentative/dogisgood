@@ -33,10 +33,10 @@
             </v-carousel>
           </v-row>
         </section>
-        <div id="content-title" class="title text-center hidden-md-and-up">
+        <div id="content-title" class="display-1 text-center hidden-md-and-up">
           Bautique
         </div>
-        <div class="text-center hidden-md-and-up">
+        <div class="text-left hidden-md-and-up">
           <v-sheet id="main-content" color="white"
             >Vieni a curiosare nella nostra Bautique! Troverai un sacco di
             prodotti esclusivi per il tuo cane, ma anche articoli sfiziosi per
@@ -48,6 +48,7 @@
               :hide-delimiters="true"
               width="85vw"
               style="margin-top:20px"
+              interval="3000"
             >
               <v-carousel-item
                 v-for="(item, i) in items"

@@ -26,7 +26,7 @@
             <v-row id="main_row" justify="center"> </v-row>
           </v-container>
         </section>
-        <div id="content-title" class="title text-center hidden-md-and-up">
+        <div id="content-title" class="display-1 text-center hidden-md-and-up">
           Feste di compleanno
         </div>
         <div id="content-title" class=" text-center hidden-sm-and-down">
@@ -48,8 +48,10 @@
               >
                 Festeggia insieme a noi!<br /><br />
               </div>
-              L'Asilo per Cani Dog is Good ti offre una vera festa a quattro
-              zampe:
+              <div class="text-left">
+                L'Asilo per Cani Dog is Good ti offre una vera festa a quattro
+                zampe:
+              </div>
             </div>
             <v-card
               color="#42a5f5"
@@ -65,7 +67,7 @@
                 </div></v-card-title
               >
               <v-card-text class="white card-text "
-                ><div class="title">
+                ><div class="title text-left">
                   Con ingredienti adatti al tuo cane e ai suoi ospiti.
                 </div></v-card-text
               ></v-card
@@ -82,7 +84,7 @@
                 ><div class="headline">Animazione dedicata</div></v-card-title
               >
               <v-card-text class="white card-text"
-                ><div class="title">
+                ><div class="title text-left">
                   Seguita dai nostri esperti educatori cinofili.
                 </div></v-card-text
               ></v-card
@@ -99,7 +101,7 @@
                 ><div class="headline">1X foto 20x30cm</div></v-card-title
               >
               <v-card-text class="white card-text"
-                ><div class="title">
+                ><div class="title text-left">
                   Il ricordo con zampa del tuo amico peloso.
                 </div></v-card-text
               ></v-card
@@ -116,7 +118,7 @@
                 ><div class="headline">Foto in digitale</div></v-card-title
               >
               <v-card-text class="white card-text"
-                ><div class="title">
+                ><div class="title text-left">
                   Il servizio fotografico di una giornata da non dimenticare.
                 </div></v-card-text
               ></v-card
@@ -133,7 +135,7 @@
                 ><div class="headline">Gadget personalizzati</div></v-card-title
               >
               <v-card-text class="white card-text"
-                ><div class="title">
+                ><div class="title text-left">
                   Buonissimi e golosi da regalare agli invitati.
                 </div></v-card-text
               ></v-card

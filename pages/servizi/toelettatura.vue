@@ -147,9 +147,9 @@
                         /></v-avatar>
                         <strong class="display-2">Servizi offerti:</strong>
                         <v-spacer></v-spacer>
-                        <v-btn icon>
+                        <!-- <v-btn icon>
                           <v-icon>mdi-account</v-icon>
-                        </v-btn>
+                        </v-btn> -->
                       </v-row>
                       <v-row
                         align="center"
@@ -170,7 +170,7 @@
                                 <v-expansion-panel-header
                                   class="white--text headline"
                                   color="blue"
-                                  >Bagno</v-expansion-panel-header
+                                  >Ozonoterapia</v-expansion-panel-header
                                 >
                                 <v-expansion-panel-content class="title pa-3">
                                   Con acqua ozonizzata. Dona lucentezza, apre i
@@ -195,9 +195,9 @@
                                   >SPA</v-expansion-panel-header
                                 >
                                 <v-expansion-panel-content class="title pa-3">
-                                  Con idromassaggio che riduce la tensione
-                                  nervosa ed ha un effetto rilassante, massaggio
-                                  a fondo la cute e tonifica la muscolatura.
+                                  Idromassaggio che riduce la tensione nervosa
+                                  ed ha un effetto rilassante, massaggia a fondo
+                                  la cute e tonifica la muscolatura.
                                 </v-expansion-panel-content>
                               </v-expansion-panel>
                             </v-expansion-panels>
@@ -209,7 +209,7 @@
                 </v-window-item>
 
                 <v-window-item>
-                  <v-card flat>
+                  <v-card flat :style="background">
                     <v-card-text>
                       <v-row class="mb-4" align="center">
                         <v-avatar color="grey" class="mr-4"
@@ -223,44 +223,41 @@
                         justify="center"
                         style="width:100%;margin-left:auto;margin-right:auto"
                       >
-                        <v-col
-                          :cols="6"
-                          style="margin-left:auto;margin-right:auto"
-                        >
-                          <v-row class="pa-3 " align="center" justify="center">
-                            <v-col :cols="12" align-self="center">
+                        <v-col :cols="12">
+                          <v-row class="pa-3 " align="center" justify="start">
+                            <v-col :cols="6" align-self="center">
                               <v-img
                                 max-width="250px"
                                 height="auto"
                                 :src="spelacchio"
+                                class="mx-auto"
                               />
+                              <v-row justify="center" class="mx-auto">
+                                <v-btn
+                                  class="ma-2"
+                                  tile
+                                  outlined
+                                  color="success"
+                                  href="mailto:spelacchiodog@gmail.com"
+                                >
+                                  <v-icon size="32px" left>mdi-email</v-icon>
+                                  spelacchiodog@gmail.com
+                                </v-btn>
+                                <v-btn
+                                  class="ma-2"
+                                  tile
+                                  outlined
+                                  color="success"
+                                  href="tel:+393491011358"
+                                >
+                                  <v-icon size="32px" left>mdi-phone</v-icon>
+                                  349 1011358
+                                </v-btn>
+                              </v-row>
                             </v-col>
-                          </v-row>
-                        </v-col>
-                        <v-col :cols="6">
-                          <v-row>
-                            <v-btn
-                              class="ma-2"
-                              tile
-                              outlined
-                              color="success"
-                              href="mailto:spelacchiodog@gmail.com"
-                            >
-                              <v-icon size="32px" left>mdi-email</v-icon>
-                              spelacchiodog@gmail.com
-                            </v-btn>
-                          </v-row>
-                          <v-row>
-                            <v-btn
-                              class="ma-2"
-                              tile
-                              outlined
-                              color="success"
-                              href="tel:+393491011358"
-                            >
-                              <v-icon size="32px" left>mdi-phone</v-icon>
-                              349 1011358
-                            </v-btn>
+                            <v-col :cols="6">
+                              <v-row> </v-row>
+                            </v-col>
                           </v-row>
                         </v-col>
                       </v-row>
@@ -551,6 +548,10 @@ export default {
   data() {
     return {
       show: false,
+      background:
+        'background:url(' +
+        require('@/static/toelettatura-2.jpg') +
+        ');background-position:100% 30%;background-size:45%;background-repeat:no-repeat;background-color:white',
       is_toelettatura: true,
       length: 3,
       window: 0,

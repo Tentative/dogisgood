@@ -277,8 +277,10 @@
       <v-layout id="top" column justify-center align-center>
         <v-flex xs12 class="main-banner">
           <Logo />
-          <div id="content-title" class="title text-center">Toelettatura</div>
-          <div id="content-subtitle" class="subtitle-2 text-center">
+          <div id="content-title" class="display-1 text-center">
+            Toelettatura
+          </div>
+          <div id="content-subtitle" class="headline text-center">
             Toelettatura Dog is Good by Spelacchio!
           </div>
 
@@ -297,18 +299,18 @@
                     class="white--text  pt-12 mt-12"
                     style="padding-top:40%!important"
                   >
-                    <div class="headline  pt-12 mt-12">Servizi offerti:</div>
                   </v-card-subtitle>
                 </v-row>
               </v-img>
+              <div class="headline text-left mt-2">Servizi offerti:</div>
 
-              <v-list two-line>
+              <v-list>
                 <v-list-item>
                   <v-list-item-icon>
                     <v-icon color="indigo">mdi-shower</v-icon>
                   </v-list-item-icon>
 
-                  <v-list-item-content>
+                  <v-list-item-content class="text-left">
                     <v-list-item-title>Bagni di igiene</v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
@@ -320,51 +322,49 @@
                     <v-icon color="indigo">mdi-content-cut</v-icon>
                   </v-list-item-icon>
 
-                  <v-list-item-content>
+                  <v-list-item-content class="text-left">
                     <v-list-item-title>Taglio a forbice</v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
 
                 <v-divider inset></v-divider>
 
-                <v-list-item>
+                <v-list-item style="max-height:58px">
                   <v-list-item-icon>
                     <div style="text-align:left;float:left">
-                      <razor style="width:24px;height:auto;margin-top:50%" />
+                      <razor style="width:24px;height:24px;" />
                     </div>
                   </v-list-item-icon>
 
-                  <v-list-item-content>
+                  <v-list-item-content class="text-left">
                     <v-list-item-title>Tosatura</v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
 
                 <v-divider inset></v-divider>
 
-                <v-list-item>
+                <v-list-item style="max-height:58px">
                   <v-list-item-icon>
                     <div style="text-align:left;float:left">
-                      <comb style="width:24px;height:auto;margin-top:50%" />
+                      <comb style="width:24px;height:auto;" />
                     </div>
                   </v-list-item-icon>
 
-                  <v-list-item-content>
+                  <v-list-item-content class="text-left">
                     <v-list-item-title>Snodatura</v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
 
                 <v-divider inset></v-divider>
 
-                <v-list-item>
+                <v-list-item style="max-height:58px">
                   <v-list-item-icon>
                     <div style="text-align:left;float:left">
-                      <stripping
-                        style="width:24px;height:auto;margin-top:50%"
-                      />
+                      <stripping style="width:24px;height:auto;" />
                     </div>
                   </v-list-item-icon>
 
-                  <v-list-item-content>
+                  <v-list-item-content class="text-left">
                     <v-list-item-title>Stripping</v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
@@ -376,11 +376,10 @@
                     <v-icon color="indigo">mdi-dog</v-icon>
                   </v-list-item-icon>
 
-                  <v-list-item-content>
+                  <v-list-item-content class="text-left">
                     <v-list-item-title class="text-no-wrap"
-                      >Pulizia orecchie
+                      >Pulizia orecchie e taglio unghie
                     </v-list-item-title>
-                    <v-list-item-title>e taglio unghie</v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
 
@@ -391,7 +390,7 @@
                     <v-icon color="indigo">mdi-palette</v-icon>
                   </v-list-item-icon>
 
-                  <v-list-item-content>
+                  <v-list-item-content class="text-left">
                     <v-list-item-title class="text-no-wrap"
                       >Cromoterapia
                     </v-list-item-title>
@@ -405,11 +404,10 @@
                     <v-icon color="indigo">mdi-cat</v-icon>
                   </v-list-item-icon>
 
-                  <v-list-item-content>
+                  <v-list-item-content class="text-left">
                     <v-list-item-title class="text-no-wrap"
-                      >Toelettatura sanitaria
+                      >Toelettatura sanitaria gatti
                     </v-list-item-title>
-                    <v-list-item-title>gatti</v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
 
@@ -426,15 +424,15 @@
                         <v-expansion-panel-header
                           color="blue"
                           class="white--text"
-                          >Bagno </v-expansion-panel-header
+                          >Ozonoterapia </v-expansion-panel-header
                         ><v-expansion-panel-content
-                          class="body-1"
+                          class="body-1 pa-2 text-left"
                           style="width:100%"
                         >
-                          Con acqua ozonizzata. Dona lucentezza, apre i nodi,
-                          elimina zecche e pulci, efficace contro dermatosi e
-                          micosi, disinfetta e aiuta la cicatrizzazione di
-                          ferite.
+                          Bagno con acqua ozonizzata. <br />Dona lucentezza,
+                          apre i nodi, elimina zecche e pulci, efficace contro
+                          dermatosi e micosi, disinfetta e aiuta la
+                          cicatrizzazione di ferite.
                         </v-expansion-panel-content></v-expansion-panel
                       >
                     </v-expansion-panels>
@@ -452,11 +450,11 @@
                           class="white--text"
                           >SPA</v-expansion-panel-header
                         ><v-expansion-panel-content
-                          class="body-1"
+                          class="body-1 pa-2 text-left"
                           style="width:100%"
                         >
-                          Con idromassaggio che riduce la tensione nervosa ed ha
-                          un effetto rilassante, massaggio a fondo la cute e
+                          Idromassaggio che riduce la tensione nervosa ed ha un
+                          effetto rilassante, massaggia a fondo la cute e
                           tonifica la muscolatura.
                         </v-expansion-panel-content></v-expansion-panel
                       >
@@ -494,31 +492,22 @@
                 </v-row>
               </v-row>
               <v-row justify="center" style="margin-top:20px">
-                <v-card class="mx-auto" max-width="300" tile>
-                  <v-img height="100%" :src="Toelettatura">
-                    <v-row align="end" class="fill-height">
-                      <v-col align-self="start" class="pa-0" cols="12">
-                        <v-avatar class="profile" color="grey" size="164" tile>
-                          <v-img :src="spelacchio"></v-img>
-                        </v-avatar>
-                      </v-col>
-                      <v-col class="py-0">
-                        <v-list-item color="rgba(0, 0, 0, .4)" dark>
-                          <v-list-item-content>
-                            <v-list-item-title class="title"
-                              >SPELACCHIO</v-list-item-title
-                            >
-                          </v-list-item-content>
-                        </v-list-item>
-                      </v-col>
-                    </v-row>
-                  </v-img>
-                </v-card>
+                <v-avatar class="profile" size="164" tile>
+                  <v-img :src="spelacchio"></v-img>
+                </v-avatar>
+
+                <v-list-item color="rgba(0, 0, 0, .4)" dark>
+                  <v-list-item-content>
+                    <v-list-item-title class="title"
+                      >SPELACCHIO</v-list-item-title
+                    >
+                  </v-list-item-content>
+                </v-list-item>
               </v-row>
             </v-sheet>
           </div>
         </v-flex>
-        <v-fab-transition>
+        <!-- <v-fab-transition>
           <v-btn
             v-show="fab"
             id="to-top"
@@ -534,7 +523,7 @@
           >
             <v-icon>mdi-chevron-up</v-icon>
           </v-btn>
-        </v-fab-transition>
+        </v-fab-transition> -->
         <!-- <Breadcrumbs :levels="1" /> -->
       </v-layout>
     </section>

@@ -6,6 +6,14 @@
   height: auto;
 }
 
+#footer_link_1 a,
+#footer_link_2 a,
+#footer_link_3 a,
+#footer_link_4 a,
+#footer_link_5 a {
+  color: transparent !important;
+}
+
 .tiktok_end {
   padding: 20px;
   display: inline-block;

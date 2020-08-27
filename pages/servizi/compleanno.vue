@@ -90,8 +90,8 @@
               light
               style="margin:20px"
             >
-              <v-card-title class="text-center "
-                ><div class="headline">
+              <v-card-title class="text-left "
+                ><div class="headline text-left">
                   Torta esclusivamente artigianale
                 </div></v-card-title
               >
@@ -109,8 +109,10 @@
               light
               style="margin:20px"
             >
-              <v-card-title class="text-center"
-                ><div class="headline">Animazione dedicata</div></v-card-title
+              <v-card-title class="text-left"
+                ><div class="headline text-left">
+                  Animazione dedicata
+                </div></v-card-title
               >
               <v-card-text class="white card-text"
                 ><div class="title text-left">
@@ -126,8 +128,10 @@
               light
               style="margin:20px"
             >
-              <v-card-title class="text-center"
-                ><div class="headline">1X foto 20x30cm</div></v-card-title
+              <v-card-title class="text-left"
+                ><div class="headline text-left">
+                  1X foto 20x30cm
+                </div></v-card-title
               >
               <v-card-text class="white card-text"
                 ><div class="title text-left">
@@ -143,8 +147,10 @@
               light
               style="margin:20px"
             >
-              <v-card-title class="text-center"
-                ><div class="headline">Foto in digitale</div></v-card-title
+              <v-card-title class="text-left"
+                ><div class="headline text-left">
+                  Foto in digitale
+                </div></v-card-title
               >
               <v-card-text class="white card-text"
                 ><div class="title text-left">
@@ -160,8 +166,10 @@
               light
               style="margin:20px"
             >
-              <v-card-title class="text-center"
-                ><div class="headline">Gadget personalizzati</div></v-card-title
+              <v-card-title class="text-left"
+                ><div class="headline text-left">
+                  Gadget personalizzati
+                </div></v-card-title
               >
               <v-card-text class="white card-text"
                 ><div class="title text-left">

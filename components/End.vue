@@ -12,19 +12,27 @@
           </v-col>
           <v-col :cols="5">
             <v-row justify="center">
-              <a href="https://www.tiktok.com/@asilodogisgood" target="_blank"
+              <a
+                id="footer_link_1"
+                href="https://www.tiktok.com/@asilodogisgood"
+                target="_blank"
                 ><div class="tiktok_end">
                   <tiktok /></div
               ></a>
-              <a href="https://www.facebook.com/asilodogisgood/" target="_blank"
+              <a
+                id="footer_link_2"
+                href="https://www.facebook.com/asilodogisgood/"
+                target="_blank"
                 ><div><v-icon size="38px">mdi-facebook</v-icon></div></a
               >
               <a
+                id="footer_link_3"
                 href="https://www.instagram.com/asilodogisgood/"
                 target="_blank"
                 ><div><v-icon size="38px">mdi-instagram</v-icon></div></a
               >
               <a
+                id="footer_link_4"
                 href="https://www.instagram.com/asilodogisgood/"
                 target="_blank"
                 ><div>

@@ -28,12 +28,7 @@
     <v-app-bar :clipped-left="clipped" app class="primary">
       <v-app-bar-nav-icon class="white--text" @click.stop="drawer = !drawer" />
 
-      <v-btn
-        :class="top > 200 && !isMobile ? 'hamburger_hide' : 'hamburger_show'"
-        icon
-        to="/"
-        @click.stop="miniVariant = !miniVariant"
-      >
+      <v-btn icon to="/" @click.stop="miniVariant = !miniVariant">
         <v-icon class="white--text">mdi-home</v-icon>
       </v-btn>
 
@@ -130,31 +125,31 @@ export default {
       right: true,
       rightDrawer: false,
       title: 'DogIsGood - Asilo per cani',
-      fix: !this.isMobile,
-      bar_color: top > 200 && !this.isMobile ? 'transparent' : '#5ea5ef',
+      // fix: !this.isMobile,
+      // bar_color: top > 200 && !this.isMobile ? 'transparent' : '#5ea5ef',
       top: 0
     }
-  },
-  computed: {
-    isMobile() {
-      return !(window.innerWidth > 768)
-    }
-  },
-
-  beforeMount() {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.handleScroll)
-  },
-
-  methods: {
-    handleScroll() {
-      // Your scroll handling here
-      // console.log(window.scrollY)
-      this.top = window.scrollY
-    }
   }
+  // computed: {
+  //   isMobile() {
+  //     return !(window.innerWidth > 768)
+  //   }
+  // },
+
+  // beforeMount() {
+  //   window.addEventListener('scroll', this.handleScroll)
+  // },
+  // beforeDestroy() {
+  //   window.removeEventListener('scroll', this.handleScroll)
+  // },
+
+  // methods: {
+  //   handleScroll() {
+  //     // Your scroll handling here
+  //     // console.log(window.scrollY)
+  //     this.top = window.scrollY
+  //   }
+  // }
 }
 </script>
 

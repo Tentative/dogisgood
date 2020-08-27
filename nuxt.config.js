@@ -1,7 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  mode: 'ssr',
+  mode: 'spa',
   /*
    ** Headers of the page
    */
@@ -30,7 +30,13 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    {
+      src: '~/plugins/vue-video-background',
+      mode: 'client',
+      ssr: false
+    }
+  ],
   /*
    ** Nuxt.js dev-modules
    */

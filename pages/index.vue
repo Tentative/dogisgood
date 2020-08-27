@@ -61,13 +61,15 @@
 
       <section v-show="!isMobile" id="fourth">
         <v-divider class="section_divider_one" color="transparent"></v-divider>
-        <video-background
-          :src="src_video"
-          style="height: 100vh;"
-          overlay="linear-gradient(45deg,rgba(0,0,0,.2),rgba(0,0,0.2))"
-        >
-          <End />
-        </video-background>
+        <no-ssr>
+          <video-background
+            :src="src_video"
+            style="height: 100vh;"
+            overlay="linear-gradient(45deg,rgba(0,0,0,.2),rgba(0,0,0.2))"
+          >
+            <End />
+          </video-background>
+        </no-ssr>
         <!-- <v-btn
           v-show="!isMobile"
           id="to-top"

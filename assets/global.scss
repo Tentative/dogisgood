@@ -23,6 +23,10 @@ body {
   }
 }
 
+.v-application a {
+  color: transparent !important;
+}
+
 .tiktok {
   & svg {
     display: inline-block;

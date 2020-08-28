@@ -83,26 +83,26 @@ export default {
           src: require('@/static/gallery/camp3.JPG'),
           title: 'Campo di educazione privato'
         },
-        {
-          src: require('@/static/gallery/compleanni-1.jpg'),
-          title: 'Feste di compleanno'
-        },
-        {
-          src: require('@/static/gallery/compleanni-2.JPG'),
-          title: 'Feste di compleanno'
-        },
-        {
-          src: require('@/static/gallery/compleanni-3.JPG'),
-          title: 'Feste di compleanno'
-        },
-        {
-          src: require('@/static/gallery/compleanni-4.JPG'),
-          title: 'Feste di compleanno'
-        },
-        {
-          src: require('@/static/gallery/compleanni-5.JPG'),
-          title: 'Feste di compleanno'
-        },
+        // {
+        //   src: require('@/static/gallery/compleanni-1.jpg'),
+        //   title: 'Feste di compleanno'
+        // },
+        // {
+        //   src: require('@/static/gallery/compleanni-2.JPG'),
+        //   title: 'Feste di compleanno'
+        // },
+        // {
+        //   src: require('@/static/gallery/compleanni-3.JPG'),
+        //   title: 'Feste di compleanno'
+        // },
+        // {
+        //   src: require('@/static/gallery/compleanni-4.JPG'),
+        //   title: 'Feste di compleanno'
+        // },
+        // {
+        //   src: require('@/static/gallery/compleanni-5.JPG'),
+        //   title: 'Feste di compleanno'
+        // },
         {
           src: require('@/static/gallery/asilo-1.jpg'),
           title: "L'asilo"

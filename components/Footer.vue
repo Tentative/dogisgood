@@ -9,7 +9,7 @@
       shaped
       class=" text-center"
     >
-      <v-card-text>
+      <v-card-text style="padding:16px 0!important">
         <v-btn
           v-for="icon in icons"
           :key="icon"

@@ -506,7 +506,7 @@
               </v-row>
               <v-row justify="center" style="margin-top:20px">
                 <v-avatar class="profile" size="164" tile>
-                  <v-img :src="spelacchio"></v-img>
+                  <v-img :src="spelacchio" contain></v-img>
                 </v-avatar>
 
                 <v-list-item color="rgba(0, 0, 0, .4)" dark>

@@ -184,10 +184,10 @@
                                   >Ozonoterapia</v-expansion-panel-header
                                 >
                                 <v-expansion-panel-content class="title pa-3">
-                                  Con acqua ozonizzata. Dona lucentezza, apre i
-                                  nodi, elimina zecche e pulci, efficace contro
-                                  dermatosi e micosi, disinfetta e aiuta la
-                                  cicatrizzazione di ferite.
+                                  Bagno con acqua ozonizzata. Dona lucentezza,
+                                  apre i nodi, elimina zecche e pulci, efficace
+                                  contro dermatosi e micosi, disinfetta e aiuta
+                                  la cicatrizzazione di ferite.
                                 </v-expansion-panel-content>
                               </v-expansion-panel>
                             </v-expansion-panels>

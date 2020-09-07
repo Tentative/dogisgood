@@ -17,24 +17,33 @@
         <v-col class="shape-content-left" :cols="4"> </v-col>
         <v-col class="shape-content-right" :cols="8"
           ><div class="right_card">
-            <Card :service="asilo" :img="asilo.src" :to="asilo.to" />
+            <Card :service="asilo" :img="asilo.src" :to="asilo.to" nuxt />
             <Card
               :service="toelettatura"
               :img="toelettatura.src"
+              nuxt
               :to="toelettatura.to"
             /><Card
+              nuxt
               :service="educazione"
               :img="educazione.src"
               :to="educazione.to"
             />
           </div>
           <v-spacer></v-spacer>
-          <v-row align="center" align-content="center" justify="center">
+          <v-row
+            align="center"
+            align-content="center"
+            justify="center"
+            class="mx-auto"
+          >
             <v-btn
               raised
               primary
               elevation="7"
               large
+              nuxt
+              width="500"
               color="primary"
               to="./servizi/"
               >Altri servizi</v-btn

@@ -130,7 +130,10 @@
 
             <v-row id="main_row" justify="center" class="mt-5 pt-5">
               <v-row justify="center" style="width:100%" class="mt-5 pt-5">
-                <div id="partners" class="text-center mx-auto display-3">
+                <div
+                  id="partners"
+                  class="text-center mx-auto display-3 mb-5 pb-5"
+                >
                   I nostri partner:
                 </div>
               </v-row>
@@ -138,12 +141,17 @@
                 v-for="partner in partners"
                 :key="partner"
                 cols="4"
-                class="mx-auto"
+                class="mx-auto mb-5 pb-5"
                 style="text-align:center"
               >
-                <v-avatar size="48">
-                  <v-img :src="partner.icon" />
+                <v-avatar size="180" tile>
+                  <a :href="partner.to"
+                    ><v-img :src="partner.icon" width="160" height="160" contain
+                  /></a>
                 </v-avatar>
+                <div class="title text-center black--text">
+                  <p>{{ partner.title }}</p>
+                </div>
               </v-col>
               <FooterLarge class="hidden-sm-and-down" style="width:100%" />
             </v-row>
@@ -268,13 +276,19 @@ export default {
       phone: 'tel:+3903621821674',
       partners: [
         {
-          icon: require('@/static/partners/gammavet.png')
+          icon: require('@/static/partners/gammavet.png'),
+          title: 'Gammavet',
+          to: 'http://www.gammavet.it/'
         },
         {
-          icon: require('@/static/partners/lussianinda.png')
+          icon: require('@/static/partners/lussianinda.png'),
+          title: 'Lussianinda',
+          to: 'https://shop.lussianinda.com/'
         },
         {
-          icon: require('@/static/partners/mariani.png')
+          icon: require('@/static/partners/mariani.png'),
+          title: 'Ilaria Mariani CRF',
+          to: 'https://ilariamarianicrf.com/'
         }
       ],
       mail: 'mailto:info.dogisgood@gmail.com',

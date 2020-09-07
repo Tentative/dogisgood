@@ -19,7 +19,8 @@
               <v-col :cols="12">
                 <div class="sub_heading text-center display-3 pa-10">
                   Bellezza e salute del cane sono ciò in cui crediamo, il nostro
-                  motto è "amore, cura e rispetto!".
+                  motto è:<br />
+                  "amore, cura e rispetto!".
                 </div>
               </v-col>
             </v-row>
@@ -64,8 +65,13 @@
                   <v-card flat>
                     <v-card-text>
                       <v-row class="mb-4" align="center">
-                        <v-avatar color="grey" class="mr-4"
-                          ><v-img :src="spelacchio"
+                        <v-avatar
+                          color="white"
+                          class="mr-4"
+                          width="140"
+                          height="140"
+                          tile
+                          ><v-img :src="spelacchio" contain
                         /></v-avatar>
                         <strong class="display-2">Servizi offerti:</strong>
                         <v-spacer></v-spacer>
@@ -142,8 +148,13 @@
                   <v-card flat>
                     <v-card-text>
                       <v-row class="mb-4" align="center">
-                        <v-avatar color="grey" class="mr-4"
-                          ><v-img :src="spelacchio"
+                        <v-avatar
+                          color="white"
+                          class="mr-4"
+                          width="140"
+                          height="140"
+                          tile
+                          ><v-img :src="spelacchio" contain
                         /></v-avatar>
                         <strong class="display-2">Servizi offerti:</strong>
                         <v-spacer></v-spacer>
@@ -212,8 +223,13 @@
                   <v-card flat :style="background">
                     <v-card-text>
                       <v-row class="mb-4" align="center">
-                        <v-avatar color="grey" class="mr-4"
-                          ><v-img :src="spelacchio"
+                        <v-avatar
+                          color="white"
+                          class="mr-4"
+                          width="140"
+                          height="140"
+                          tile
+                          ><v-img :src="spelacchio" contain
                         /></v-avatar>
                         <strong class="display-2">Contatti:</strong>
                         <v-spacer></v-spacer>
@@ -560,7 +576,7 @@ export default {
         require('@/static/servizi-toelettatura-banner-mobile.jpg') +
         ');' +
         'background-position:center top',
-      spelacchio: require('@/static/spelacchio-logo grande.jpeg'),
+      spelacchio: require('@/static/spelacchio-logo grande.png'),
       showspa: false,
       imgSrc: 'struttura',
       fab: false,

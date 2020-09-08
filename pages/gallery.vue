@@ -36,7 +36,7 @@
         </v-carousel-item>
       </v-carousel>
       <div class="display-1 primary--text text-center mt-5">
-        Asilo per cani Dog Is Good
+        Asilo per cani Dog is Good
       </div>
       <div class="headline text-center primary--text mt-2">
         Via San Vitale 129 - Seregno (MB)

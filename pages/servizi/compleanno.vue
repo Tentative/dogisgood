@@ -45,7 +45,7 @@
               width="85vw"
             >
               <v-carousel-item
-                v-for="(item, i) in items"
+                v-for="(item, i) in mobile"
                 :key="i"
                 :src="item.src"
                 ><v-col :cols="12" style="background-color:rgba(0,0,0,0.4)">
@@ -256,6 +256,17 @@ export default {
         },
         {
           src: require('@/static/gallery/compleanni-1.jpg')
+        }
+      ],
+      mobile: [
+        {
+          src: require('@/static/compleanno-home.jpg')
+        },
+        {
+          src: require('@/static/compleanno-3.JPG')
+        },
+        {
+          src: require('@/static/compleanno-4.JPG')
         }
       ]
     }

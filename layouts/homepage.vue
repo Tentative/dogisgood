@@ -100,7 +100,7 @@ export default {
           icon: 'mdi-bone',
           title: 'Percorsi educativi',
           to: '/percorsi',
-          class: 'hidden-sm-and-down'
+          class: ''
         },
         {
           icon: 'mdi-dog',

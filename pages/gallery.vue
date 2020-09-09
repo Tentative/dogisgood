@@ -106,8 +106,12 @@ export default {
         //   src: require('@/static/gallery/compleanni-4.JPG'),
         //   title: 'Feste di compleanno'
         // },
+        // {
+        //   src: require('@/static/gallery/compleanni-5.JPG'),
+        //   title: 'Feste di compleanno'
+        // },
         {
-          src: require('@/static/gallery/compleanni-5.JPG'),
+          src: require('@/static/gallery/compleanni-6.JPG'),
           title: 'Feste di compleanno'
         },
         {
@@ -116,6 +120,14 @@ export default {
         },
         {
           src: require('@/static/gallery/asilo-2.jpg'),
+          title: "Attività all'aperto"
+        },
+        {
+          src: require('@/static/gallery/asilo-11.jpg'),
+          title: "Attività all'aperto"
+        },
+        {
+          src: require('@/static/gallery/struttura-2.jpg'),
           title: "Attività all'aperto"
         },
         {
@@ -139,11 +151,31 @@ export default {
           title: "L'asilo"
         },
         {
+          src: require('@/static/gallery/asilo-8.jpg'),
+          title: "L'asilo"
+        },
+        {
+          src: require('@/static/gallery/asilo-9.jpg'),
+          title: "L'asilo"
+        },
+        {
+          src: require('@/static/gallery/asilo-10.jpg'),
+          title: "L'asilo"
+        },
+        {
           src: require('@/static/gallery/struttura-1.jpg'),
           title: 'Palestra'
         },
         {
+          src: require('@/static/gallery/asilo-12.jpg'),
+          title: 'Palestra'
+        },
+        {
           src: require('@/static/gallery/toelettatura.jpg'),
+          title: 'Toelettatura'
+        },
+        {
+          src: require('@/static/gallery/toelettatura-2.jpg'),
           title: 'Toelettatura'
         }
       ],
@@ -164,10 +196,10 @@ export default {
           src: require('@/static/gallery/camp3.JPG'),
           title: 'Campo di educazione privato'
         },
-        // {
-        //   src: require('@/static/gallery/compleanni-1.jpg'),
-        //   title: 'Feste di compleanno'
-        // },
+        {
+          src: require('@/static/gallery/compleanni-1.jpg'),
+          title: 'Feste di compleanno'
+        },
         // {
         //   src: require('@/static/gallery/compleanni-2.JPG'),
         //   title: 'Feste di compleanno'
@@ -180,16 +212,28 @@ export default {
         //   src: require('@/static/gallery/compleanni-4.JPG'),
         //   title: 'Feste di compleanno'
         // },
-        // {
-        //   src: require('@/static/gallery/compleanni-5.JPG'),
-        //   title: 'Feste di compleanno'
-        // },
+        {
+          src: require('@/static/gallery/compleanni-5.JPG'),
+          title: 'Feste di compleanno'
+        },
+        {
+          src: require('@/static/gallery/compleanni-7.JPG'),
+          title: 'Feste di compleanno'
+        },
         {
           src: require('@/static/gallery/asilo-1.jpg'),
           title: "L'asilo"
         },
         {
           src: require('@/static/gallery/asilo-2.jpg'),
+          title: "Attività all'aperto"
+        },
+        {
+          src: require('@/static/gallery/asilo-11.jpg'),
+          title: "Attività all'aperto"
+        },
+        {
+          src: require('@/static/gallery/struttura-2.jpg'),
           title: "Attività all'aperto"
         },
         {
@@ -213,11 +257,31 @@ export default {
           title: "L'asilo"
         },
         {
+          src: require('@/static/gallery/asilo-8.jpg'),
+          title: "L'asilo"
+        },
+        {
+          src: require('@/static/gallery/asilo-9.jpg'),
+          title: "L'asilo"
+        },
+        {
+          src: require('@/static/gallery/asilo-10.jpg'),
+          title: "L'asilo"
+        },
+        {
           src: require('@/static/gallery/struttura-1.jpg'),
           title: 'Palestra'
         },
         {
+          src: require('@/static/gallery/asilo-12.jpg'),
+          title: 'Palestra'
+        },
+        {
           src: require('@/static/gallery/toelettatura.jpg'),
+          title: 'Toelettatura'
+        },
+        {
+          src: require('@/static/gallery/toelettatura-2.jpg'),
           title: 'Toelettatura'
         }
       ]

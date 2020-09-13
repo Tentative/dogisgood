@@ -5,8 +5,8 @@
         <Logo :src="src_home" />
         <Intro />
         <v-btn
-          v-show="!isMobile"
           id="to-bottom"
+          class="hidden-sm-and-down"
           absolute
           dark
           fab
@@ -21,11 +21,11 @@
       </section>
       <v-divider class="section_divider_one" color="transparent"></v-divider>
 
-      <section v-show="!isMobile" id="second" :style="style">
+      <section id="second" class="hidden-sm-and-down" :style="style">
         <Service />
         <v-btn
-          v-show="!isMobile"
           id="to-third"
+          class="hidden-sm-and-down"
           absolute
           dark
           fab
@@ -39,13 +39,13 @@
         </v-btn>
       </section>
 
-      <section v-show="!isMobile" id="third">
+      <section id="third" class="hidden-sm-and-down">
         <v-divider class="section_divider_two" color="transparent"></v-divider>
         <Logo :src="src" />
         <Struttura />
         <v-btn
-          v-show="!isMobile"
           id="to-bottom"
+          class="hidden-sm-and-down"
           absolute
           dark
           fab
@@ -59,7 +59,7 @@
         </v-btn>
       </section>
 
-      <section v-show="!isMobile" id="fourth">
+      <section id="fourth" class="hidden-sm-and-down">
         <v-divider class="section_divider_one" color="transparent"></v-divider>
         <no-ssr>
           <video-background
@@ -85,7 +85,7 @@
           <v-icon class="pulse">mdi-chevron-up</v-icon>
         </v-btn> -->
       </section>
-      <Cards v-show="isMobile" />
+      <Cards class="hidden-md-and-up" />
     </v-flex>
     <v-flex xs12 sm8 md6> </v-flex>
   </v-layout>

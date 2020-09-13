@@ -1,7 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -32,7 +32,7 @@ export default {
    */
   plugins: [
     {
-      src: '~/plugins/vue-video-background',
+      src: '~/plugins/vue-video-background.client.js',
       mode: 'client',
       ssr: false
     }

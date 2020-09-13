@@ -92,7 +92,7 @@
 </template>
 
 <script>
-import VideoBackground from 'vue-responsive-video-background-player'
+// import VideoBackground from 'vue-responsive-video-background-player'
 import { Logo, Cards, Intro, Service, Struttura, End } from '~/components'
 export default {
   layout: 'homepage',
@@ -102,11 +102,12 @@ export default {
     Intro,
     Service,
     Struttura,
-    End,
-    VideoBackground
+    End
+    // VideoBackground
   },
   data() {
     return {
+      VideoBackground: null,
       src_video: require('@/static/cagnociao.mp4'),
       imgSrc: 'homepage',
       src_home: require('@/static/index-banner-mobile.jpg'),
@@ -133,6 +134,9 @@ export default {
         // easing: this.easing
       }
     }
+  },
+  mounted() {
+    this.VideoBackground = require('~/plugins/vue-video-background.client.js')
   },
   methods: {}
 }

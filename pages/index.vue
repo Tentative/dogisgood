@@ -123,9 +123,9 @@ export default {
     }
   },
   computed: {
-    isMobile() {
-      return !(window.innerWidth > 768)
-    },
+    // isMobile() {
+    //   return !(window.innerWidth > 768)
+    // },
     options() {
       return {
         duration: this.duration,

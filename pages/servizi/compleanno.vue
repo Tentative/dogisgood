@@ -278,6 +278,20 @@ export default {
       this.fab = top > 200
     }
   },
+  head() {
+    return {
+      title: 'Dog Is Good | Feste di compleanno',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Il tuo migliore amico compie gli anni? Festeggia con noi! L' +
+            'asilo per cani Dog is Good offre una vera e propria festa a quattro zampe!'
+        }
+      ]
+    }
+  },
   layout: 'homepage'
 }
 </script>

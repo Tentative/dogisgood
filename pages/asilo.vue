@@ -174,6 +174,19 @@ export default {
       this.fab = top > 200
     }
   },
+  head() {
+    return {
+      title: 'Dog Is Good | L' + 'asilo',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'L’asilo è lo spazio dove il nostro cane può fare tante attività nel nostro grande campo di educazione. Perché un cane educato e stanco è un cane felice, con un compagno umano sereno e contento!'
+        }
+      ]
+    }
+  },
   layout: 'homepage'
 }
 </script>

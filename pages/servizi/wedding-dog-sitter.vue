@@ -159,6 +159,19 @@ export default {
       this.fab = top > 200
     }
   },
+  head() {
+    return {
+      title: 'Dog Is Good | Wedding dog sitter',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Perché rinunciare al tuo migliore amico in uno dei giorni più belli? Con Dog is Good tutto è possibile!  Ci prenderemo cura di lui per tutta la giornata, assicurandoci che ci sia nei momenti più importanti.'
+        }
+      ]
+    }
+  },
   layout: 'homepage'
 }
 </script>

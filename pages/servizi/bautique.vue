@@ -133,6 +133,19 @@ export default {
       this.fab = top > 200
     }
   },
+  head() {
+    return {
+      title: 'Dog Is Good | Bautique',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            ' Vieni a curiosare nella nostra Bautique! Troverai un sacco di prodotti esclusivi per il tuo cane, ma anche articoli sfiziosi per te!'
+        }
+      ]
+    }
+  },
   layout: 'homepage'
 }
 </script>

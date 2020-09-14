@@ -177,6 +177,19 @@ export default {
       this.fab = top > 200
     }
   },
+  head() {
+    return {
+      title: 'Dog Is Good | Percorsi Educativi',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Il nostro è il metodo di educazione detto gentile, adatto a qualunque cane, indipendentemente da razza, età, sesso e caratteristiche individuali'
+        }
+      ]
+    }
+  },
   layout: 'homepage'
 }
 </script>

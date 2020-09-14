@@ -178,6 +178,20 @@ export default {
         }
       ]
     }
+  },
+  head() {
+    return {
+      title: 'Dog Is Good | I nostri servizi',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Dog is good, l' +
+            'asilo per cani, Via San Vitale, 129, Seregno (MB), Vieni a trovarci! Per info: 3397268386'
+        }
+      ]
+    }
   }
 }
 </script>

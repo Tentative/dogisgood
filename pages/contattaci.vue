@@ -312,6 +312,19 @@ export default {
       this.fab = top > 200
     }
   },
+  head() {
+    return {
+      title: 'Dog Is Good | Contattaci',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Per ogni informazione, non esitate a contattarci! Info: 3397268386 o 03621821674 mail: info@dogisgood.it'
+        }
+      ]
+    }
+  },
   layout: 'homepage'
 }
 </script>

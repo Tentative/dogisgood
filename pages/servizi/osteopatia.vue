@@ -122,6 +122,19 @@ export default {
       this.fab = top > 200
     }
   },
+  head() {
+    return {
+      title: 'Dog Is Good | Osteopatia',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'L’osteopatia animale è una disciplina olistica complementare alla medicina veterinaria, che si avvale di manipolazioni e mobilizzazioni terapeutiche, con lo scopo di promuovere il benessere psico-fisico dell’animale a 360°'
+        }
+      ]
+    }
+  },
   layout: 'homepage'
 }
 </script>

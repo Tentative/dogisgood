@@ -69,6 +69,18 @@ export default {
       this.fab = top > 200
     }
   },
+  head() {
+    return {
+      title: 'Dog Is Good | Campo educazione privato',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Coming soon...'
+        }
+      ]
+    }
+  },
   layout: 'homepage'
 }
 </script>

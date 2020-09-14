@@ -593,6 +593,19 @@ export default {
       this.fab = top > 200
     }
   },
+  head() {
+    return {
+      title: 'Dog Is Good | Toelettatura',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            ' Bellezza e salute del cane sono ciò in cui crediamo, il nostro motto è: "amore, cura e rispetto!" Per info: spelacchiodog@gmail.com, tel: 3491011358'
+        }
+      ]
+    }
+  },
   layout: 'homepage'
 }
 </script>

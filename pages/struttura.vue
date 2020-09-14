@@ -114,6 +114,19 @@ export default {
       this.fab = top > 200
     }
   },
+  head() {
+    return {
+      title: 'Dog Is Good | La struttura',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'La struttura che ospita l’Asilo Dog is Good è stata realizzata per rispondere a tutte le esigenze dei nostri amici pelosi: 400 mq e un ampio cortile privato.'
+        }
+      ]
+    }
+  },
   layout: 'homepage'
 }
 </script>

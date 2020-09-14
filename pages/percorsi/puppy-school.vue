@@ -204,6 +204,19 @@ export default {
       this.fab = top > 200
     }
   },
+  head() {
+    return {
+      title: 'Dog Is Good | Puppy School',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Gli obiettivi di questo percorso sono diversi e contribuiscono tutti al benessere di cucciolo e proprietario e alla crescita serena del nostro piccolo amico'
+        }
+      ]
+    }
+  },
   layout: 'homepage'
 }
 </script>

@@ -147,8 +147,7 @@ export default {
           hid: 'description',
           name: 'description',
           content:
-            'Dog is good, l' +
-            'asilo per cani, Via San Vitale, 129, Seregno (MB), Vieni a trovarci! Per info: 3397268386'
+            'Dog is Good è il primo asilo per cani della Brianza studiato per rispondere alle esigenze del tuo amico a 4 zampe.'
         }
       ]
     }

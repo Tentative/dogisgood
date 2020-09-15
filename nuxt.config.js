@@ -51,6 +51,9 @@ export default {
     '@nuxtjs/google-analytics',
     '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    hostname: 'https://dogisgood.it'
+  },
   googleAnalytics: {
     id: 'UA-117415536-1'
   },

@@ -93,7 +93,7 @@ export default {
         {
           icon: 'mdi-donkey',
           title: 'Toelettatura',
-          to: 'servizi/toelettatura',
+          to: '/servizi/toelettatura',
           class: ''
         },
         {

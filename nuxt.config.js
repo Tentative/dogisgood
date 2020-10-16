@@ -1,12 +1,14 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
+
   /*
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
+    // titleTemplate: '%s - ' + process.env.npm_package_name,
+    titleTemplate: '%s  ',
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -15,6 +17,31 @@ export default {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
+      },
+      {
+        property: 'og:url',
+        content: 'https://www.dogisgood.it'
+      },
+      {
+        property: 'og:image',
+        content: 'https://www.dogisgood.it/_nuxt/img/b42490d.jpg'
+      },
+      {
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        property: 'og:title',
+        content: 'Dog is Good | Asilo per cani'
+      },
+      {
+        property: 'og:description',
+        content:
+          'Dog is Good è il primo asilo per cani della Brianza studiato per rispondere alle esigenze del tuo amico a 4 zampe.'
+      },
+      {
+        property: 'fb:app_id',
+        content: '3329651863750111'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
@@ -30,7 +57,13 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    {
+      src: '~/plugins/vue-video-background.client.js',
+      mode: 'client',
+      ssr: false
+    }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -39,8 +72,16 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    hostname: 'https://dogisgood.it'
+  },
+  googleAnalytics: {
+    id: 'UA-117415536-1'
+  },
   /*
    ** Nuxt.js modules
    */
@@ -60,7 +101,8 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
+      light: true,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -70,6 +112,10 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3
+        },
+        light: {
+          primary: colors.blue,
+          accent: colors.blue.lighten4
         }
       }
     }
@@ -81,6 +127,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   }
 }

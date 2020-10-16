@@ -1,0 +1,70 @@
+@import './global.scss';
+@import './variables.scss';
+
+#shape {
+  height: 100px;
+
+  & .shape-left {
+    width: 250px !important;
+    background-color: transparent;
+    border: none !important;
+  }
+  & .shape-right {
+    background-color: #5ea5ef;
+    border-radius: 5px 0 0 5px;
+    color: white;
+    font-size: 1.3em;
+    text-transform: uppercase;
+  }
+
+  & .shape-right_large {
+    text-align: left;
+    background-color: #5ea5ef;
+    border-radius: 5px 0 0 5px;
+    color: white;
+    font-size: 1.3em;
+    text-transform: uppercase;
+  }
+}
+
+#logo_right {
+  width: 80px;
+  height: auto;
+  float: right;
+  background-color: #5ea5ef;
+}
+
+.logo_menu {
+  background-color: #5ea5ef;
+}
+
+.right_card {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#shape-content {
+  height: 100vh;
+  & .shape-content-left {
+    background-color: transparent;
+    max-height: 100%;
+  }
+  & .shape-content-right {
+    background-color: #aae56d;
+  }
+}
+
+#shape-content-left_large {
+  background-color: aae56d;
+}
+
+.section-divider {
+  border-color: red !important;
+}
+
+#shape-end {
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+}

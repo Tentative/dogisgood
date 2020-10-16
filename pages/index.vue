@@ -1,75 +1,160 @@
 <template>
   <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            For more information on Vuetify, check out the
-            <a href="https://vuetifyjs.com" target="_blank"> documentation </a>.
-          </p>
-          <p>
-            If you have questions, please join the official
-            <a href="https://chat.vuetifyjs.com/" target="_blank" title="chat">
-              discord </a
-            >.
-          </p>
-          <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-            >
-              issue board </a
-            >.
-          </p>
-          <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
-          </p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3" />
-          <a href="https://nuxtjs.org/" target="_blank">
-            Nuxt Documentation
-          </a>
-          <br />
-          <a href="https://github.com/nuxt/nuxt.js" target="_blank">
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire">
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
+    <v-flex xs12 class="main-banner">
+      <section id="first">
+        <Logo :src="src_home" />
+        <Intro />
+        <v-btn
+          id="to-bottom"
+          class="hidden-sm-and-down"
+          absolute
+          dark
+          fab
+          bottom
+          center
+          small
+          color="#5ea5ef"
+          @click="$vuetify.goTo('#second', options)"
+        >
+          <v-icon class="pulse">mdi-chevron-down</v-icon>
+        </v-btn>
+      </section>
+      <v-divider class="section_divider_one" color="transparent"></v-divider>
+
+      <section id="second" class="hidden-sm-and-down" :style="style">
+        <Service />
+        <v-btn
+          id="to-third"
+          class="hidden-sm-and-down"
+          absolute
+          dark
+          fab
+          bottom
+          center
+          small
+          color="#5ea5ef"
+          @click="$vuetify.goTo('#third', options)"
+        >
+          <v-icon class="pulse">mdi-chevron-down</v-icon>
+        </v-btn>
+      </section>
+
+      <section id="third" class="hidden-sm-and-down">
+        <v-divider class="section_divider_two" color="transparent"></v-divider>
+        <Logo :src="src" />
+        <Struttura />
+        <v-btn
+          id="to-bottom"
+          class="hidden-sm-and-down"
+          absolute
+          dark
+          fab
+          bottom
+          center
+          small
+          color="#5ea5ef"
+          @click="$vuetify.goTo('#fourth', options)"
+        >
+          <v-icon class="pulse">mdi-chevron-down</v-icon>
+        </v-btn>
+      </section>
+
+      <section id="fourth" class="hidden-sm-and-down">
+        <v-divider class="section_divider_one" color="transparent"></v-divider>
+        <no-ssr>
+          <video-background
+            :src="src_video"
+            style="height: 100vh;"
+            overlay="linear-gradient(45deg,rgba(0,0,0,.2),rgba(0,0,0.2))"
+          >
+            <End />
+          </video-background>
+        </no-ssr>
+        <!-- <v-btn
+          v-show="!isMobile"
+          id="to-top"
+          absolute
+          dark
+          fab
+          bottom
+          center
+          small
+          color="#5ea5ef"
+          @click="$vuetify.goTo('#first', options)"
+        >
+          <v-icon class="pulse">mdi-chevron-up</v-icon>
+        </v-btn> -->
+      </section>
+      <Cards class="hidden-md-and-up" />
     </v-flex>
+    <v-flex xs12 sm8 md6> </v-flex>
   </v-layout>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
+// import VideoBackground from 'vue-responsive-video-background-player'
+import { Logo, Cards, Intro, Service, Struttura, End } from '~/components'
 export default {
+  layout: 'homepage',
   components: {
     Logo,
-    VuetifyLogo
+    Cards,
+    Intro,
+    Service,
+    Struttura,
+    End
+    // VideoBackground
+  },
+  data() {
+    return {
+      VideoBackground: null,
+      src_video: require('@/static/cagnociao.mp4'),
+      imgSrc: 'homepage',
+      src_home: require('@/static/index-banner-mobile.jpg'),
+      src: require('@/static/struttura-alt.jpg'),
+      imgSrc_struttura: 'struttura',
+      style:
+        "background:url('" + require('@/static/sfondo-servizi.jpg') + "');",
+      style_servizi:
+        "background:url('" + require('@/static/struttura-desktop.jpg') + "');",
+      to_second: '$vuetify.goTo("#second", 2500)',
+
+      duration: 500,
+      offset: -64
+    }
+  },
+  computed: {
+    // isMobile() {
+    //   return !(window.innerWidth > 768)
+    // },
+    options() {
+      return {
+        duration: this.duration,
+        offset: this.offset
+        // easing: this.easing
+      }
+    }
+  },
+  mounted() {
+    this.VideoBackground = require('~/plugins/vue-video-background.client.js')
+  },
+  methods: {},
+  head() {
+    return {
+      title: 'Dog is Good | Asilo per cani',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Dog is Good è il primo asilo per cani della Brianza studiato per rispondere alle esigenze del tuo amico a 4 zampe.'
+        }
+      ]
+    }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@import '~/assets/homepage.scss';
+</style>

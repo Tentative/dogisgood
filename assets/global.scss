@@ -1,0 +1,48 @@
+@import '~assets/variables.scss';
+
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+body {
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.v-card__title {
+  word-break: normal;
+}
+
+.v-application {
+  & .display-3,
+  .display-4,
+  .body-1,
+  .headline,
+  .title {
+    font-family: 'Josefin Sans', sans-serif !important;
+  }
+}
+
+#footer_link_1,
+#footer_link_2,
+#footer_link_3,
+#footer_link_4,
+#footer_link_5 {
+  color: transparent !important;
+}
+
+.tiktok {
+  & svg {
+    display: inline-block;
+    height: auto;
+    fill: white;
+  }
+  display: inline-block;
+  color: white !important;
+}
+
+@media only screen and (min-width: 960px) {
+  .container {
+    max-width: 100%;
+  }
+}

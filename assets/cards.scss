@@ -1,0 +1,81 @@
+@import './variables.scss';
+
+#card-exp-1,
+#card-exp-3 {
+  background-color: $item-content-border;
+  color: $main-text-color;
+  text-transform: uppercase;
+  -webkit-box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  margin-top: -25px;
+}
+
+#card-exp-2,
+#card-exp-4 {
+  background-color: $item-content-border-bis;
+  color: $main-text-color;
+  text-transform: uppercase;
+  -webkit-box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  margin-top: -25px;
+}
+
+#panel-1,
+#panel-2,
+#panel-3,
+#panel-4 {
+  margin-bottom: 80px;
+}
+
+#asilo,
+#percorsi {
+  color: $main-text-color;
+  background-color: $card-icon-background-color;
+  border-radius: 100%;
+  font-size: 3em;
+  padding: 10px;
+  -webkit-box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  margin-top: -50px;
+}
+
+#struttura,
+#servizi {
+  color: $main-text-color;
+  background-color: $card-icon-background-color-bis;
+  border-radius: 100%;
+  font-size: 3em;
+  padding: 10px;
+  -webkit-box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px -2px 26px -4px rgba(0, 0, 0, 0.75);
+  margin-top: -50px;
+}
+
+#card-content-1 {
+  background-color: $item-content-border;
+}
+
+#card-content-2 {
+  background-color: $card-light-background;
+}
+
+#partners {
+  max-width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.v-card__title {
+  word-break: normal;
+}
+
+@media only screen and (min-width: 1200px) {
+  #struttura {
+    font-size: 2em;
+  }
+}

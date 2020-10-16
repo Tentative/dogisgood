@@ -1,0 +1,45 @@
+@import '@/assets/variables.scss';
+@import '@/assets/global.scss';
+
+@media only screen and (min-width: 960px) {
+  .main-banner {
+    width: 100%;
+    height: 100vh;
+    & .v-image__image {
+      height: 100vh;
+    }
+    & #logo {
+      height: 100vh;
+    }
+
+    #corner_text {
+      padding: 20px;
+
+      font-size: 1.2em;
+      & .corner_title {
+        font-size: 1.4em;
+        font-weight: 500;
+        justify-content: center;
+        text-transform: uppercase;
+      }
+    }
+
+    #md_row {
+      font-size: 5em;
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+
+  // .large-banner {
+  //   width: 100%;
+  //   height: 50vh;
+  //   & .v-image__image {
+  //     height: 50vh;
+  //     object-fit: contain;
+  //   }
+  //   & #logo {
+  //     height: 50vh;
+  //   }
+  // }
+}

@@ -21,11 +21,11 @@
     }
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "fibers": "^5.0.0",
-    "nuxt": "^2.0.0",
-    "vue-responsive-video-background-player": "^1.1.1"
+    "nuxt": "^2.14.7",
+    "vue-responsive-video-background-player": "^1.1.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
@@ -35,11 +35,11 @@
     "@nuxtjs/vuetify": "^1.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",
-    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-nuxt": ">=0.4.2",
-    "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^4.0.0",
-    "lint-staged": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
     "prettier": "^1.19.1",
     "stylelint": "^10.1.0"
   }

@@ -101,10 +101,24 @@
         </div>
         <div
           id="content-title"
+          class="text-center title text-xs-body-2 hidden-sm-and-down"
+          style="margin-bottom:20px"
+        >
+          sabato dalle 9 alle 18
+        </div>
+        <div
+          id="content-title"
           class="text-center title  hidden-md-and-up"
           style="margin-bottom:20px"
         >
           dal lunedì al venerdì, dalle 7.30 alle 19
+        </div>
+        <div
+          id="content-title"
+          class="text-center title  hidden-md-and-up"
+          style="margin-bottom:20px"
+        >
+          sabato dalle 9 alle 18
         </div>
       </v-flex>
 

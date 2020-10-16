@@ -17,6 +17,31 @@ export default {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
+      },
+      {
+        property: 'og:url',
+        content: 'https://www.dogisgood.it'
+      },
+      {
+        property: 'og:image',
+        content: 'https://www.dogisgood.it/_nuxt/img/b42490d.jpg'
+      },
+      {
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        property: 'og:title',
+        content: 'Dog is Good | Asilo per cani'
+      },
+      {
+        property: 'og:description',
+        content:
+          'Dog is Good è il primo asilo per cani della Brianza studiato per rispondere alle esigenze del tuo amico a 4 zampe.'
+      },
+      {
+        property: 'fb:app_id',
+        content: '3329651863750111'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]

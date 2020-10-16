@@ -141,7 +141,7 @@ export default {
   methods: {},
   head() {
     return {
-      title: 'Dog Is Good | Asilo per cani',
+      title: 'Dog is Good | Asilo per cani',
       meta: [
         {
           hid: 'description',

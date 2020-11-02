@@ -47,11 +47,7 @@
                 <v-btn text icon color="white" class="mx-5"
                   ><v-icon>mdi-phone</v-icon></v-btn
                 >
-                <v-btn
-                  href="mailto:info.dogisgood@gmail.com"
-                  class="mx-5"
-                  text
-                  icon
+                <v-btn href="mailto:info@dogisgood.it" class="mx-5" text icon
                   ><v-icon>mdi-email</v-icon></v-btn
                 >
                 <v-btn href="https://wa.me/393397268386" class="mx-5" text icon

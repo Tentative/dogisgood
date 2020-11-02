@@ -41,10 +41,10 @@
                         block
                         outlined
                         color="success"
-                        href="mailto:info.dogisgood@gmail.com"
+                        href="mailto:info@dogisgood.it"
                       >
                         <v-icon size="32px" left>mdi-email</v-icon>
-                        info.dogisgood@gmail.com
+                        info@dogisgood.it
                       </v-btn>
                     </v-row></v-sheet
                   >
@@ -180,7 +180,7 @@
                     block
                     outlined
                     color="success"
-                    href="mailto:info.dogisgood@gmail.com"
+                    href="mailto:info@dogisgood.it"
                   >
                     <v-icon size="32px" left>mdi-email</v-icon>
                     <span class="text-truncate">info</span>
@@ -291,7 +291,7 @@ export default {
           to: 'https://ilariamarianicrf.com/'
         }
       ],
-      mail: 'mailto:info.dogisgood@gmail.com',
+      mail: 'mailto:info@dogisgood.it',
       src: require('@/static/logo-circle.png'),
       src_logo: require('@/static/struttura-banner-mobile.jpg'),
 
